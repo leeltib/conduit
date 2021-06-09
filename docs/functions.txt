@@ -1,0 +1,16 @@
+User registration: az alkalmazásba be lehet regisztrálni, név, email cím és jelszó megadásával - teszt: CON_TC_001
+User login - Logaut : bejelentkezés az alkalmazásba egy meglévő felhasználói fiókkal, majd kilépés belőle - teszt: CON_TC_002
+New blog post : új blogbejegyzést tudunk készíteni  - teszt: CON_TC_003
+Edit my existing blog post : tudunk saját, meglévő bejegyzést szerkeszteni - teszt: CON_TC_004
+Delete my existing blog post : törölhetjük a saját, meglévő bejegyzésünket - teszt: CON_TC_005
+Use of tags : címkét (címkéket) adhatunk a bejegyzésünkhöz - teszt: CON_TC_006
+Following : követni tudjuk az általunk kedvelt blogszerzők bejegyzéseit - teszt: CON_TC_007
+Blog feed, Tag feed page : az alkalmazás listázza, megjeleníti  a bejegyzéseket, és címkék alapján csoportosítja a hírcsatorna tartalmát - teszt: CON_TC_008
+Article details view, Comment : megnyithatjuk, olvashatjuk a mások által írt bejegyzéseket, és (regisztrált felhasználóként) kommentet is fűzhetünk hozzá - teszt: CON_TC_009
+Mark blog post as favorite : kedvelhetjük a nekünk tetsző bejegyzéseket (szív ikon), amiket az alkalmazás külön listába rendez (Favorites Articles) - teszt: CON_TC_010
+Paginated blog post feed : az alkalmazás lapozó funkciót biztosít, max. 10 bejegyzés/oldal - teszt: CON_TC_011
+
+Ezeket a funkciókat kell vizsgálnunk a specifikáció előírásai alapján.
+
+További, általam javasolt vizsgálatok a "testcasses" mappában levő dokumentációban találhatók.
+Összefoglaló táblázat: Conduit_TestCase_List.xlsx

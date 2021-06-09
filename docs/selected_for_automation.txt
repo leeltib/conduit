@@ -1,0 +1,11 @@
+A001, CON_TC_001 User registration: felület automatizázás, (alap tesztkörnyezet létrehozás) mert ismétlődő művelet, magas prioritású alapfunkció (regressziós teszt is)
+A002, CON_TC_002 User login - Logaut : felület automatizázás, mert ismétlődő művelet, magas prioritású alapfunkció (regressziós teszt is)
+A003, CON_TC_003 New blog post : felület automatizázás, mert magas prioritású alapfunkció  (regressziós teszt is)
+A004, CON_TC_004 Edit my existing blog post : felület automatizázás, mert magas prioritású alapfunkció  (regressziós teszt is)
+A005, CON_TC_005 Delete my existing blog post : felület automatizázás, mert magas prioritású alapfunkció  (regressziós teszt is)
+A006, CON_TC_008 Blog feed, Tag feed page : felület automatizázás, mert magas prioritású alapfunkció  (regressziós teszt is)
+A007, CON_TC_009 Article details view, Comment : felület automatizázás, mert magas prioritású alapfunkció  (regressziós teszt is)
+A008, CON_TC_017 User registration - negativ test : felület automatizázás, mert kockázati tényező a stabil és biztonságos üzemeltetés szempontjából (regressziós teszt is)
+A009, CON_TC_018 Your Settings - password - negativ test : felület automatizázás, mert kockázati tényező a stabil és biztonságos üzemeltetés szempontjából (regressziós teszt is)
+A010, CON_TC_020 Article, comment size : felület automatizázás, mert kockázati tényező a stabil és biztonságos üzemeltetés szempontjából (regressziós teszt is)
+
