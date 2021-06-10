@@ -14,3 +14,4 @@ Ezeket a funkciókat kell vizsgálnunk a specifikáció előírásai alapján.
 
 További, általam javasolt vizsgálatok a "testcasses" mappában levő dokumentációban találhatók.
 Összefoglaló táblázat: Conduit_TestCase_List.xlsx
+

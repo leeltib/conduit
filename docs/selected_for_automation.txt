@@ -9,3 +9,9 @@ A008, CON_TC_017 User registration - negativ test : felület automatizázás, me
 A009, CON_TC_018 Your Settings - password - negativ test : felület automatizázás, mert kockázati tényező a stabil és biztonságos üzemeltetés szempontjából (regressziós teszt is)
 A010, CON_TC_020 Article, comment size : felület automatizázás, mert kockázati tényező a stabil és biztonságos üzemeltetés szempontjából (regressziós teszt is)
 
+Amit szerintem a functions.txt listában felsorolt funkciók közül nem érdemes automatizálni:
+
+CON_TC_006 Use of tags : manuálisan gyorsan tesztelhető, az oldal használhatóságát csak viszonylag kis mértékben rontja
+CON_TC_007 Following : külön, csak erre a funkcióra automatizált tesztet készíteni nem láttam kifizetődőnek, ezért beépítettem az A006 tesztbe
+CON_TC_010 Mark blog post as favorite : manuálisan gyorsan tesztelhető, az oldal használhatóságát csak viszonylag kis mértékben rontja
+CON_TC_011 Paginated blog post feed : manuálisan gyorsan tesztelhető, az oldal használhatóságát csak viszonylag kis mértékben rontja
