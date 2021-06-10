@@ -10,7 +10,7 @@ Article details view, Comment : megnyithatjuk, olvashatjuk a mások által írt 
 Mark blog post as favorite : kedvelhetjük a nekünk tetsző bejegyzéseket (szív ikon), amiket az alkalmazás külön listába rendez (Favorites Articles) - teszt: CON_TC_010
 Paginated blog post feed : az alkalmazás lapozó funkciót biztosít, max. 10 bejegyzés/oldal - teszt: CON_TC_011
 
-Ezeket a funkciókat kell vizsgálnunk a specifikáció előírásai alapján.
+Ezeket, az előzőekben felsorolt funkciókat kell vizsgálnunk a specifikáció előírásai alapján.
 
 További, általam javasolt vizsgálatok a "testcasses" mappában levő dokumentációban találhatók.
 Összefoglaló táblázat: Conduit_TestCase_List.xlsx
