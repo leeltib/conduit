@@ -28,11 +28,11 @@ jobs:
 
     - name: Install Chrome
       run: |
-        apt install google-chrome-stable
+        sudo apt-get install google-chrome-stable
 
     - name: Install chromedriver
       run: |
-          seleniumbase install chromedriver
+        seleniumbase install chromedriver
 
     - name: Test with pytest
       run: |
