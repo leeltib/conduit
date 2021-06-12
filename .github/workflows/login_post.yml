@@ -17,6 +17,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Builds and Starts
+        run: |
+            docker-compose up -d
+
       - name: install Nodejs
         uses: actions/setup-node@v2
         with:
