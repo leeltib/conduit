@@ -37,6 +37,10 @@ jobs:
       run: |
         seleniumbase install chromedriver
 
+    - name: Run Chrome
+      uses: browser-actions/setup-chrome@latest
+      run: chrome --91.0
+
     - name: Test with pytest
       run: |
         pytest seleniumide-tests/webdr_test.py --alluredir=allure-results
