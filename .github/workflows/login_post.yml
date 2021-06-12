@@ -39,4 +39,4 @@ jobs:
 
       - name: Run Tests
         run: |
-            selenium-side-runner seleniumide-tests/login.side
+            selenium-side-runner seleniumide-tests/registration.side
