@@ -1,0 +1,53 @@
+{
+  "uid" : "77414e5d05777bd9",
+  "name" : "test_add_negative",
+  "fullName" : "seleniumide-tests.test_mymath#test_add_negative",
+  "historyId" : "471f50a3039806a019f7240f5c075b72",
+  "time" : {
+    "start" : 1623511847739,
+    "stop" : 1623511847739,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "seleniumide-tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_mymath"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-870"
+  }, {
+    "name" : "thread",
+    "value" : "2746-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "seleniumide-tests.test_mymath"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "77414e5d05777bd9.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,61 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "seleniumide-tests.test_mymath",
+    "children" : [ {
+      "name" : "test_add_positive",
+      "uid" : "1f128acba20d9880",
+      "parentUid" : "c26d2066715d41a581d1e95e8b2921d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623511847736,
+        "stop" : 1623511847736,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_zero",
+      "uid" : "3964665d7c202078",
+      "parentUid" : "c26d2066715d41a581d1e95e8b2921d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623511847738,
+        "stop" : 1623511847738,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_negative",
+      "uid" : "77414e5d05777bd9",
+      "parentUid" : "c26d2066715d41a581d1e95e8b2921d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623511847739,
+        "stop" : 1623511847739,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_add_string__expect_exception",
+      "uid" : "85087fa8439724ec",
+      "parentUid" : "c26d2066715d41a581d1e95e8b2921d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623511847741,
+        "stop" : 1623511847741,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "seleniumide-tests.test_mymath"
+  } ],
+  "name" : "packages"
+}
