@@ -12,7 +12,7 @@ jobs:
 
   tests:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -28,7 +28,7 @@ jobs:
 
       - name: Install Chrome
         run: |
-          apt install google-chrome-stable
+          sudo apt-get install google-chrome-stable
 
       - name: Install seleniumbase
         run: pip install seleniumbase
