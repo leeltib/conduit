@@ -2,7 +2,7 @@
   "id": "319d414d-17e5-4021-8d5c-e9376231df3c",
   "version": "2.0",
   "name": "Conduit_registration",
-  "url": "https://github.com/leeltib/conduit/blob/master/src/public/views/index.html",
+  "url": "http://localhost:1667",
   "tests": [{
     "id": "93d2c925-1bda-440c-88f6-fd6721376f9b",
     "name": "registration",
