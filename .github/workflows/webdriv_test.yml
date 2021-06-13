@@ -40,7 +40,7 @@ jobs:
 
     - name: Install chromedriver
       run: |
-        seleniumbase install chromedriver
+        sudo seleniumbase install chromedriver
 
     - name: Lint with flake8
       run: |

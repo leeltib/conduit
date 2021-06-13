@@ -1,7 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 
-driver = webdriver.Chrome()
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+# options.add_argument('--disable-dev-shm-usage')
+driver = webdriver.Chrome(executable_path="/root/chromedriver", chrome_options=options)
+
+
+# driver = webdriver.Chrome()
 # driver = webdriver.Firefox()
 driver.get("http://www.python.org")
 assert "Python" in driver.title
