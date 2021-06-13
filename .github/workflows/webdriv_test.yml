@@ -38,6 +38,15 @@ jobs:
       run: |
         seleniumbase install chromedriver
 
+    - uses: nanasess/setup-chromedriver@master
+      with:
+        # Optional: do not specify to match Chrome's version
+        chromedriver-version: '77.0.3865.40'
+    - run: |
+        export DISPLAY=:99
+        chromedriver --url-base=/wd/hub &
+        sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
+
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
