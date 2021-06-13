@@ -39,8 +39,7 @@ jobs:
 
       - name: Install chromedriver
         run: |
-          sudo apt-get install chromedriver
-#          seleniumbase install chromedriver
+          seleniumbase install chromedriver
 
       - name: Run Tests
         run: |
