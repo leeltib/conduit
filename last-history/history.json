@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ac1f8f030a56ba34",
+      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/ac1f8f030a56ba34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623588119959,
+        "stop" : 1623588119959,
+        "duration" : 0
+      }
+    }, {
       "uid" : "fa3e43c17f0a4023",
       "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/fa3e43c17f0a4023",
       "status" : "passed",
@@ -24,11 +33,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2b461f16af31cdbd",
+      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/2b461f16af31cdbd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623588119947,
+        "stop" : 1623588119948,
+        "duration" : 1
+      }
+    }, {
       "uid" : "7f47bd611c970b8a",
       "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/7f47bd611c970b8a",
       "status" : "passed",
@@ -39,42 +57,60 @@
       }
     } ]
   },
-  "967a99493de010d873634d625ce21091" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "65e2df37e2b69e5d",
-      "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/65e2df37e2b69e5d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1623573840404,
-        "stop" : 1623573840404,
-        "duration" : 0
-      }
-    } ]
-  },
   "a7db232d975e69c1d9fc17633c4586b4" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "f2281c6e482f2bd8",
+      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/f2281c6e482f2bd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623588119957,
+        "stop" : 1623588119957,
+        "duration" : 0
+      }
+    }, {
       "uid" : "242050a25afef8b5",
       "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/242050a25afef8b5",
       "status" : "passed",
       "time" : {
         "start" : 1623573840406,
         "stop" : 1623573840406,
+        "duration" : 0
+      }
+    } ]
+  },
+  "967a99493de010d873634d625ce21091" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "d1ba1a995a31d96",
+      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/d1ba1a995a31d96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623588119956,
+        "stop" : 1623588119956,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "65e2df37e2b69e5d",
+      "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/65e2df37e2b69e5d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623573840404,
+        "stop" : 1623573840404,
         "duration" : 0
       }
     } ]
