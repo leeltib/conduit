@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "c7773781c417e95c",
+      "reportUrl" : "https://leeltib.github.io/conduit/11//#testresult/c7773781c417e95c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623624961347,
+        "stop" : 1623624961347,
+        "duration" : 0
+      }
+    }, {
       "uid" : "ab57b20e0cd445b4",
       "reportUrl" : "https://leeltib.github.io/conduit/10//#testresult/ab57b20e0cd445b4",
       "status" : "passed",
@@ -69,11 +78,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "89daf7b09ae413c",
+      "reportUrl" : "https://leeltib.github.io/conduit/11//#testresult/89daf7b09ae413c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623624961292,
+        "stop" : 1623624961293,
+        "duration" : 1
+      }
+    }, {
       "uid" : "c27a3d0036d3ee2c",
       "reportUrl" : "https://leeltib.github.io/conduit/10//#testresult/c27a3d0036d3ee2c",
       "status" : "passed",
@@ -134,11 +152,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "725fd9a4d17971ed",
+      "reportUrl" : "https://leeltib.github.io/conduit/11//#testresult/725fd9a4d17971ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623624961345,
+        "stop" : 1623624961345,
+        "duration" : 0
+      }
+    }, {
       "uid" : "a30ed51f539fc51c",
       "reportUrl" : "https://leeltib.github.io/conduit/10//#testresult/a30ed51f539fc51c",
       "status" : "passed",
@@ -199,11 +226,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "22155171e6cf77",
+      "reportUrl" : "https://leeltib.github.io/conduit/11//#testresult/22155171e6cf77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623624961342,
+        "stop" : 1623624961342,
+        "duration" : 0
+      }
+    }, {
       "uid" : "2d4486d6215b5bde",
       "reportUrl" : "https://leeltib.github.io/conduit/10//#testresult/2d4486d6215b5bde",
       "status" : "passed",
