@@ -13,6 +13,7 @@ jobs:
   registration:
     runs-on: ubuntu-latest
     steps:
+      - name: Check Out Repo
       - uses: actions/checkout@v2
 
       - name: Builds and Starts
@@ -37,12 +38,11 @@ jobs:
 
       - name: Install chromedriver
         run: |
-          sudo apt-get -yqq install chromium-chromedriver
-#          seleniumbase install chromedriver
+          seleniumbase install chromedriver
 
       - name: Run Tests
         run: |
-          selenium-side-runner seleniumide-tests/registration.side
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
 
   login:
     runs-on: ubuntu-latest
@@ -76,7 +76,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          selenium-side-runner seleniumide-tests/login.side
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
 
   post:
     runs-on: ubuntu-latest
@@ -110,4 +110,6 @@ jobs:
 
       - name: Run Tests
         run: |
-          selenium-side-runner seleniumide-tests/post.side
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
+
+
