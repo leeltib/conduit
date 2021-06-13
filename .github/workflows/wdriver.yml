@@ -9,13 +9,13 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v2
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.7
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -28,17 +28,26 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-    - name: Install Chrome
+    - name: Install ubuntu package
       run: |
+        sudo apt-get install fonts-unfonts-core
+        sudo apt-get install fonts-unfonts-extra
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add
         sudo apt-get install google-chrome-stable
+        wget https://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip
+        unzip ./chromedriver_linux64.zip
 
-    - name: Install seleniumbase
-      run: pip install seleniumbase
+#    - name: Install Chrome
+#      run: |
+#        sudo apt-get install google-chrome-stable
 
-    - name: Install chromedriver
-      run: |
-        sudo apt-get install chromium-chromedriver
-#        seleniumbase install chromedriver
+#    - name: Install seleniumbase
+#      run: pip install seleniumbase
+
+#    - name: Install chromedriver
+#      run: |
+#        sudo apt-get install chromium-chromedriver
+##        seleniumbase install chromedriver
 
     - name: Test with pytest
       run: |
