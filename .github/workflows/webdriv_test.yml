@@ -23,6 +23,10 @@ jobs:
         pip install flake8 pytest
         if [ -f selenium-tests/requirements_wd.txt ]; then pip install -r selenium-tests/requirements_wd.txt; fi
 
+    - name: Install Chrome
+      run: |
+        sudo apt install google-chrome-stable
+
     - name: Prepare Selenium
       # https://github.com/marketplace/actions/setup-chromedriver
       uses: nanasess/setup-chromedriver@master
