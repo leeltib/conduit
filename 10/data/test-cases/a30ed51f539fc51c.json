@@ -1,0 +1,109 @@
+{
+  "uid" : "a30ed51f539fc51c",
+  "name" : "test_add_negative",
+  "fullName" : "selenium-tests.test_mymath#test_add_negative",
+  "historyId" : "a7db232d975e69c1d9fc17633c4586b4",
+  "time" : {
+    "start" : 1623624941833,
+    "stop" : 1623624941834,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "selenium-tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_mymath"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-200"
+  }, {
+    "name" : "thread",
+    "value" : "2842-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selenium-tests.test_mymath"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "6e67a14409b1e088",
+        "reportUrl" : "https://leeltib.github.io/conduit/9//#testresult/6e67a14409b1e088",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623588808865,
+          "stop" : 1623588808865,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "53377ec134639df1",
+        "reportUrl" : "https://leeltib.github.io/conduit/8//#testresult/53377ec134639df1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623588647124,
+          "stop" : 1623588647124,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4add6ed9a996f829",
+        "reportUrl" : "https://leeltib.github.io/conduit/7//#testresult/4add6ed9a996f829",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623588499835,
+          "stop" : 1623588499835,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f2281c6e482f2bd8",
+        "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/f2281c6e482f2bd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623588119957,
+          "stop" : 1623588119957,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "242050a25afef8b5",
+        "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/242050a25afef8b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623573840406,
+          "stop" : 1623573840406,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a30ed51f539fc51c.json",
+  "parameterValues" : [ ]
+}
