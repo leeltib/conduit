@@ -43,7 +43,6 @@ jobs:
         run: |
           selenium-side-runner seleniumide-tests/registration.side
 
-
   login:
     runs-on: ubuntu-latest
     needs: registration
@@ -78,7 +77,6 @@ jobs:
         run: |
           selenium-side-runner seleniumide-tests/login.side
 
-
   post:
     runs-on: ubuntu-latest
     needs: login
@@ -112,4 +110,3 @@ jobs:
       - name: Run Tests
         run: |
           selenium-side-runner seleniumide-tests/post.side
-
