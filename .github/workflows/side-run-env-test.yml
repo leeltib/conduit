@@ -43,7 +43,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          selenium-side-runner seleniumide-tests/registration.side
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/registration.side
 
   login:
     runs-on: ubuntu-latest
@@ -73,7 +73,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          selenium-side-runner seleniumide-tests/login.side
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" seleniumide-tests/login.side
 
   post:
     runs-on: ubuntu-latest

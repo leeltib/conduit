@@ -52,5 +52,5 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest selenium-tests/webdriv.py
+        pytest -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" selenium-tests/webdriv.py
 
