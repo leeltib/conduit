@@ -1,0 +1,82 @@
+{
+  "uid" : "c59cc5cc49c1a146",
+  "name" : "test_add_string__expect_exception",
+  "fullName" : "selenium-tests.test_mymath#test_add_string__expect_exception",
+  "historyId" : "d065f4f298241105d2b9217cf76c5411",
+  "time" : {
+    "start" : 1623588499837,
+    "stop" : 1623588499837,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "selenium-tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_mymath"
+  }, {
+    "name" : "host",
+    "value" : "fv-az83-907"
+  }, {
+    "name" : "thread",
+    "value" : "2752-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "selenium-tests.test_mymath"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "ac1f8f030a56ba34",
+        "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/ac1f8f030a56ba34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623588119959,
+          "stop" : 1623588119959,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "fa3e43c17f0a4023",
+        "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/fa3e43c17f0a4023",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623573840408,
+          "stop" : 1623573840408,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c59cc5cc49c1a146.json",
+  "parameterValues" : [ ]
+}
