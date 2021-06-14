@@ -33,7 +33,7 @@
       "command": "waitForElementPresent",
       "target": "linkText=Sign up",
       "targets": [],
-      "value": "30000"
+      "value": "50000"
     }, {
       "id": "c575f336-d2ba-48b7-9b3d-e1cb18cc54af",
       "comment": "",
