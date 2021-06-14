@@ -8,11 +8,6 @@ on:
     branches:
       - master
 
-env:
-  name: Builds and Starts
-  run: |
-      docker-compose up -d
-
 
 jobs:
 
@@ -20,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Builds and Starts
+        run: |
+          docker-compose up -d
 
       - name: install Nodejs
         uses: actions/setup-node@v2
@@ -51,6 +50,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Builds and Starts
+        run: |
+          docker-compose up -d
+
       - name: install Nodejs
         uses: actions/setup-node@v2
         with:
@@ -80,6 +83,10 @@ jobs:
     needs: login
     steps:
       - uses: actions/checkout@v2
+
+      - name: Builds and Starts
+        run: |
+          docker-compose up -d
 
       - name: install Nodejs
         uses: actions/setup-node@v2

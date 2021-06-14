@@ -20,9 +20,9 @@ jobs:
         run: |
           docker-compose up -d
 
-      - name: Install Selenium Side Runner
+      - name: Localhost start
         run: |
-          http://localhost:1667
+          http://localhost:1667/api/users
 
 
   registration:
