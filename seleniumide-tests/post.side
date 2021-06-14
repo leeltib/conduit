@@ -128,7 +128,7 @@
       "command": "waitForElementPresent",
       "target": "linkText=New Article",
       "targets": [],
-      "value": "30000"
+      "value": "50000"
     }, {
       "id": "4b3aa176-d3c6-41ae-b0f7-a2b6278c8880",
       "comment": "",

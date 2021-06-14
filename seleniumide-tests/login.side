@@ -123,7 +123,7 @@
       "command": "waitForElementPresent",
       "target": "linkText=testuser01",
       "targets": [],
-      "value": "30000"
+      "value": "50000"
     }, {
       "id": "62cef93e-3ff3-45a4-8a93-ea05aab84855",
       "comment": "",

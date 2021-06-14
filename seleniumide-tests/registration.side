@@ -170,7 +170,7 @@
         ["xpath=//li[4]/a", "xpath:position"],
         ["xpath=//a[contains(.,'testuser08')]", "xpath:innerText"]
       ],
-      "value": "30000"
+      "value": "50000"
     }, {
       "id": "d0d07930-d682-413c-82c8-3704500dcabe",
       "comment": "",
