@@ -120,7 +120,7 @@
     }, {
       "id": "0706551b-8d31-4d78-8872-3ab47703413e",
       "comment": "",
-      "command": "waitForElementPresent",
+      "command": "// waitForElementPresent",
       "target": "linkText=testuser01",
       "targets": [],
       "value": "80000"
