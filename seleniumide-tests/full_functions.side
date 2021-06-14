@@ -191,7 +191,7 @@
     }, {
       "id": "cd489908-a6f1-4c68-9c8f-c05c1e8a433a",
       "comment": "",
-      "command": "// waitForElementPresent",
+      "command": "//waitForElementPresent",
       "target": "linkText=Sign in",
       "targets": [
         ["linkText=Sign in", "linkText"],
@@ -308,7 +308,7 @@
     }, {
       "id": "a4e9d922-de7f-439a-bf0a-37bf7217c19e",
       "comment": "",
-      "command": "// waitForElementPresent",
+      "command": "//waitForElementPresent",
       "target": "linkText=testuser05",
       "targets": [
         ["linkText=testuser05", "linkText"],
@@ -319,7 +319,7 @@
         ["xpath=//li[4]/a", "xpath:position"],
         ["xpath=//a[contains(.,'testuser05')]", "xpath:innerText"]
       ],
-      "value": "80000"
+      "value": "90000"
     }, {
       "id": "bf805b80-af8c-47db-82de-ada535d76968",
       "comment": "",
@@ -488,7 +488,7 @@
     }, {
       "id": "c10ba96d-6480-49a9-b033-23e1c8316a15",
       "comment": "",
-      "command": "// waitForElementPresent",
+      "command": "//waitForElementPresent",
       "target": "linkText=baba",
       "targets": [
         ["linkText=baba", "linkText"],
@@ -516,7 +516,7 @@
     }, {
       "id": "8a27568b-8557-4518-b5d4-b535c3cf67e6",
       "comment": "",
-      "command": "// waitForElementPresent",
+      "command": "//waitForElementPresent",
       "target": "linkText=Sign in",
       "targets": [
         ["linkText=Sign in", "linkText"],
