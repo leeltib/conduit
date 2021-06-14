@@ -1,4 +1,4 @@
-name: side_run_test
+name: registration_test
 
 on:
   pull_request:

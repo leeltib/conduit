@@ -1,4 +1,4 @@
-name: side_run_test
+name: side_run_full_test
 
 on:
   pull_request:
