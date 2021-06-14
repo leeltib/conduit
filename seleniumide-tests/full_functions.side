@@ -23,7 +23,7 @@
     }, {
       "id": "2cc1c89b-d67c-420f-9c6f-ccd219c87e49",
       "comment": "",
-      "command":"// waitForElementPresent",
+      "command":"//waitForElementPresent",
       "target": "linkText=Sign up",
       "targets": [
         ["linkText=Sign up", "linkText"],
@@ -38,7 +38,7 @@
     }, {
       "id": "3c728743-d6c5-44b9-af46-b9a6047f8730",
       "comment": "",
-      "command": "assertElementPresent",
+      "command": "//assertElementPresent",
       "target": "linkText=Sign up",
       "targets": [
         ["linkText=Sign up", "linkText"],
