@@ -33,7 +33,7 @@
       "command": "waitForElementPresent",
       "target": "linkText=Sign up",
       "targets": [],
-      "value": "50000"
+      "value": "80000"
     }, {
       "id": "c575f336-d2ba-48b7-9b3d-e1cb18cc54af",
       "comment": "",
@@ -170,7 +170,7 @@
         ["xpath=//li[4]/a", "xpath:position"],
         ["xpath=//a[contains(.,'testuser08')]", "xpath:innerText"]
       ],
-      "value": "50000"
+      "value": "80000"
     }, {
       "id": "d0d07930-d682-413c-82c8-3704500dcabe",
       "comment": "",
