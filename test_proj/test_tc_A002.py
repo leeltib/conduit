@@ -15,6 +15,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=option
 #driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
+time.sleep(10)
 
 # Cookie elutasítása
 try:
