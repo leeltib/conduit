@@ -2,7 +2,9 @@
   "buildOrder" : 3,
   "reportUrl" : "https://leeltib.github.io/conduit/3/",
   "reportName" : "Allure Report with history",
-  "data" : { }
+  "data" : {
+    "Test defects" : 5
+  }
 }, {
   "data" : { }
 } ]

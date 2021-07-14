@@ -1,5 +1,82 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[3]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "children" : [ {
+        "name" : "test_t_case001",
+        "uid" : "f05ad1e91b26ade9",
+        "parentUid" : "efee3d55fadb9d481337d31f9a1c0b9c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626271747961,
+          "stop" : 1626271756964,
+          "duration" : 9003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "efee3d55fadb9d481337d31f9a1c0b9c"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "children" : [ {
+        "name" : "test_t_case002",
+        "uid" : "5cfe4799398a96dc",
+        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626271757135,
+          "stop" : 1626271758730,
+          "duration" : 1595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_t_case003",
+        "uid" : "2d14aa103a77713e",
+        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626271758812,
+          "stop" : 1626271760425,
+          "duration" : 1613
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_t_case004",
+        "uid" : "7a168ce6c9bb786c",
+        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626271760506,
+          "stop" : 1626271762093,
+          "duration" : 1587
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_t_case005",
+        "uid" : "6e169a1af7c9ccf6",
+        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626271762180,
+          "stop" : 1626271763746,
+          "duration" : 1566
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "26a689029c7ab9ec226ad679dba74b34"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
