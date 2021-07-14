@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "8ffeb301da09590df3d37fb045c77190",
-    "name" : "selenium-tests",
+    "uid" : "92db12f7e7d0b8dc8bfd8a470ddd0514",
+    "name" : "test_proj",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 5,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     }
   } ]
 }
