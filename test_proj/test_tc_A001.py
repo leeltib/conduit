@@ -54,6 +54,7 @@ def test_registr():
 
 user_menu_text = test_registr()
 
+
 # normál futtatáshoz:
 if __name__ == "__main__":
     print(user_menu_text)
