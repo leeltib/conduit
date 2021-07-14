@@ -3,7 +3,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/15/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
     "retry" : 0
   }
 }, {
@@ -11,7 +11,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/14/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
     "retry" : 0
   }
 }, {
@@ -19,7 +19,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/13/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
     "retry" : 0
   }
 }, {
@@ -27,7 +27,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/12/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
     "retry" : 0
   }
 }, {
@@ -35,7 +35,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/11/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
     "retry" : 0
   }
 }, {
@@ -43,7 +43,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/10/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
     "retry" : 0
   }
 }, {
@@ -51,12 +51,52 @@
   "reportUrl" : "https://leeltib.github.io/conduit/9/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 4,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 8,
+  "reportUrl" : "https://leeltib.github.io/conduit/8/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 4,
     "retry" : 0
   }
 }, {
   "buildOrder" : 7,
   "reportUrl" : "https://leeltib.github.io/conduit/7/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 4,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 6,
+  "reportUrl" : "https://leeltib.github.io/conduit/6/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 4,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 5,
+  "reportUrl" : "https://leeltib.github.io/conduit/5/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 4,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 4,
+  "reportUrl" : "https://leeltib.github.io/conduit/4/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 0,
+    "retry" : 0
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "https://leeltib.github.io/conduit/3/",
   "reportName" : "Allure Report with history",
   "data" : {
     "run" : 0,
