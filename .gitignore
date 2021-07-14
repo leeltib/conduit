@@ -6,5 +6,6 @@ src/node_modules
 src/deno_dir
 docs/testcasses_munka
 selenium-tests/venv
-
-
+test_proj/venv
+test_proj/out
+test_proj/.pytest_cache
