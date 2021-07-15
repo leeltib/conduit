@@ -18,7 +18,6 @@ tcA005_run = True
 if tcA001_run == True:
     def test_t_case001():
         import test_tc_A001 as tc01
-        time.sleep(5)
         import data.data_tcA001 as da01
         assert da01.name == tc01.user_menu_text
 else:
@@ -27,7 +26,6 @@ else:
 if tcA002_run == True:
     def test_t_case002():
         import test_tc_A002 as tc02
-        time.sleep(5)
         import data.data_tcA002 as da02
         assert da02.name == tc02.user_menu_text2
 else:
@@ -36,7 +34,6 @@ else:
 if tcA003_run == True:
     def test_t_case003():
         import test_tc_A003 as tc03
-        time.sleep(5)
         import data.data_tcA003 as da03
         assert da03.write == tc03.write_cont_text
 else:
@@ -45,7 +42,6 @@ else:
 if tcA004_run == True:
     def test_t_case004():
         import test_tc_A004 as tc04
-        time.sleep(5)
         import data.data_tcA004 as da04
         assert da04.write == tc04.write_edit_text
 else:
@@ -54,7 +50,6 @@ else:
 if tcA005_run == True:
     def test_t_case005():
         import test_tc_A005 as tc05
-        time.sleep(5)
         assert tc05.what_text[0] != tc05.what_text[1]
 else:
     print("Az A005 teszteset vizsgálata ki van kapcsolva!")
