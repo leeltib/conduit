@@ -59,3 +59,5 @@ if __name__ == "__main__":
 
     except:
         print("Hiba, az ellenőrző feltételek nem a várt eredményt mutatják.")
+
+

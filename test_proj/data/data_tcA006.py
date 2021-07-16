@@ -8,3 +8,5 @@ what = 'UserTagsTest articel-1'
 write = 'Ez User01 teszt bejegyzése a tag funkció vizsgálatához.'
 tags = ['urna', 'ego', 'ipsum']
 ta_nu = int(len(tags))
+
+

@@ -8,3 +8,5 @@ what = 'User01 articel-1.1'
 write = 'Ez User01 első bejegyzésének módosítása.'
 tags = ['birs', "szőlő", 'mandula']
 ta_nu = int(len(tags))
+
+

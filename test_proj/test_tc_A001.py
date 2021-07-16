@@ -83,3 +83,5 @@ if __name__ == "__main__":
         print("Hiba, az ellenőrző feltételnél nincs egyezés.")
 
 
+
+

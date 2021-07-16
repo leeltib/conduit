@@ -9,3 +9,5 @@ write = 'Ez User01 első bejegyzése.'
 tags = ['alma', 'szilva']
 ta_nu = int(len(tags))
 
+
+
