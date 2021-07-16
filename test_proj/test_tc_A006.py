@@ -1,6 +1,6 @@
-# TC002 test case - Belépés a regisztráció során megadott adatokkal - kilépés.
+# A006 test case - Tags funkció tesztelése (listázás)
 
-import data.data_tcA002 as da02
+import data.data_tcA006 as da06
 import func.func_01 as fu01
 
 from selenium import webdriver
@@ -22,23 +22,40 @@ driver.get("http://localhost:1667")
 fu01.wait(driver, By.ID, "app")
 time.sleep(2)
 
-# *** TC-A002 **************************************
+# *** TC-A006 **************************************
 
-def test_A002():
-    fu01.sign_in(driver, da02.mail, da02.passw)
-    usern_text = fu01.login_check(driver)
+def test_A006_basis():
+    fu01.sign_in(driver, da06.mail, da06.passw)
+    ta_bas = fu01.tags_list(driver)
+    return ta_bas
+
+tags_basis = test_A006_basis()
+
+def test_A006_add():
+    fu01.blog_write(driver, da06)
+    ta_add = fu01.tags_list(driver)
+    return ta_add
+
+tags_add = test_A006_add()
+
+def test_A006_del():
+    fu01.blog_del(driver)
+    ta_del = fu01.tags_list(driver)
     fu01.out_close_driver(driver)
-    return usern_text
+    return ta_del
 
-username_text = test_A002()
+tags_del = test_A006_del()
 
 # ***************************************************
 
 # normál futtatáshoz:
 if __name__ == "__main__":
-    print(username_text)
+    print(tags_basis)
+    print(tags_add)
+    print(tags_del)
     try:
-        assert da02.name == username_text
-    except:
-        print("Hiba, az ellenőrző feltételnél nincs egyezés.")
+        assert tags_basis == tags_del
+        assert tags_basis != tags_add
 
+    except:
+        print("Hiba, az ellenőrző feltételek nem a várt eredményt mutatják.")

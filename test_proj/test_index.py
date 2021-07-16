@@ -13,8 +13,8 @@ tcA003_run = True
 tcA004_run = True
 # tcA005_run = A005 test case - Saját, meglévő blogbejegyzés törlése - kilépés.
 tcA005_run = True
-# tcA006_run = A006 test case - Saját, meglévő blogbejegyzés törlése - kilépés.
-tcA006_run = False
+# tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
+tcA006_run = True
 
 if tcA001_run == True:
     def test_t_case001():
@@ -58,7 +58,8 @@ else:
 if tcA006_run == True:
     def test_t_case006():
         import test_tc_A006 as tc06
-        assert tc06.what_text[0] != tc06.what_text[1]
+        assert tc06.tags_basis == tc06.tags_del
+        assert tc06.tags_basis != tc06.tags_add
 else:
     print("Az A006 teszteset vizsgálata ki van kapcsolva!")
 
