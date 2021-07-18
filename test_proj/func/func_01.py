@@ -12,6 +12,41 @@ def wait(brow, by, attr):
     except TimeoutException:
         print("Loading took too much time!-Try again")
 
+# Sign up -> regisztrálás: regisztrációs űrlap kitöltése (username, email, password), belépés
+def sign_up(brow, uname, mail, passw):
+    try:
+        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
+    except:
+        print("Nincs cookie.")
+    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[3]/a').click()
+    wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/form/fieldset[1]/input')
+    username = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[1]/input')
+    email = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[2]/input')
+    password = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[3]/input')
+    sign_up_button = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/button')
+    username.send_keys(uname)
+    email.send_keys(mail)
+    password.send_keys(passw)
+    sign_up_button.click()
+
+# Regisztráció belépés utáni fázisai: welcome OK, username megjelenésének ellenőrzése
+def registr_check(brow):
+    wait(brow, By.XPATH, "/html/body/div[2]/div/div[4]/div/button")
+    time.sleep(1)
+    try:
+        welcome_button = brow.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button')
+        welcome_button.click()
+        wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[4]/a')
+        time.sleep(1)
+        usern_text = brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[4]/a').text
+        print(usern_text)
+        wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[5]/a')
+        time.sleep(2)
+        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[5]/a').click()
+        return usern_text
+    except:
+        print("Ez a felhasználó már létezik.")
+
 # sign_in -> belépés email és jelszó megadásával
 def sign_in(brow, mail, passw):
     try:

@@ -19,8 +19,7 @@ tcA006_run = True
 if tcA001_run == True:
     def test_t_case001():
         import test_tc_A001 as tc01
-        import data.data_tcA001 as da01
-        assert da01.name == tc01.user_menu_text
+        assert tc01.list_username == tc01.user_menu_text
 else:
     print("Az A001 teszteset vizsgálata ki van kapcsolva!")
 
