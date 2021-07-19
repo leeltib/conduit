@@ -13,8 +13,8 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
-#driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
+#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
+driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
 
@@ -50,13 +50,19 @@ tags_del = test_A006_del()
 
 # normál futtatáshoz:
 if __name__ == "__main__":
-    print(tags_basis)
-    print(tags_add)
-    print(tags_del)
+    rn = len(tags_add)
+    add_num = len(tags_add) - len(tags_basis)
+    ta_ba = tags_basis
+    for i in range(add_num):
+        ta_ba.append([0, 0])
+    ta_de = tags_del
+    for i in range(add_num):
+        ta_de.append([0, 0])
+    for i in range(rn):
+        print(f"{tags_add[i][0]}: bas={ta_ba[i][1]}, add={tags_add[i][1]}, del={ta_de[i][1]}")
     try:
         assert tags_basis == tags_del
         assert tags_basis != tags_add
-
     except:
         print("Hiba, az ellenőrző feltételek nem a várt eredményt mutatják.")
 

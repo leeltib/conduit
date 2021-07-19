@@ -12,6 +12,29 @@ def wait(brow, by, attr):
     except TimeoutException:
         print("Loading took too much time!-Try again")
 
+# menüpont kiválasztása
+def click_menu(brow, i):
+    menu_full = brow.find_elements_by_class_name('nav-item')
+    menu_full[i-1].click()
+
+# My Articles -> bejegyzés kiválasztása
+def click_my_blog(brow, i):
+    my_blogs = brow.find_elements_by_class_name('article-preview')
+    my_blog = my_blogs[i]
+    my_blog.click()
+
+# My Articles -> bejegyzés h1 elemének szövege
+def text_my_blog(brow, i, tagname):
+    my_blogs = brow.find_elements_by_class_name('article-preview')
+    my_bl_text = my_blogs[i].find_element_by_tag_name(tagname).text
+    return my_bl_text
+
+# New Article -> új bejegyzés beviteli mezői
+def new_art_inp(brow, i, tagname):
+    art_inputs = brow.find_elements_by_class_name('form-group')
+    art_inp = art_inputs[i].find_element_by_tag_name(tagname)
+    return art_inp
+
 # Sign up -> regisztrálás: regisztrációs űrlap kitöltése (username, email, password), belépés
 def sign_up(brow, uname, mail, passw):
     try:
@@ -53,7 +76,7 @@ def sign_in(brow, mail, passw):
         brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
     except:
         print("Nincs cookie.")
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[2]/a').click()
+    click_menu(brow, 2)
     wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/form/fieldset[1]/input')
     email = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[1]/input')
     password = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[2]/input')
@@ -75,25 +98,12 @@ def login_check(brow):
     except:
         print("Hibás belépési adatok, nincs ilyen felhasználó.")
 
+# ------------------------------------------------------------------------------------------
 # blog írás, ellenőrzés (hogy létrejött-e az új bejegyzés)
 # induló és záró állapot: belépve, "Home" menü aktív
-def blog_write(brow, da):
-    wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[2]/a')
-    time.sleep(2)
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[2]/a').click()
-    wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
-    time.sleep(2)
-    input1 = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
-    input1.send_keys(da.title)
-    input2 = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[2]/input')
-    input2.send_keys(da.what)
-    input3 = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[3]/textarea')
-    input3.send_keys(da.write)
-    for i in range(da.ta_nu):
-        input4 = brow.find_element_by_xpath(f'//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li[{i + 1}]/input')
-        input4.send_keys(da.tags[i])
-        input4.send_keys(Keys.ENTER)
-        time.sleep(1)
+
+# Bejegyzés létrejöttének és tartalmának ellenőrzése
+def control_blog_write_edit(brow, da):
     brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/button').click()
     wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div[1]/div/div[1]/p')
     time.sleep(2)
@@ -109,51 +119,73 @@ def blog_write(brow, da):
         assert tags_text == da.tags
     except:
         print('A "tags" paraméter nem egyezik.')
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[4]/a').click()
+    click_menu(brow, 4)
     wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1')
-    brow.refresh()
     time.sleep(2)
-    my_art_title = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1').text
+    my_art_title = text_my_blog(brow, -1, 'h1')
     print(my_art_title)
     try:
         assert my_art_title == da.title
     except:
         print('A "title" paraméter nem egyezik.')
-    my_art_what = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/p').text
+    my_art_what = text_my_blog(brow, -1, 'p')
     print(my_art_what)
     try:
         assert my_art_what == da.what
     except:
         print('A "what" paraméter nem egyezik.')
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[1]/a').click()
-    wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div[2]/div/p')
-    time.sleep(2)
-    brow.refresh()
     return write_cont
 
+# új bejegyzés létrehozása
+def blog_write(brow, da):
+    wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[2]/a')
+    time.sleep(2)
+    click_menu(brow, 2)
+    wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
+    time.sleep(2)
+    input1 = new_art_inp(brow, 0, 'input')
+    input1.send_keys(da.title)
+    input2 = new_art_inp(brow, 1, 'input')
+    input2.send_keys(da.what)
+    input3 = new_art_inp(brow, 2, 'textarea')
+    input3.send_keys(da.write)
+    for i in range(da.ta_nu):
+        input4 = brow.find_element_by_xpath(f'//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li[{i + 1}]/input')
+        input4.send_keys(da.tags[i])
+        input4.send_keys(Keys.ENTER)
+        time.sleep(1)
+    # ellenórzés, lezárás
+    wri_contr = control_blog_write_edit(brow, da)
+    click_menu(brow, 1)
+    wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div[2]/div/p')
+    brow.refresh()
+    time.sleep(2)
+    return wri_contr
+
+# ------------------------------------------------------------------------------------------
 # meglévő blog módosítása, ellenőrzés  (hogy változott-e az eredeti bejegyzés)
 # induló és záró állapot: belépve, "Home" menü aktív
+
 def blog_edit(brow, da):
     wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[4]/a')
     time.sleep(2)
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[4]/a').click()
+    click_menu(brow, 4)
     wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div[1]/a/span')
-    brow.refresh()
-    time.sleep(5)
+    time.sleep(4)
     try:
-        brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1').click()
+        click_my_blog(brow, -1)
         wait(brow, By.XPATH, '//div[@id="app"]/div/div[1]/div/div/span/a/span')
         time.sleep(1)
         brow.find_element_by_xpath('//div[@id="app"]/div/div[1]/div/div/span/a/span').click()
         wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
         time.sleep(1)
-        input1 = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input')
+        input1 = new_art_inp(brow, 0, 'input')
         input1.clear()
         input1.send_keys(da.title)
-        input2 = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[2]/input')
+        input2 = new_art_inp(brow, 1, 'input')
         input2.clear()
         input2.send_keys(da.what)
-        input3 = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[3]/textarea')
+        input3 = new_art_inp(brow, 2, 'textarea')
         input3.clear()
         input3.send_keys(da.write)
         time.sleep(1)
@@ -166,68 +198,44 @@ def blog_edit(brow, da):
             input4.send_keys(da.tags[i])
             input4.send_keys(Keys.ENTER)
             time.sleep(1)
-        brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/button').click()
-        wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div[1]/div/div[1]/p')
-        time.sleep(3)
-        write_cont = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div[1]/div/div[1]/p').text
-        print(write_cont)
-        tags = brow.find_elements_by_xpath('//div[@class="tag-list"]//a')
-        tags_text = []
-        for tag in tags:
-            tag_cont = tag.text
-            print(tag_cont)
-            tags_text.append(tag_cont)
-        try:
-            assert tags_text == da.tags
-        except:
-            print('A "tags" paraméter nem egyezik.')
-        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[4]/a').click()
-        wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1')
-        brow.refresh()
-        time.sleep(2)
-        my_art_title = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1').text
-        print(my_art_title)
-        my_art_what = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/p').text
-        print(my_art_what)
-        time.sleep(1)
-        try:
-            assert my_art_title == da.title
-            assert my_art_what == da.what
-        except:
-            print('A "title" vagy a "what" paraméter nem egyezik.')
-        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[1]/a').click()
+        # ellenórzés, lezárás
+        wri_con = control_blog_write_edit(brow, da)
+        click_menu(brow, 1)
         wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div[2]/div/p')
-        time.sleep(2)
         brow.refresh()
-        return write_cont
+        time.sleep(2)
+        return wri_con
     except:
         print("Nincs módosítható bejegyzés.")
 
+# ------------------------------------------------------------------------------------------
 # bejegyzés törlése -> induló és záró állapot: belépve, "Home" menü aktív
 # a legfelső bejegyzést törli, ellenőrzi, hogy valóban törlődik a bejegyzés
+
 def blog_del(brow):
     del_list = []
     wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[4]/a')
     time.sleep(2)
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[4]/a').click()
+    click_menu(brow, 4)
     wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/p')
     time.sleep(4)
     try:
-        blog_del_what = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/p').text
+        blog_del_what = text_my_blog(brow, -1, 'p')
         print(blog_del_what)
         del_list.append(blog_del_what)
-        brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1').click()
+        click_my_blog(brow, -1)
         wait(brow, By.XPATH, '//div[@id="app"]/div/div[1]/div/div/span/button/span')
         time.sleep(1)
         brow.find_element_by_xpath('//div[@id="app"]/div/div[1]/div/div/span/button/span').click()
         wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[4]/a')
         time.sleep(1)
-        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[4]/a').click()
+        # ellenórzés, lezárás
+        click_menu(brow, 4)
         wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div[1]/a/p')
         brow.refresh()
         time.sleep(3)
         try:
-            blog_stay_what = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div[1]/a/p').text
+            blog_stay_what = text_my_blog(brow, -1, 'p')
             print(blog_stay_what)
             del_list.append(blog_stay_what)
             try:
@@ -237,13 +245,15 @@ def blog_del(brow):
         except:
             del_list.append('None')
             print("Nincs több bejegyzés a My Articles mappában.")
-        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[1]/a').click()
+        click_menu(brow, 1)
         wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div[2]/div/p')
-        time.sleep(2)
         brow.refresh()
+        time.sleep(2)
         return del_list
     except:
         print("Nincs módosítható bejegyzés.")
+
+# ------------------------------------------------------------------------------------------
 
 # kilépés
 def out_user(brow):
@@ -282,11 +292,9 @@ def tags_list(brow):
         wait(brow, By.XPATH, '//div[@class="article-preview"]')
         time.sleep(1)
         tb_list_el.append(len(brow.find_elements_by_class_name('article-preview')))
-        #print(tb_list_el)
         tb_list.append(tb_list_el)
-        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[1]/a').click()
-        time.sleep(2)
-    print(tb_list)
+        click_menu(brow, 1)
+        time.sleep(1)
     return tb_list
 
 

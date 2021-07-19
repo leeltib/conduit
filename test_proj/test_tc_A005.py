@@ -13,8 +13,8 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
-#driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
+#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
+driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
 
@@ -41,5 +41,4 @@ if __name__ == "__main__":
         assert what_text[0] != what_text[1]
     except:
         print("Hiba, az ellenőrző feltételnél nincs eltérés.")
-
 
