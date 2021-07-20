@@ -2,13 +2,23 @@
   "14084ffd873fb428e1b60fdcdb26ff90" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "d2b1334d1f8f1bfb",
+      "reportUrl" : "https://leeltib.github.io/conduit/18//#testresult/d2b1334d1f8f1bfb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1626770662679,
+        "stop" : 1626770664184,
+        "duration" : 1505
+      }
+    }, {
       "uid" : "f849d41d3fb7995a",
       "reportUrl" : "https://leeltib.github.io/conduit/17//#testresult/f849d41d3fb7995a",
       "status" : "broken",
@@ -53,13 +63,23 @@
   "f33ce9d91ee5ada8386910f19651b875" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "847bc29a1bcacb68",
+      "reportUrl" : "https://leeltib.github.io/conduit/18//#testresult/847bc29a1bcacb68",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1626770667594,
+        "stop" : 1626770668894,
+        "duration" : 1300
+      }
+    }, {
       "uid" : "b79d9c7fa387b6dd",
       "reportUrl" : "https://leeltib.github.io/conduit/17//#testresult/b79d9c7fa387b6dd",
       "status" : "broken",
@@ -101,6 +121,27 @@
       }
     } ]
   },
+  "ed2e9159af87091dcaee9204cada77df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "20c66a48f76abd9e",
+      "reportUrl" : "https://leeltib.github.io/conduit/18//#testresult/20c66a48f76abd9e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1626770668991,
+        "stop" : 1626770670305,
+        "duration" : 1314
+      }
+    } ]
+  },
   "7326c3974390f374f8389bd5840b561f" : {
     "statistic" : {
       "failed" : 0,
@@ -135,13 +176,23 @@
   "09a39af9d8d217da13bb3873342c3a88" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "b1e222c929dafe48",
+      "reportUrl" : "https://leeltib.github.io/conduit/18//#testresult/b1e222c929dafe48",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1626770656628,
+        "stop" : 1626770662369,
+        "duration" : 5741
+      }
+    }, {
       "uid" : "3146e446da74e64",
       "reportUrl" : "https://leeltib.github.io/conduit/17//#testresult/3146e446da74e64",
       "status" : "broken",
@@ -186,13 +237,23 @@
   "e739a9ec452ff12d78bc6fa23447bffd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "4dd9c567af4a8887",
+      "reportUrl" : "https://leeltib.github.io/conduit/18//#testresult/4dd9c567af4a8887",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1626770665934,
+        "stop" : 1626770667438,
+        "duration" : 1504
+      }
+    }, {
       "uid" : "ee307a91c3ad3f5d",
       "reportUrl" : "https://leeltib.github.io/conduit/17//#testresult/ee307a91c3ad3f5d",
       "status" : "broken",
@@ -237,13 +298,23 @@
   "5e709d2a98f31afa1139c4caf120c45d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "f555e84b833a06ff",
+      "reportUrl" : "https://leeltib.github.io/conduit/18//#testresult/f555e84b833a06ff",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "time" : {
+        "start" : 1626770664334,
+        "stop" : 1626770665795,
+        "duration" : 1461
+      }
+    }, {
       "uid" : "a570f513f777f8c",
       "reportUrl" : "https://leeltib.github.io/conduit/17//#testresult/a570f513f777f8c",
       "status" : "broken",
