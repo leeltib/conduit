@@ -5,6 +5,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 import time
 
+
 # várakozás a betöltésre
 def wait(brow, by, attr):
     try:
@@ -12,16 +13,19 @@ def wait(brow, by, attr):
     except TimeoutException:
         print("Loading took too much time!-Try again")
 
+
 # menüpont kiválasztása
 def click_menu(brow, i):
     menu_full = brow.find_elements_by_class_name('nav-item')
     menu_full[i-1].click()
 
+
 # My Articles -> bejegyzés kiválasztása
 def click_my_blog(brow, i):
     my_blogs = brow.find_elements_by_class_name('article-preview')
-    my_blog = my_blogs[i]
+    my_blog = my_blogs[i].find_element_by_tag_name('h1')
     my_blog.click()
+
 
 # My Articles -> bejegyzés h1 elemének szövege
 def text_my_blog(brow, i, tagname):
@@ -29,11 +33,13 @@ def text_my_blog(brow, i, tagname):
     my_bl_text = my_blogs[i].find_element_by_tag_name(tagname).text
     return my_bl_text
 
+
 # New Article -> új bejegyzés beviteli mezői
 def new_art_inp(brow, i, tagname):
     art_inputs = brow.find_elements_by_class_name('form-group')
     art_inp = art_inputs[i].find_element_by_tag_name(tagname)
     return art_inp
+
 
 # Sign up -> regisztrálás: regisztrációs űrlap kitöltése (username, email, password), belépés
 def sign_up(brow, uname, mail, passw):
@@ -51,6 +57,7 @@ def sign_up(brow, uname, mail, passw):
     email.send_keys(mail)
     password.send_keys(passw)
     sign_up_button.click()
+
 
 # Regisztráció belépés utáni fázisai: welcome OK, username megjelenésének ellenőrzése
 def registr_check(brow):
@@ -70,6 +77,7 @@ def registr_check(brow):
     except:
         print("Ez a felhasználó már létezik.")
 
+
 # sign_in -> belépés email és jelszó megadásával
 def sign_in(brow, mail, passw):
     try:
@@ -85,6 +93,7 @@ def sign_in(brow, mail, passw):
     password.send_keys(passw)
     sign_in_button.click()
 
+
 # username (megjelenésének) ellenőrzése
 # induló és záró állapot: belépve, "Home" menü aktív
 def login_check(brow):
@@ -97,6 +106,7 @@ def login_check(brow):
         return usern_text
     except:
         print("Hibás belépési adatok, nincs ilyen felhasználó.")
+
 
 # ------------------------------------------------------------------------------------------
 # blog írás, ellenőrzés (hogy létrejött-e az új bejegyzés)
@@ -136,6 +146,7 @@ def control_blog_write_edit(brow, da):
         print('A "what" paraméter nem egyezik.')
     return write_cont
 
+
 # új bejegyzés létrehozása
 def blog_write(brow, da):
     wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[2]/a')
@@ -161,6 +172,7 @@ def blog_write(brow, da):
     brow.refresh()
     time.sleep(2)
     return wri_contr
+
 
 # ------------------------------------------------------------------------------------------
 # meglévő blog módosítása, ellenőrzés  (hogy változott-e az eredeti bejegyzés)
@@ -208,6 +220,7 @@ def blog_edit(brow, da):
     except:
         print("Nincs módosítható bejegyzés.")
 
+
 # ------------------------------------------------------------------------------------------
 # bejegyzés törlése -> induló és záró állapot: belépve, "Home" menü aktív
 # a legfelső bejegyzést törli, ellenőrzi, hogy valóban törlődik a bejegyzés
@@ -253,27 +266,31 @@ def blog_del(brow):
     except:
         print("Nincs módosítható bejegyzés.")
 
+
 # ------------------------------------------------------------------------------------------
 
 # kilépés
 def out_user(brow):
     brow.refresh()
     time.sleep(2)
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[5]/a').click()
+    click_menu(brow, 5)
     time.sleep(1)
+
 
 # kilépés és driver bezárás
 def out_close_driver(brow):
     brow.refresh()
     time.sleep(2)
-    brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[5]/a').click()
+    click_menu(brow, 5)
     time.sleep(1)
     brow.close()
+
 
 # driver bezárás
 def close_driver(brow):
     time.sleep(2)
     brow.close()
+
 
 # tag elemek száma, az egyes tag-ekhez tartozó bejegyzések száma (listázás)
 def tags_list(brow):

@@ -24,13 +24,16 @@ time.sleep(2)
 
 # *** TC-A003 **************************************
 
+
 def test_A003():
     fu01.sign_in(driver, da03.mail, da03.passw)
     wr_cont = fu01.blog_write(driver, da03)
     fu01.out_close_driver(driver)
     return wr_cont
 
+
 write_add_text = test_A003()
+
 
 # ***************************************************
 

@@ -18,6 +18,9 @@ tcA004_run = True
 tcA005_run = True
 # tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
 tcA006_run = True
+# tcA007_run = A007 test case - User select funkció -> a kiválasztott user bejegyzéseinek kiírása egy text fájlba
+tcA007_run = True
+
 
 if tcA001_run == True:
     def test_t_case001():
@@ -65,5 +68,10 @@ if tcA006_run == True:
 else:
     print("Az A006 teszteset vizsgálata ki van kapcsolva!")
 
-
+if tcA007_run == True:
+    def test_t_case007():
+        import test_tc_A007 as tc07
+        assert tc07.user_blog_num1 == tc07.user_blog_num2
+else:
+    print("Az A007 teszteset vizsgálata ki van kapcsolva!")
 

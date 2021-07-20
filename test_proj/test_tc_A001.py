@@ -25,6 +25,7 @@ time.sleep(2)
 
 # *** TC-A001 **************************************
 
+
 def test_A001_users():
     filename = "data/a001.csv"
     with open(filename, "r", encoding='utf-8') as csvfile:
@@ -34,12 +35,14 @@ def test_A001_users():
         print(list_us)
         return list_us
 
+
 list_user = test_A001_users()
 list_username = []
 for user in list_user:
     list_username.append(user[0])
 
 print(list_username)
+
 
 def test_A001(users):
     usern_text = []
@@ -50,7 +53,9 @@ def test_A001(users):
     fu01.close_driver(driver)
     return usern_text
 
+
 user_menu_text = test_A001(list_user)
+
 
 # ***************************************************
 

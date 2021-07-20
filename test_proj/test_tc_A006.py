@@ -24,19 +24,22 @@ time.sleep(2)
 
 # *** TC-A006 **************************************
 
+
 def test_A006_basis():
     fu01.sign_in(driver, da06.mail, da06.passw)
-    ta_bas = fu01.tags_list(driver)
-    return ta_bas
+    return fu01.tags_list(driver)
+
 
 tags_basis = test_A006_basis()
 
+
 def test_A006_add():
     fu01.blog_write(driver, da06)
-    ta_add = fu01.tags_list(driver)
-    return ta_add
+    return fu01.tags_list(driver)
+
 
 tags_add = test_A006_add()
+
 
 def test_A006_del():
     fu01.blog_del(driver)
@@ -44,7 +47,9 @@ def test_A006_del():
     fu01.out_close_driver(driver)
     return ta_del
 
+
 tags_del = test_A006_del()
+
 
 # ***************************************************
 

@@ -24,13 +24,16 @@ time.sleep(2)
 
 # *** TC-A005 **************************************
 
+
 def test_A005():
     fu01.sign_in(driver, da05.mail, da05.passw)
     what_text_l = fu01.blog_del(driver)
     fu01.out_close_driver(driver)
     return what_text_l
 
+
 what_text = test_A005()
+
 
 # ***************************************************
 
