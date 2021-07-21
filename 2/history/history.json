@@ -23,13 +23,23 @@
   "71763ec3eea4774bee86fb73c5a99948" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8a04d70f8bdd0298",
+      "reportUrl" : "https://leeltib.github.io/conduit/2//#testresult/8a04d70f8bdd0298",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1626910468667,
+        "stop" : 1626910508130,
+        "duration" : 39463
+      }
+    }, {
       "uid" : "f6b61f521b60cffe",
       "reportUrl" : "https://leeltib.github.io/conduit/1//#testresult/f6b61f521b60cffe",
       "status" : "broken",
@@ -484,13 +494,23 @@
   "a9155a82234d7f5ade612dbe35ce421d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "8a296be506d5861f",
+      "reportUrl" : "https://leeltib.github.io/conduit/2//#testresult/8a296be506d5861f",
+      "status" : "broken",
+      "statusDetails" : "IndexError: list index out of range",
+      "time" : {
+        "start" : 1626910418020,
+        "stop" : 1626910468547,
+        "duration" : 50527
+      }
+    }, {
       "uid" : "af6dc4469f827ac8",
       "reportUrl" : "https://leeltib.github.io/conduit/1//#testresult/af6dc4469f827ac8",
       "status" : "broken",
