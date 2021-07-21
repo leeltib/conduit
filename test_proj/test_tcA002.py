@@ -1,6 +1,6 @@
-# A003 test case - Új blogbejegyzés készítése - kilépés.
+# TC002 test case - Belépés a regisztráció során megadott adatokkal - kilépés.
 
-import data.data_tcA003 as da03
+import data.data_tcA002 as da02
 import func.func_01 as fu01
 
 from selenium import webdriver
@@ -13,8 +13,8 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
-driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
+driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
+#driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
 
@@ -22,26 +22,26 @@ driver.get("http://localhost:1667")
 fu01.wait(driver, By.ID, "app")
 time.sleep(2)
 
-# *** TC-A003 **************************************
+# *** TC-A002 **************************************
 
 
-def test_A003():
-    fu01.sign_in(driver, da03.mail, da03.passw)
-    wr_cont = fu01.blog_write(driver, da03)
+def test_A002():
+    fu01.sign_in(driver, da02.mail, da02.passw)
+    usern_text = fu01.login_check(driver)
     fu01.out_close_driver(driver)
-    return wr_cont
+    return usern_text
 
 
-write_add_text = test_A003()
+username_text = test_A002()
 
 
 # ***************************************************
 
 # normál futtatáshoz:
 if __name__ == "__main__":
-    print(write_add_text)
+    print(username_text)
     try:
-        assert da03.write == write_add_text
+        assert da02.name == username_text
     except:
         print("Hiba, az ellenőrző feltételnél nincs egyezés.")
 

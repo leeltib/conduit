@@ -1,6 +1,6 @@
 # A002 teszteset tesztadatai
 
-name = 'testuser01'
-mail = 'tuser01@gmail.com'
-passw = 'TestUser01'
+name = 'testuser02'
+mail = 'tuser02@gmail.com'
+passw = 'TestUser02'
 

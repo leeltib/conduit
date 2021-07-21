@@ -13,8 +13,8 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 
-#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
-driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
+driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
+#driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
 
@@ -34,7 +34,7 @@ user_blog_num1 = test_A007_select()
 
 
 def test_A007_read():
-    blog_read = fu02.select_user_read(driver, user_blog_num1)
+    blog_read = fu02.user_read(driver, user_blog_num1)
     fu02.out_close_driver(driver)
     return blog_read
 
@@ -43,7 +43,7 @@ blog_read_full = test_A007_read()
 
 
 def test_A007_write():
-    filename = f"data_out/{da07.username}_blogs"
+    filename = f"data_out/a007_{da07.username}_blogs"
     with open(filename, "w", encoding='utf-8') as f:
         f.write(f"{da07.username} bejegyzései:\n")
         r_num = len(blog_read_full)
