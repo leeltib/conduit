@@ -16,11 +16,11 @@ tcA003_run = True
 # tcA004_run = A004 test case - Saját, meglévő blogbejegyzés módosítása - kilépés.
 tcA004_run = True
 # tcA005_run = A005 test case - Saját, meglévő blogbejegyzés törlése - kilépés.
-tcA005_run = False
+tcA005_run = True
 # tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
 tcA006_run = False
 # tcA007_run = A007 test case - User select funkció -> a kiválasztott user bejegyzéseinek kiírása egy text fájlba
-tcA007_run = False
+tcA007_run = True
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = False
 
