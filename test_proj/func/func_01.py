@@ -64,7 +64,7 @@ def sign_up(brow, uname, mail, passw):
 # Regisztráció belépés utáni fázisai: welcome OK, username megjelenésének ellenőrzése
 def registr_check(brow):
     wait(brow, By.XPATH, "/html/body/div[2]/div/div[4]/div/button")
-    time.sleep(1)
+    time.sleep(2)
     try:
         welcome_button = brow.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button')
         welcome_button.click()
@@ -74,7 +74,8 @@ def registr_check(brow):
         print(usern_text)
         wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[5]/a')
         time.sleep(2)
-        brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[5]/a').click()
+        click_menu(brow, 5)
+        #brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[5]/a').click()
         return usern_text
     except:
         print("Ez a felhasználó már létezik.")
