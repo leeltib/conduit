@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'data/a008.txt'",
+      "children" : [ {
+        "name" : "test_t_case008",
+        "uid" : "bde396e0d20c8215",
+        "parentUid" : "8835cc5fc60b64c6cb361127450eb211",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626910383135,
+          "stop" : 1626910392988,
+          "duration" : 9853
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8835cc5fc60b64c6cb361127450eb211"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
