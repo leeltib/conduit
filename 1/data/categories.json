@@ -3,22 +3,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'data/a008.txt'",
+      "name" : "IndexError: list index out of range",
       "children" : [ {
-        "name" : "test_t_case008",
-        "uid" : "7a6c19ad2ff6f8f4",
-        "parentUid" : "8835cc5fc60b64c6cb361127450eb211",
+        "name" : "test_t_case002",
+        "uid" : "af6dc4469f827ac8",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
         "status" : "broken",
         "time" : {
-          "start" : 1626893996937,
-          "stop" : 1626894001619,
-          "duration" : 4682
+          "start" : 1626893999649,
+          "stop" : 1626894038361,
+          "duration" : 38712
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8835cc5fc60b64c6cb361127450eb211"
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_t_case006",
+        "uid" : "f6b61f521b60cffe",
+        "parentUid" : "c7eb767f5e079b9f48dab2d9715e4759",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626894038444,
+          "stop" : 1626894077954,
+          "duration" : 39510
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7eb767f5e079b9f48dab2d9715e4759"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
