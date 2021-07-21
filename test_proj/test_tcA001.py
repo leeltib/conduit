@@ -26,18 +26,19 @@ time.sleep(2)
 # *** TC-A001 **************************************
 
 
-def test_A001_users():
-    reader = []
-    with open("users.txt", "r", encoding='utf-8') as file:
-        for row in file:
-            element = row.strip()
-            reader.append(element.split(','))
-        list_us = reader[1:]
-        print(list_us)
-        return list_us
-
-
-list_user = test_A001_users()
+# def test_A001_users():
+#     reader = []
+#     with open("users.txt", "r", encoding='utf-8') as file:
+#         for row in file:
+#             element = row.strip()
+#             reader.append(element.split(','))
+#         list_us = reader[1:]
+#         print(list_us)
+#         return list_us
+#
+#
+# list_user = test_A001_users()
+list_user = [['testuser01', 'tuser01@gmail.com', 'TestUser01'], ['testuser02', 'tuser02@gmail.com', 'TestUser02'], ['testuser03', 'tuser03@gmail.com', 'TestUser03']]
 list_username = []
 for user in list_user:
     list_username.append(user[0])
