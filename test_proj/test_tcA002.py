@@ -7,13 +7,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
+from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+options.headless = True
+driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
+#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
 #driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")

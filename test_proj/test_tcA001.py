@@ -8,13 +8,13 @@ from selenium.webdriver.common.by import By
 import time
 import csv
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
+from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+options.headless = True
+driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
+#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
 #driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
@@ -27,7 +27,7 @@ time.sleep(2)
 
 
 def test_A001_users():
-    filename = "data/a001.csv"
+    filename = "a001.csv"
     with open(filename, "r", encoding='utf-8') as csvfile:
         reader = list(csv.reader(csvfile, delimiter=','))
         print(reader)
