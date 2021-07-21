@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'data/a001.csv'",
+      "children" : [ {
+        "name" : "test_t_case001",
+        "uid" : "99a22866d8d7106e",
+        "parentUid" : "1f4af499a41486ed9b3278c94c631a56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626893971145,
+          "stop" : 1626893979498,
+          "duration" : 8353
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1f4af499a41486ed9b3278c94c631a56"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

@@ -1,1 +1,11 @@
-[ ]
+[ {
+  "uid" : "99a22866d8d7106e",
+  "name" : "test_t_case001",
+  "time" : {
+    "start" : 1626893971145,
+    "stop" : 1626893979498,
+    "duration" : 8353
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

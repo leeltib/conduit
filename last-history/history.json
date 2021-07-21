@@ -415,5 +415,26 @@
         "duration" : 2669
       }
     } ]
+  },
+  "c20f4104b80c968b53dea94058396756" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "99a22866d8d7106e",
+      "reportUrl" : "https://leeltib.github.io/conduit/1//#testresult/99a22866d8d7106e",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'data/a001.csv'",
+      "time" : {
+        "start" : 1626893971145,
+        "stop" : 1626893979498,
+        "duration" : 8353
+      }
+    } ]
   }
 }
