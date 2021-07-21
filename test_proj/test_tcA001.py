@@ -1,5 +1,5 @@
 # A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
-# A tesztekhez használt felhasználók adatait a data/a001.csv fájlban kell megadni (tetszőleges számú lehet)
+# A tesztekhez használt felhasználók adatait a data/users.csv fájlban kell megadni (tetszőleges számú lehet)
 
 import func.func_01 as fu01
 
@@ -27,8 +27,8 @@ time.sleep(2)
 
 
 def test_A001_users():
-    filename = "a001.csv"
-    with open(filename, "r", encoding='utf-8') as csvfile:
+#    filename = "users.csv"
+    with open("users.csv", "r", encoding='utf-8') as csvfile:
         reader = list(csv.reader(csvfile, delimiter=','))
         print(reader)
         list_us = reader[1:]
