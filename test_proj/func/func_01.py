@@ -49,6 +49,7 @@ def sign_up(brow, uname, mail, passw):
         print("Nincs cookie.")
     brow.find_element_by_xpath('//div[@id="app"]/nav/div/ul/li[3]/a').click()
     wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/form/fieldset[1]/input')
+    time.sleep(1)
     username = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[1]/input')
     email = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[2]/input')
     password = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset[3]/input')
@@ -57,6 +58,7 @@ def sign_up(brow, uname, mail, passw):
     email.send_keys(mail)
     password.send_keys(passw)
     sign_up_button.click()
+    time.sleep(1)
 
 
 # Regisztráció belépés utáni fázisai: welcome OK, username megjelenésének ellenőrzése

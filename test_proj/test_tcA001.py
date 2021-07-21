@@ -6,16 +6,12 @@ import func.func_01 as fu01
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-import csv
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
 options.headless = True
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-
-#driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)       # Headless mód
-#driver = webdriver.Chrome(ChromeDriverManager().install())                              # normál mód
 
 driver.get("http://localhost:1667")
 
