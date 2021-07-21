@@ -31,8 +31,8 @@ jobs:
       run: |
           docker-compose up -d
 
-    - name: Sleep for 55 seconds
-      run: sleep 55s
+    - name: Sleep for 60 seconds
+      run: sleep 60s
       shell: bash
 
     - name: Test with pytest
