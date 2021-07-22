@@ -3,38 +3,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/6/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "duration" : 34986
-  }
-}, {
-  "buildOrder" : 5,
-  "reportUrl" : "https://leeltib.github.io/conduit/5/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 17521
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "https://leeltib.github.io/conduit/3/",
-  "reportName" : "Allure Report with history",
-  "data" : { }
-}, {
-  "buildOrder" : 2,
-  "reportUrl" : "https://leeltib.github.io/conduit/2/",
-  "reportName" : "Allure Report with history",
-  "data" : { }
-}, {
-  "buildOrder" : 4,
-  "reportUrl" : "https://leeltib.github.io/conduit/4/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 8735
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "https://leeltib.github.io/conduit/3/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 15785
+    "duration" : 200258
   }
 }, {
   "data" : { }
