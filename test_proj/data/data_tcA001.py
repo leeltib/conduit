@@ -15,7 +15,6 @@ us10 = ['testuser10', 'tuser10@gmail.com', 'TestUser10']
 
 users = [us1, us2, us3]
 
-
 # us11 = ['testuser101', 'tuser101@gmail.com', 'TestUser101']
 # us12 = ['testuser102', 'tuser102@gmail.com', 'TestUser102']
 # us13 = ['testuser103', 'tuser103@gmail.com', 'TestUser103']
