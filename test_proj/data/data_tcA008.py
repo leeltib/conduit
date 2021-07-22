@@ -15,3 +15,4 @@ com_row_num = len(com_row)
 # második szám: a bejegyzéshez rendelt hozzászólás sorszáma
 com_list = [[1, 2], [2, 4], [5, 1], [10, 3]]
 com_list_num = len(com_list)
+
