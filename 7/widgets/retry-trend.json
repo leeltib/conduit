@@ -7,6 +7,14 @@
     "retry" : 0
   }
 }, {
+  "buildOrder" : 13,
+  "reportUrl" : "https://leeltib.github.io/conduit/13/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 2,
+    "retry" : 0
+  }
+}, {
   "data" : {
     "run" : 0,
     "retry" : 0

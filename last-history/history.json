@@ -19,6 +19,47 @@
       }
     } ]
   },
+  "5cfcc2cefb9f1836745df83e2e45ab28" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93e67d31a9c318fb",
+      "reportUrl" : "https://leeltib.github.io/conduit/7//#testresult/93e67d31a9c318fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626947217525,
+        "stop" : 1626947255675,
+        "duration" : 38150
+      }
+    } ]
+  },
+  "e494c20f2411125ffa3d93b45247e426" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4165772484c53a6d",
+      "reportUrl" : "https://leeltib.github.io/conduit/7//#testresult/4165772484c53a6d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ['Ez egy nagy...t is adok...'] == ['Ez egy alap... olvashatók.']\n  At index 0 diff: 'Ez egy nagyon pozitív hozzászólás, amiben megdicsérem a bejegyzés szerzőjét. Jelzem felé, hogy minden általa leírt gondolat megérintett, és megköszönöm neki, hogy megosztotta a világgal ezeket a remek észrevételeket.' != 'Ez egy alapvetően pozitív hozzászólás, amiben megdicsérem a bejegyzés szerzőjét, de jelzem felé, hogy van pár megállapítás a bejegyzésében, ami szerintem nincs teljesen rendben.'\n  Use -v to get the full diff",
+      "time" : {
+        "start" : 1626947255686,
+        "stop" : 1626947401747,
+        "duration" : 146061
+      }
+    } ]
+  },
   "2f17a20ede4d483d0057e94ad59c5aaa" : {
     "statistic" : {
       "failed" : 0,

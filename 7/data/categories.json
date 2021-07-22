@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert ['Ez egy nagy...t is adok...'] == ['Ez egy alap... olvashatók.']\n  At index 0 diff: 'Ez egy nagyon pozitív hozzászólás, amiben megdicsérem a bejegyzés szerzőjét. Jelzem felé, hogy minden általa leírt gondolat megérintett, és megköszönöm neki, hogy megosztotta a világgal ezeket a remek észrevételeket.' != 'Ez egy alapvetően pozitív hozzászólás, amiben megdicsérem a bejegyzés szerzőjét, de jelzem felé, hogy van pár megállapítás a bejegyzésében, ami szerintem nincs teljesen rendben.'\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_t_case008",
+        "uid" : "4165772484c53a6d",
+        "parentUid" : "2f5b8b598eb0148cf2c49a97370c2618",
+        "status" : "failed",
+        "time" : {
+          "start" : 1626947255686,
+          "stop" : 1626947401747,
+          "duration" : 146061
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2f5b8b598eb0148cf2c49a97370c2618"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }
