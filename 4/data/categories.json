@@ -3,78 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[3]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
       "children" : [ {
-        "name" : "test_t_case001",
-        "uid" : "87ce5b21448c411f",
-        "parentUid" : "efee3d55fadb9d481337d31f9a1c0b9c",
+        "name" : "test_t_case006",
+        "uid" : "3a78c41f90ab46ac",
+        "parentUid" : "c7eb767f5e079b9f48dab2d9715e4759",
         "status" : "broken",
         "time" : {
-          "start" : 1626272629836,
-          "stop" : 1626272632226,
-          "duration" : 2390
+          "start" : 1626933386619,
+          "stop" : 1626933430532,
+          "duration" : 43913
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "efee3d55fadb9d481337d31f9a1c0b9c"
-    }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
-      "children" : [ {
-        "name" : "test_t_case002",
-        "uid" : "8c74f5ef03030470",
-        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272632359,
-          "stop" : 1626272633820,
-          "duration" : 1461
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case003",
-        "uid" : "dd38ef234bc8d12a",
-        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272633882,
-          "stop" : 1626272635381,
-          "duration" : 1499
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case004",
-        "uid" : "c9455ab08e10df9a",
-        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272635443,
-          "stop" : 1626272636957,
-          "duration" : 1514
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case005",
-        "uid" : "1ccb59e0dd617923",
-        "parentUid" : "26a689029c7ab9ec226ad679dba74b34",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272637028,
-          "stop" : 1626272638571,
-          "duration" : 1543
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "26a689029c7ab9ec226ad679dba74b34"
+      "uid" : "c7eb767f5e079b9f48dab2d9715e4759"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

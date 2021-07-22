@@ -3,74 +3,35 @@
   "children" : [ {
     "name" : "test_proj",
     "children" : [ {
-      "name" : "test_index",
+      "name" : "test_index_2",
       "children" : [ {
         "name" : "test_t_case001",
-        "uid" : "87ce5b21448c411f",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
+        "uid" : "68d2626fe86b377",
+        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
+        "status" : "passed",
         "time" : {
-          "start" : 1626272629836,
-          "stop" : 1626272632226,
-          "duration" : 2390
+          "start" : 1626933356794,
+          "stop" : 1626933386615,
+          "duration" : 29821
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_t_case002",
-        "uid" : "8c74f5ef03030470",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
+        "name" : "test_t_case006",
+        "uid" : "3a78c41f90ab46ac",
+        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
         "status" : "broken",
         "time" : {
-          "start" : 1626272632359,
-          "stop" : 1626272633820,
-          "duration" : 1461
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case003",
-        "uid" : "dd38ef234bc8d12a",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272633882,
-          "stop" : 1626272635381,
-          "duration" : 1499
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case004",
-        "uid" : "c9455ab08e10df9a",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272635443,
-          "stop" : 1626272636957,
-          "duration" : 1514
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case005",
-        "uid" : "1ccb59e0dd617923",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626272637028,
-          "stop" : 1626272638571,
-          "duration" : 1543
+          "start" : 1626933386619,
+          "stop" : 1626933430532,
+          "duration" : 43913
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "7e901b428a0cbda663582c3e91a89543"
+      "uid" : "3b7bed4fb7b60153631b941f6f252ece"
     } ],
     "uid" : "92db12f7e7d0b8dc8bfd8a470ddd0514"
   } ],

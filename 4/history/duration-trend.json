@@ -3,14 +3,14 @@
   "reportUrl" : "https://leeltib.github.io/conduit/4/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "duration" : 8735
+    "duration" : 73738
   }
 }, {
   "buildOrder" : 3,
   "reportUrl" : "https://leeltib.github.io/conduit/3/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "duration" : 15785
+    "duration" : 116444
   }
 }, {
   "data" : { }

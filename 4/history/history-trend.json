@@ -4,11 +4,11 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
-    "broken" : 5,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 0,
+    "passed" : 1,
     "unknown" : 0,
-    "total" : 5
+    "total" : 2
   }
 }, {
   "buildOrder" : 3,
@@ -16,11 +16,11 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
-    "broken" : 5,
+    "broken" : 2,
     "skipped" : 0,
-    "passed" : 0,
+    "passed" : 1,
     "unknown" : 0,
-    "total" : 5
+    "total" : 3
   }
 }, {
   "data" : {

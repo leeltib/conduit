@@ -3,7 +3,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/4/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 5,
+    "run" : 2,
     "retry" : 0
   }
 }, {
@@ -11,7 +11,7 @@
   "reportUrl" : "https://leeltib.github.io/conduit/3/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 5,
+    "run" : 3,
     "retry" : 0
   }
 }, {

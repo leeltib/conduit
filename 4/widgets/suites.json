@@ -5,11 +5,11 @@
     "name" : "test_proj",
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 5
+      "total" : 2
     }
   } ]
 }

@@ -1,156 +1,104 @@
 {
-  "09a39af9d8d217da13bb3873342c3a88" : {
+  "e494c20f2411125ffa3d93b45247e426" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "8c74f5ef03030470",
-      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/8c74f5ef03030470",
+      "uid" : "571ae3e790424526",
+      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/571ae3e790424526",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'data/a008.txt'",
       "time" : {
-        "start" : 1626272632359,
-        "stop" : 1626272633820,
-        "duration" : 1461
-      }
-    }, {
-      "uid" : "5cfe4799398a96dc",
-      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/5cfe4799398a96dc",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
-      "time" : {
-        "start" : 1626271757135,
-        "stop" : 1626271758730,
-        "duration" : 1595
+        "start" : 1626933412691,
+        "stop" : 1626933421355,
+        "duration" : 8664
       }
     } ]
   },
-  "14084ffd873fb428e1b60fdcdb26ff90" : {
+  "2f17a20ede4d483d0057e94ad59c5aaa" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "dd38ef234bc8d12a",
-      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/dd38ef234bc8d12a",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "uid" : "68d2626fe86b377",
+      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/68d2626fe86b377",
+      "status" : "passed",
       "time" : {
-        "start" : 1626272633882,
-        "stop" : 1626272635381,
-        "duration" : 1499
-      }
-    }, {
-      "uid" : "2d14aa103a77713e",
-      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/2d14aa103a77713e",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
-      "time" : {
-        "start" : 1626271758812,
-        "stop" : 1626271760425,
-        "duration" : 1613
+        "start" : 1626933356794,
+        "stop" : 1626933386615,
+        "duration" : 29821
       }
     } ]
   },
-  "e739a9ec452ff12d78bc6fa23447bffd" : {
+  "71763ec3eea4774bee86fb73c5a99948" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "1ccb59e0dd617923",
-      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/1ccb59e0dd617923",
+      "uid" : "3a78c41f90ab46ac",
+      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/3a78c41f90ab46ac",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
       "time" : {
-        "start" : 1626272637028,
-        "stop" : 1626272638571,
-        "duration" : 1543
-      }
-    }, {
-      "uid" : "6e169a1af7c9ccf6",
-      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/6e169a1af7c9ccf6",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
-      "time" : {
-        "start" : 1626271762180,
-        "stop" : 1626271763746,
-        "duration" : 1566
+        "start" : 1626933386619,
+        "stop" : 1626933430532,
+        "duration" : 43913
       }
     } ]
   },
-  "7326c3974390f374f8389bd5840b561f" : {
+  "5cfcc2cefb9f1836745df83e2e45ab28" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "87ce5b21448c411f",
-      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/87ce5b21448c411f",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[3]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "uid" : "f720e2657fca5267",
+      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/f720e2657fca5267",
+      "status" : "passed",
       "time" : {
-        "start" : 1626272629836,
-        "stop" : 1626272632226,
-        "duration" : 2390
-      }
-    }, {
-      "uid" : "f05ad1e91b26ade9",
-      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/f05ad1e91b26ade9",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[3]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
-      "time" : {
-        "start" : 1626271747961,
-        "stop" : 1626271756964,
-        "duration" : 9003
+        "start" : 1626933304911,
+        "stop" : 1626933334866,
+        "duration" : 29955
       }
     } ]
   },
-  "5e709d2a98f31afa1139c4caf120c45d" : {
+  "9ac83a73c8806776a78675035ad2422a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "c9455ab08e10df9a",
-      "reportUrl" : "https://leeltib.github.io/conduit/4//#testresult/c9455ab08e10df9a",
+      "uid" : "f554ea4b5cd2dc6e",
+      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/f554ea4b5cd2dc6e",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
+      "statusDetails" : "IndexError: list index out of range",
       "time" : {
-        "start" : 1626272635443,
-        "stop" : 1626272636957,
-        "duration" : 1514
-      }
-    }, {
-      "uid" : "7a168ce6c9bb786c",
-      "reportUrl" : "https://leeltib.github.io/conduit/3//#testresult/7a168ce6c9bb786c",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@id=\"app\"]/nav/div/ul/li[2]/a\"}\n  (Session info: headless chrome=91.0.4472.114)",
-      "time" : {
-        "start" : 1626271760506,
-        "stop" : 1626271762093,
-        "duration" : 1587
+        "start" : 1626933334870,
+        "stop" : 1626933412617,
+        "duration" : 77747
       }
     } ]
   }
