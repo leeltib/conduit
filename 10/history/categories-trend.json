@@ -1,3 +1,8 @@
 [ {
+  "buildOrder" : 10,
+  "reportUrl" : "https://leeltib.github.io/conduit/10/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "data" : { }
 } ]
