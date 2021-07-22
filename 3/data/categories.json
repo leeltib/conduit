@@ -3,22 +3,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "name" : "IndexError: list index out of range",
       "children" : [ {
-        "name" : "test_t_case006",
-        "uid" : "3e5f19c7b5e869b9",
-        "parentUid" : "c7eb767f5e079b9f48dab2d9715e4759",
+        "name" : "test_t_case007",
+        "uid" : "f554ea4b5cd2dc6e",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
         "status" : "broken",
         "time" : {
-          "start" : 1626933326804,
-          "stop" : 1626933370856,
-          "duration" : 44052
+          "start" : 1626933334870,
+          "stop" : 1626933412617,
+          "duration" : 77747
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c7eb767f5e079b9f48dab2d9715e4759"
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'data/a008.txt'",
+      "children" : [ {
+        "name" : "test_t_case008",
+        "uid" : "571ae3e790424526",
+        "parentUid" : "8835cc5fc60b64c6cb361127450eb211",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626933412691,
+          "stop" : 1626933421355,
+          "duration" : 8664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8835cc5fc60b64c6cb361127450eb211"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
