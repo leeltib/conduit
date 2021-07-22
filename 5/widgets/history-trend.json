@@ -4,35 +4,11 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
-    "broken" : 5,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 0,
+    "passed" : 1,
     "unknown" : 0,
-    "total" : 5
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "https://leeltib.github.io/conduit/3/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 0
-  }
-}, {
-  "buildOrder" : 2,
-  "reportUrl" : "https://leeltib.github.io/conduit/2/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 0
+    "total" : 2
   }
 }, {
   "buildOrder" : 4,
@@ -40,23 +16,11 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,
-    "broken" : 5,
+    "broken" : 2,
     "skipped" : 0,
-    "passed" : 0,
+    "passed" : 1,
     "unknown" : 0,
-    "total" : 5
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "https://leeltib.github.io/conduit/3/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 5,
-    "skipped" : 0,
-    "passed" : 0,
-    "unknown" : 0,
-    "total" : 5
+    "total" : 3
   }
 }, {
   "data" : {

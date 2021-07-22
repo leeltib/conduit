@@ -20,6 +20,47 @@
       }
     } ]
   },
+  "2f17a20ede4d483d0057e94ad59c5aaa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bebd762673f81e9e",
+      "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/bebd762673f81e9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626934575055,
+        "stop" : 1626934612824,
+        "duration" : 37769
+      }
+    } ]
+  },
+  "71763ec3eea4774bee86fb73c5a99948" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3ec0b47c029e4288",
+      "reportUrl" : "https://leeltib.github.io/conduit/5//#testresult/3ec0b47c029e4288",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "time" : {
+        "start" : 1626934612839,
+        "stop" : 1626934656860,
+        "duration" : 44021
+      }
+    } ]
+  },
   "5cfcc2cefb9f1836745df83e2e45ab28" : {
     "statistic" : {
       "failed" : 0,
