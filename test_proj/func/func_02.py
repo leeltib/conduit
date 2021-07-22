@@ -125,7 +125,8 @@ def user_comment(brow, rn, blog, comment):
         time.sleep(2)
         data_blog = []
         blog_cur = blog[i][0]
-        comm_cur = comment[i]
+        k = blog[i][1]
+        comm_cur = comment[k-1]
         blogs = brow.find_elements_by_class_name('article-preview')
         users = brow.find_elements_by_class_name('info')
         blog_num = len(blogs)
@@ -136,8 +137,6 @@ def user_comment(brow, rn, blog, comment):
             blog_selected = blogs[blog_cur-1].find_element_by_tag_name('h1')
             blog_title = blog_selected.text
             username = users[blog_cur-1].find_element_by_tag_name('a').text
-            #print(blog_title)
-            #print(username)
             data_blog.append(username)
             data_blog.append(blog_title)
             data_blogs.append(data_blog)

@@ -4,7 +4,7 @@
 # allure serve ./out
 
 import time
-time.sleep(20)
+time.sleep(60)
 
 # tcA001_run = A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
 tcA001_run = True
@@ -19,7 +19,7 @@ tcA005_run = False
 # tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
 tcA006_run = False
 # tcA007_run = A007 test case - User select funkció -> a kiválasztott user bejegyzéseinek kiírása egy text fájlba
-tcA007_run = True
+tcA007_run = False
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = True
 

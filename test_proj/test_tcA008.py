@@ -12,7 +12,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
 
 options = Options()
-options.headless = True
+options.headless = False
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
 driver.get("http://localhost:1667")
@@ -25,21 +25,12 @@ time.sleep(2)
 
 
 def test_comment_text():
-    with open('data/a008.txt', 'r', encoding='utf-8') as file:
-        comm_full = file.readlines()
-        comm_full_list = []
-        for i in range(da08.com_row_num):
-            com_start = da08.com_row[i][0]
-            com_stop = da08.com_row[i][1]
-            comm_str = ""
-            for element in comm_full[com_start:com_stop]:
-                if element == comm_full[com_stop-1]:
-                    el = element.replace("\n", "")
-                else:
-                    el = element.replace("\n", " ")
-                comm_str += el
-            comm_full_list.append(comm_str)
-        return comm_full_list
+    comm_full_list = []
+    for element in da08.comment_full:
+        el1 = element.strip()
+        el2 = el1.replace("\n", " ")
+        comm_full_list.append(el2)
+    return comm_full_list
 
 
 comments_text = test_comment_text()
@@ -78,6 +69,7 @@ def test_A008_del():
 del_user_title_list = test_A008_del()
 
 
+
 # ***************************************************
 
 # normál, önálló futtatáshoz:
@@ -88,7 +80,7 @@ if __name__ == "__main__":
     print(control_text_list)
     print(del_user_title_list)
     try:
-        assert comments_text == control_text_list
+        assert set(comments_text) == set(control_text_list)
         assert comments_user_title_list == del_user_title_list
     except:
         print("Hiba, az ellenőrző feltételek nem a várt eredményt mutatják.")
