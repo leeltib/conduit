@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Fri Jul 16 19:54:10 GMT 2021","Fri Jul 16 19:54:14 GMT 2021","3641","test_proj","test_index","","","","test_t_case006",""
-"broken","Fri Jul 16 19:53:51 GMT 2021","Fri Jul 16 19:54:00 GMT 2021","8976","test_proj","test_index","","","","test_t_case002",""
-"broken","Fri Jul 16 19:54:04 GMT 2021","Fri Jul 16 19:54:06 GMT 2021","2669","test_proj","test_index","","","","test_t_case004",""
-"broken","Fri Jul 16 19:54:06 GMT 2021","Fri Jul 16 19:54:10 GMT 2021","3585","test_proj","test_index","","","","test_t_case005",""
-"broken","Fri Jul 16 19:54:00 GMT 2021","Fri Jul 16 19:54:04 GMT 2021","3621","test_proj","test_index","","","","test_t_case003",""
