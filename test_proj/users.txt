@@ -1,4 +1,0 @@
-Username,Email,Password
-testuser01,tuser01@gmail.com,TestUser01
-testuser02,tuser02@gmail.com,TestUser02
-testuser03,tuser03@gmail.com,TestUser03
