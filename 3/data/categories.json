@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (637, 26). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=91.0.4472.164)",
+      "children" : [ {
+        "name" : "test_t_case006",
+        "uid" : "3e5f19c7b5e869b9",
+        "parentUid" : "c7eb767f5e079b9f48dab2d9715e4759",
+        "status" : "broken",
+        "time" : {
+          "start" : 1626933326804,
+          "stop" : 1626933370856,
+          "duration" : 44052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7eb767f5e079b9f48dab2d9715e4759"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
