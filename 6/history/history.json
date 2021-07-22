@@ -1,25 +1,26 @@
 {
-  "71763ec3eea4774bee86fb73c5a99948" : {
+  "e494c20f2411125ffa3d93b45247e426" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "64192494b527ba4",
-      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/64192494b527ba4",
-      "status" : "passed",
+      "uid" : "343be21e2a707948",
+      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/343be21e2a707948",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
       "time" : {
-        "start" : 1626934683897,
-        "stop" : 1626934853575,
-        "duration" : 169678
+        "start" : 1626946849376,
+        "stop" : 1626946856124,
+        "duration" : 6748
       }
     } ]
   },
-  "2f17a20ede4d483d0057e94ad59c5aaa" : {
+  "5cfcc2cefb9f1836745df83e2e45ab28" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -29,13 +30,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5d73625e03288907",
-      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/5d73625e03288907",
+      "uid" : "fdba23528147c083",
+      "reportUrl" : "https://leeltib.github.io/conduit/6//#testresult/fdba23528147c083",
       "status" : "passed",
       "time" : {
-        "start" : 1626934653317,
-        "stop" : 1626934683886,
-        "duration" : 30569
+        "start" : 1626946819304,
+        "stop" : 1626946849372,
+        "duration" : 30068
       }
     } ]
   }
