@@ -1,74 +1,35 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "test_proj.test_index",
+    "name" : "test_proj.test_index_2",
     "children" : [ {
       "name" : "test_t_case001",
-      "uid" : "fd611021e8626911",
-      "parentUid" : "ec37c365c4430bd9713f40997800b22b",
-      "status" : "broken",
+      "uid" : "afd2420876a7e83c",
+      "parentUid" : "5ee4198401b0146cacaf9021b51886ca",
+      "status" : "passed",
       "time" : {
-        "start" : 1626344404728,
-        "stop" : 1626344418305,
-        "duration" : 13577
+        "start" : 1626937941499,
+        "stop" : 1626937975443,
+        "duration" : 33944
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
-      "name" : "test_t_case002",
-      "uid" : "e61ad9c6af32bebc",
-      "parentUid" : "ec37c365c4430bd9713f40997800b22b",
-      "status" : "broken",
+      "name" : "test_t_case006",
+      "uid" : "a5ab24ccbde2388",
+      "parentUid" : "5ee4198401b0146cacaf9021b51886ca",
+      "status" : "passed",
       "time" : {
-        "start" : 1626344418418,
-        "stop" : 1626344421934,
-        "duration" : 3516
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_t_case003",
-      "uid" : "e1e383bee77aeeb5",
-      "parentUid" : "ec37c365c4430bd9713f40997800b22b",
-      "status" : "broken",
-      "time" : {
-        "start" : 1626344422017,
-        "stop" : 1626344425556,
-        "duration" : 3539
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_t_case004",
-      "uid" : "7527c17762035d22",
-      "parentUid" : "ec37c365c4430bd9713f40997800b22b",
-      "status" : "broken",
-      "time" : {
-        "start" : 1626344425629,
-        "stop" : 1626344429302,
-        "duration" : 3673
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_t_case005",
-      "uid" : "ded1a6d542566677",
-      "parentUid" : "ec37c365c4430bd9713f40997800b22b",
-      "status" : "broken",
-      "time" : {
-        "start" : 1626344429378,
-        "stop" : 1626344432890,
-        "duration" : 3512
+        "start" : 1626937975454,
+        "stop" : 1626938143544,
+        "duration" : 168090
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "test_proj.test_index"
+    "uid" : "test_proj.test_index_2"
   } ],
   "name" : "packages"
 }

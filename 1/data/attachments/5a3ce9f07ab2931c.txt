@@ -1,2 +1,0 @@
-Loading took too much time!-Try again
-Hibás belépési adatok, nincs ilyen felhasználó.
