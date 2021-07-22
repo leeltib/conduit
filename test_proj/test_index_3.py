@@ -4,7 +4,7 @@
 # allure serve ./out
 
 import time
-#time.sleep(40)
+time.sleep(20)
 
 # tcA001_run = A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
 tcA001_run = True
