@@ -1,1 +1,42 @@
-{ }
+{
+  "71763ec3eea4774bee86fb73c5a99948" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6839238ad2809e50",
+      "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/6839238ad2809e50",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626947218803,
+        "stop" : 1626947386695,
+        "duration" : 167892
+      }
+    } ]
+  },
+  "2f17a20ede4d483d0057e94ad59c5aaa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ad411bc43d47265b",
+      "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/ad411bc43d47265b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626947188677,
+        "stop" : 1626947218799,
+        "duration" : 30122
+      }
+    } ]
+  }
+}
