@@ -2,65 +2,26 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "test_t_case001",
-    "uid" : "60fd342eb25dadc6",
+    "uid" : "c4e08262b9e3bc0c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
+    "status" : "passed",
     "time" : {
-      "start" : 1626341144730,
-      "stop" : 1626341162368,
-      "duration" : 17638
+      "start" : 1626936157224,
+      "stop" : 1626936189353,
+      "duration" : 32129
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "test_t_case002",
-    "uid" : "5868f937d3cc44cc",
+    "name" : "test_t_case006",
+    "uid" : "da60300a07d0ff9f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
+    "status" : "passed",
     "time" : {
-      "start" : 1626341162573,
-      "stop" : 1626341166272,
-      "duration" : 3699
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "test_t_case003",
-    "uid" : "76e5667ad8d48bcc",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1626341166356,
-      "stop" : 1626341170062,
-      "duration" : 3706
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "test_t_case004",
-    "uid" : "9c4678907302eed2",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1626341170177,
-      "stop" : 1626341173884,
-      "duration" : 3707
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "test_t_case005",
-    "uid" : "3218a886d7a551f8",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1626341173963,
-      "stop" : 1626341210428,
-      "duration" : 36465
+      "start" : 1626936189357,
+      "stop" : 1626936360044,
+      "duration" : 170687
     },
     "flaky" : false,
     "newFailed" : false,

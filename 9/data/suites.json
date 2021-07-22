@@ -3,74 +3,35 @@
   "children" : [ {
     "name" : "test_proj",
     "children" : [ {
-      "name" : "test_index",
+      "name" : "test_index_2",
       "children" : [ {
         "name" : "test_t_case001",
-        "uid" : "60fd342eb25dadc6",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
+        "uid" : "c4e08262b9e3bc0c",
+        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
+        "status" : "passed",
         "time" : {
-          "start" : 1626341144730,
-          "stop" : 1626341162368,
-          "duration" : 17638
+          "start" : 1626936157224,
+          "stop" : 1626936189353,
+          "duration" : 32129
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_t_case002",
-        "uid" : "5868f937d3cc44cc",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
+        "name" : "test_t_case006",
+        "uid" : "da60300a07d0ff9f",
+        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
+        "status" : "passed",
         "time" : {
-          "start" : 1626341162573,
-          "stop" : 1626341166272,
-          "duration" : 3699
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case003",
-        "uid" : "76e5667ad8d48bcc",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626341166356,
-          "stop" : 1626341170062,
-          "duration" : 3706
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case004",
-        "uid" : "9c4678907302eed2",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626341170177,
-          "stop" : 1626341173884,
-          "duration" : 3707
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case005",
-        "uid" : "3218a886d7a551f8",
-        "parentUid" : "7e901b428a0cbda663582c3e91a89543",
-        "status" : "broken",
-        "time" : {
-          "start" : 1626341173963,
-          "stop" : 1626341210428,
-          "duration" : 36465
+          "start" : 1626936189357,
+          "stop" : 1626936360044,
+          "duration" : 170687
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "7e901b428a0cbda663582c3e91a89543"
+      "uid" : "3b7bed4fb7b60153631b941f6f252ece"
     } ],
     "uid" : "92db12f7e7d0b8dc8bfd8a470ddd0514"
   } ],
