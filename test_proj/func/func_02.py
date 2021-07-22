@@ -135,6 +135,7 @@ def user_comment(brow, rn, blog, comment):
         else:
             time.sleep(2)
             blog_selected = blogs[blog_cur-1].find_element_by_tag_name('h1')
+            time.sleep(1)
             blog_title = blog_selected.text
             username = users[blog_cur-1].find_element_by_tag_name('a').text
             data_blog.append(username)
@@ -183,21 +184,16 @@ def user_comment_control(brow, rn, blog, comment):
             username_cont = user.find_element_by_tag_name('a').text
             title = brow.find_element_by_class_name('banner')
             title_cont = title.find_element_by_tag_name('h1').text
-            #print(username_cont)
-            #print(title_cont)
             data_blog_cont.append(username_cont)
             data_blog_cont.append(title_cont)
             cards = brow.find_elements_by_class_name('card')
             card_text = cards[1].find_element_by_tag_name('p').text
             time.sleep(1)
             if card_text == comm_cur:
-                #print(card_text)
                 data_blog_cont.append(card_text)
             else:
                 card_text2 = cards[-1].find_element_by_tag_name('p').text
-                #print(card_text2)
                 data_blog_cont.append(card_text2)
-            data_blog_cont.append(card_text)
             data_blogs_cont.append(data_blog_cont)
             time.sleep(1)
             click_menu(brow, 1)
@@ -205,7 +201,6 @@ def user_comment_control(brow, rn, blog, comment):
     click_menu(brow, 1)
     time.sleep(2)
     return data_blogs_cont
-
 
 
 # komment törlése (az utoljára létrehozott kommentet töröljük)

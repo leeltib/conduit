@@ -87,7 +87,7 @@ if tcA008_run == True:
     def test_t_case008():
         time.sleep(5)
         import test_tcA008 as tc08
-        assert tc08.comments_text == tc08.control_text_list
+        assert tc08.comments_text_set == tc08.control_text_list_set
         assert tc08.comments_user_title_list == tc08.del_user_title_list
 else:
     print("Az A008 teszteset vizsgálata ki van kapcsolva!")

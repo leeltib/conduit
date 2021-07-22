@@ -34,6 +34,7 @@ def test_comment_text():
 
 
 comments_text = test_comment_text()
+comments_text_set = set(comments_text)
 
 
 def test_A008_comment():
@@ -58,6 +59,8 @@ control_text_list = []
 for comment_text in control_user_title_text_list:
     control_text_list.append(comment_text[2])
 
+control_text_list_set = set(control_text_list)
+
 
 def test_A008_del():
     fu02.sign_in(driver, da08.mail, da08.passw)
@@ -75,13 +78,17 @@ del_user_title_list = test_A008_del()
 # normál, önálló futtatáshoz:
 if __name__ == "__main__":
     print(comments_text)
+    print(comments_text_set)
     print(comments_user_title_list)
     print(control_user_title_text_list)
     print(control_text_list)
+    print(control_text_list_set)
     print(del_user_title_list)
     try:
-        assert set(comments_text) == set(control_text_list)
+        assert comments_text_set == control_text_list_set
         assert comments_user_title_list == del_user_title_list
     except:
         print("Hiba, az ellenőrző feltételek nem a várt eredményt mutatják.")
+
+
 
