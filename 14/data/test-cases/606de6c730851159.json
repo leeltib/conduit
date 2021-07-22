@@ -1,12 +1,12 @@
 {
-  "uid" : "fdba23528147c083",
-  "name" : "test_t_case001",
-  "fullName" : "test_proj.test_index_3#test_t_case001",
-  "historyId" : "5cfcc2cefb9f1836745df83e2e45ab28",
+  "uid" : "606de6c730851159",
+  "name" : "test_t_case006",
+  "fullName" : "test_proj.test_index_2#test_t_case006",
+  "historyId" : "71763ec3eea4774bee86fb73c5a99948",
   "time" : {
-    "start" : 1626946819304,
-    "stop" : 1626946849372,
-    "duration" : 30068
+    "start" : 1626951784934,
+    "stop" : 1626951954472,
+    "duration" : 169538
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,29 +16,29 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "2927b5aff73f4eee",
+      "uid" : "9d5332a77e3c53a3",
       "name" : "log",
-      "source" : "2927b5aff73f4eee.txt",
+      "source" : "9d5332a77e3c53a3.txt",
       "type" : "text/plain",
-      "size" : 642
+      "size" : 344
     }, {
-      "uid" : "c5a5cd3a34af15c6",
+      "uid" : "308887fbb65c42bf",
       "name" : "stdout",
-      "source" : "c5a5cd3a34af15c6.txt",
+      "source" : "308887fbb65c42bf.txt",
       "type" : "text/plain",
-      "size" : 104
+      "size" : 272
     }, {
-      "uid" : "38bc4c8f86535bd0",
+      "uid" : "be18012e6eac75eb",
       "name" : "stderr",
-      "source" : "38bc4c8f86535bd0.txt",
+      "source" : "be18012e6eac75eb.txt",
       "type" : "text/plain",
-      "size" : 435
+      "size" : 215
     } ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 0,
     "attachmentsCount" : 3,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -46,13 +46,13 @@
     "value" : "test_proj"
   }, {
     "name" : "suite",
-    "value" : "test_index_3"
+    "value" : "test_index_2"
   }, {
     "name" : "host",
-    "value" : "fv-az33-381"
+    "value" : "fv-az77-97"
   }, {
     "name" : "thread",
-    "value" : "3741-MainThread"
+    "value" : "3609-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -61,7 +61,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test_proj.test_index_3"
+    "value" : "test_proj.test_index_2"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -76,6 +76,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "fdba23528147c083.json",
+  "source" : "606de6c730851159.json",
   "parameterValues" : [ ]
 }
