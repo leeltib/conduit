@@ -1,7 +1,0 @@
-[{'username': 'iwzdkczi', 'email': 'fejysgn@gmail.com', 'password': 't5Hck7Ho'}, {'username': 'lvdegpzq', 'email': 'ktcgcvj@gmail.com', 'password': 'v2Fgt7Du'}]
-testuser01
-Nincs cookie.
-testuser02
-Nincs cookie.
-testuser03
-['testuser01', 'testuser02', 'testuser03']
