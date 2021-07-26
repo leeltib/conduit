@@ -17,8 +17,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 driver.get("http://localhost:1667")
 
 # Várakozás a betöltésre
-fu01.wait(driver, By.ID, "app")
-time.sleep(2)
+fu01.wait(driver, By.ID, "app", 1)
 
 # *** TC-A001 **************************************
 
@@ -50,6 +49,12 @@ if __name__ == "__main__":
         assert list_username == user_menu_text
     except:
         print("Hiba, az ellenőrző feltételnél nincs egyezés.")
+
+
+
+
+
+
 
 
 

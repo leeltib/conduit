@@ -1,11 +1,10 @@
 # A007 select user - Szűrés blogszerző szerint, a kiválasztott blogszerző bejegyzéseinek kiírása text fájlba
 
 import data.data_tcA007 as da07
-import func.func_02 as fu02
+import func.func_01 as fu01
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
 
@@ -16,23 +15,22 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 driver.get("http://localhost:1667")
 
 # Várakozás a betöltésre
-fu02.wait(driver, By.ID, "app")
-time.sleep(2)
+fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A007 **************************************
 
 
 def test_A007_select():
-    fu02.sign_in(driver, da07.mail, da07.passw)
-    return fu02.select_user(driver, da07.username)
+    fu01.sign_in(driver, da07.mail, da07.passw)
+    return fu01.select_user(driver, da07.username)
 
 
 user_blog_num1 = test_A007_select()
 
 
 def test_A007_read():
-    blog_read = fu02.user_read(driver, user_blog_num1)
-    fu02.out_close_driver(driver)
+    blog_read = fu01.user_read(driver, user_blog_num1)
+    fu01.out_close_driver(driver)
     return blog_read
 
 

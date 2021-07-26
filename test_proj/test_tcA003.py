@@ -16,8 +16,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 driver.get("http://localhost:1667")
 
 # Várakozás a betöltésre
-fu01.wait(driver, By.ID, "app")
-time.sleep(2)
+fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A003 **************************************
 

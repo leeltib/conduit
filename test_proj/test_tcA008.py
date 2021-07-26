@@ -3,7 +3,7 @@
 # A komment szövegét külső fájlból olvassuk be
 
 import data.data_tcA008 as da08
-import func.func_02 as fu02
+import func.func_01 as fu01
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -18,8 +18,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 driver.get("http://localhost:1667")
 
 # Várakozás a betöltésre
-fu02.wait(driver, By.ID, "app")
-time.sleep(2)
+fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A008 **************************************
 
@@ -38,9 +37,9 @@ comments_text_set = set(comments_text)
 
 
 def test_A008_comment():
-    fu02.sign_in(driver, da08.mail, da08.passw)
-    co_da_li = fu02.user_comment(driver, da08.com_list_num, da08.com_list, comments_text)
-    fu02.out_user(driver)
+    fu01.sign_in(driver, da08.mail, da08.passw)
+    co_da_li = fu01.user_comment(driver, da08.com_list_num, da08.com_list, comments_text)
+    fu01.out_user(driver)
     return co_da_li
 
 
@@ -48,9 +47,9 @@ comments_user_title_list = test_A008_comment()
 
 
 def test_A008_control():
-    fu02.sign_in(driver, da08.mail_cont, da08.passw_cont)
-    cont_da_li = fu02.user_comment_control(driver, da08.com_list_num, da08.com_list, comments_text)
-    fu02.out_user(driver)
+    fu01.sign_in(driver, da08.mail_cont, da08.passw_cont)
+    cont_da_li = fu01.user_comment_control(driver, da08.com_list_num, da08.com_list, comments_text)
+    fu01.out_user(driver)
     return cont_da_li
 
 
@@ -63,9 +62,9 @@ control_text_list_set = set(control_text_list)
 
 
 def test_A008_del():
-    fu02.sign_in(driver, da08.mail, da08.passw)
-    del_da_li = fu02.user_comment_del(driver, da08.com_list_num, da08.com_list, comments_text)
-    fu02.out_close_driver(driver)
+    fu01.sign_in(driver, da08.mail, da08.passw)
+    del_da_li = fu01.user_comment_del(driver, da08.com_list_num, da08.com_list, comments_text)
+    fu01.out_close_driver(driver)
     return del_da_li
 
 

@@ -5,7 +5,6 @@ import func.func_01 as fu01
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
 
@@ -16,8 +15,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 driver.get("http://localhost:1667")
 
 # Várakozás a betöltésre
-fu01.wait(driver, By.ID, "app")
-time.sleep(2)
+fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A006 **************************************
 

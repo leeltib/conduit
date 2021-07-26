@@ -7,7 +7,7 @@ import time
 # time.sleep(20)
 
 # tcA001_run = A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
-tcA001_run = False
+tcA001_run = True
 # tcA002_run = A002 test case - Belépés a regisztráció során megadott adatokkal - kilépés.
 tcA002_run = True
 # tcA003_run = A003 test case - Új blogbejegyzés készítése - kilépés.
@@ -22,7 +22,8 @@ tcA006_run = True
 tcA007_run = True
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = True
-
+# tcA009_run = A009 test case - Lapozó funkció -> elvárás: egyszerre 10 blogot jelenítsen meg a rendszer
+tcA009_run = True
 
 if tcA001_run == True:
     def test_t_case001():
@@ -91,4 +92,12 @@ if tcA008_run == True:
         assert tc08.comments_user_title_list == tc08.del_user_title_list
 else:
     print("Az A008 teszteset vizsgálata ki van kapcsolva!")
+
+if tcA009_run == True:
+    def test_t_case009():
+        time.sleep(1)
+        import test_tcA009 as tc09
+        assert tc09.pages_blog_num == 10
+else:
+    print("Az A009 teszteset vizsgálata ki van kapcsolva!")
 

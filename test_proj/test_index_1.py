@@ -22,6 +22,8 @@ tcA006_run = False
 tcA007_run = False
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = False
+# tcA009_run = A009 test case - Lapozó funkció -> elvárás: egyszerre 10 blogot jelenítsen meg a rendszer
+tcA009_run = False
 
 
 if tcA001_run == True:
@@ -92,3 +94,10 @@ if tcA008_run == True:
 else:
     print("Az A008 teszteset vizsgálata ki van kapcsolva!")
 
+if tcA009_run == True:
+    def test_t_case009():
+        time.sleep(5)
+        import test_tcA009 as tc09
+        assert tc09.pages_blog_num == 10
+else:
+    print("Az A009 teszteset vizsgálata ki van kapcsolva!")
