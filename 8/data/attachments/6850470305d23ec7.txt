@@ -1,6 +1,0 @@
-testuser01
-Nincs cookie.
-testuser02
-Nincs cookie.
-testuser03
-['testuser01', 'testuser02', 'testuser03']

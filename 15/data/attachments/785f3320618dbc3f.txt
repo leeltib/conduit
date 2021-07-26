@@ -7,5 +7,5 @@ UserTagsTest
 UserTagsTest articel-1
 14 tag van az alkalmazásban.
 UserTagsTest articel-1
-Nincs több bejegyzés a My Articles mappában.
+A erat nam at lectus urna duis convallis
 12 tag van az alkalmazásban.
