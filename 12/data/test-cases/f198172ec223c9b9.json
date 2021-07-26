@@ -1,12 +1,12 @@
 {
-  "uid" : "e1caaa66a23eeced",
+  "uid" : "f198172ec223c9b9",
   "name" : "test_t_case007",
   "fullName" : "test_proj.test_index_3#test_t_case007",
   "historyId" : "9ac83a73c8806776a78675035ad2422a",
   "time" : {
-    "start" : 1627302122336,
-    "stop" : 1627302156194,
-    "duration" : 33858
+    "start" : 1627312974594,
+    "stop" : 1627313008058,
+    "duration" : 33464
   },
   "status" : "broken",
   "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'data_out/a007_testuser2_blogs'",
@@ -20,21 +20,21 @@
     "statusTrace" : "def test_t_case007():\n        time.sleep(5)\n>       import test_tcA007 as tc07\n\ntest_proj/test_index_3.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap>:1007: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:986: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:680: in _load_unlocked\n    ???\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/_pytest/assertion/rewrite.py:170: in exec_module\n    exec(co, module.__dict__)\ntest_proj/test_tcA007.py:54: in <module>\n    user_blog_num2 = test_A007_write()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def test_A007_write():\n        filename = f\"data_out/a007_{da07.username}_blogs\"\n>       with open(filename, \"w\", encoding='utf-8') as f:\nE       FileNotFoundError: [Errno 2] No such file or directory: 'data_out/a007_testuser2_blogs'\n\ntest_proj/test_tcA007.py:42: FileNotFoundError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "cc598c68d4b1bcc2",
+      "uid" : "6420033feca276a2",
       "name" : "log",
-      "source" : "cc598c68d4b1bcc2.txt",
+      "source" : "6420033feca276a2.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "d942acb4871754af",
+      "uid" : "8bfaa4164dfdf850",
       "name" : "stdout",
-      "source" : "d942acb4871754af.txt",
+      "source" : "8bfaa4164dfdf850.txt",
       "type" : "text/plain",
       "size" : 1558
     }, {
-      "uid" : "993cd9414f9abc3a",
+      "uid" : "7b07059b285dee63",
       "name" : "stderr",
-      "source" : "993cd9414f9abc3a.txt",
+      "source" : "7b07059b285dee63.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -53,10 +53,10 @@
     "value" : "test_index_3"
   }, {
     "name" : "host",
-    "value" : "fv-az74-824"
+    "value" : "fv-az36-928"
   }, {
     "name" : "thread",
-    "value" : "3675-MainThread"
+    "value" : "3631-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -84,6 +84,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "e1caaa66a23eeced.json",
+  "source" : "f198172ec223c9b9.json",
   "parameterValues" : [ ]
 }
