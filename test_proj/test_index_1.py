@@ -4,7 +4,7 @@
 # allure serve ./out
 
 import time
-# time.sleep(1)
+time.sleep(2)
 
 # tcA001_run = A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
 tcA001_run = True
@@ -17,13 +17,15 @@ tcA004_run = True
 # tcA005_run = A005 test case - Saját, meglévő blogbejegyzés törlése - kilépés.
 tcA005_run = True
 # tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
-tcA006_run = False
+tcA006_run = True
 # tcA007_run = A007 test case - User select funkció -> a kiválasztott user bejegyzéseinek kiírása egy text fájlba
 tcA007_run = False
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = False
 # tcA009_run = A009 test case - Lapozó funkció -> elvárás: egyszerre 10 blogot jelenítsen meg a rendszer
 tcA009_run = False
+# tcA010_run = A010 test case - Regisztrációs űrlap mezőinek validálása
+tcA010_run = False
 
 
 if tcA001_run == True:
@@ -101,3 +103,12 @@ if tcA009_run == True:
         assert tc09.pages_blog_num == 10
 else:
     print("Az A009 teszteset vizsgálata ki van kapcsolva!")
+
+if tcA010_run == True:
+    def test_t_case010():
+        time.sleep(5)
+        import test_tcA010 as tc10
+        assert tc10.expect_valid == tc10.sign_up_valid_list
+else:
+    print("Az A010 teszteset vizsgálata ki van kapcsolva!")
+

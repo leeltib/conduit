@@ -24,6 +24,9 @@ tcA007_run = True
 tcA008_run = True
 # tcA009_run = A009 test case - Lapozó funkció -> elvárás: egyszerre 10 blogot jelenítsen meg a rendszer
 tcA009_run = True
+# tcA010_run = A010 test case - Regisztrációs űrlap mezőinek validálása
+tcA010_run = True
+
 
 if tcA001_run == True:
     def test_t_case001():
@@ -100,4 +103,12 @@ if tcA009_run == True:
         assert tc09.pages_blog_num == 10
 else:
     print("Az A009 teszteset vizsgálata ki van kapcsolva!")
+
+if tcA010_run == True:
+    def test_t_case010():
+        time.sleep(1)
+        import test_tcA010 as tc10
+        assert tc10.expect_valid == tc10.sign_up_valid_list
+else:
+    print("Az A010 teszteset vizsgálata ki van kapcsolva!")
 

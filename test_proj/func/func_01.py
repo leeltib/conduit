@@ -16,9 +16,6 @@ def wait(brow, by, attr, sleep_s):
         print("Loading took too much time!-Try again")
 
 
-# ****************************** ELEMEK KIVÁLASZTÁSA *************************************
-
-
 # klikkelés kiválasztott menüpontra
 def click_menu(brow, i):
     menu_full = brow.find_elements_by_class_name('nav-item')
@@ -36,7 +33,8 @@ def cookie_ok(brow):
     try:
         brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
     except:
-        print("Nincs cookie.")
+        pass
+        #print("Nincs cookie.")
 
 
 # sign up, sign in beviteli mezők:
@@ -70,13 +68,10 @@ def reg_failed(brow):
 
 
 # "várakozások
-wait_sign_upin1 = 'app'
 wait_sign_up_in = '//div[@id="app"]/div/div/div/div/form/fieldset[1]/input'     # a bejelentkező űrlap betöltésére
 wait_registr_check1 = '/html/body/div[2]/div/div[4]/div/button'                 # a Welcome OK gomb betöltésére
 wait_registr_check2 = '//div[@id="app"]/nav/div/ul/li[5]/a'                     # a Log out gomb megjelenésére
 wait_login_check = '//div[@id="app"]/nav/div/ul/li[4]/a'                        # a usernév (menüpont) megejelenésére
-
-# ////////////////////////// func_01.py és func_02.py közös elemei EDDIG... /////////////////////////////////////////
 
 wait_blog_write1 = '//div[@id="app"]/nav/div/ul/li[2]/a'                                  # a New Article gomb betöltésére
 wait_blog_write2 = '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input'     # a blog író úrlap betöltésére
@@ -287,7 +282,6 @@ def del_comm_button(brow):
 # ****************************************************************************************
 # ****************************** "TISZTA" FÜGGVÉNYEK *************************************
 
-# ////////////////////////// func_01.py és func_02.py közös elemei INNENTŐL... /////////////////////////////////////////
 
 # regisztráció
 def sign_up(brow, uname, mail, passw):
@@ -371,8 +365,6 @@ def out_close_driver(brow):
 def close_driver(brow):
     time.sleep(2)
     brow.close()
-
-# ////////////////////////// func_01.py és func_02.py közös elemei EDDIG... /////////////////////////////////////////
 
 
 # Bejegyzés létrejöttének és tartalmának ellenőrzése
@@ -665,7 +657,7 @@ def registr_check_a009(brow):
     try:
         welcome_ok(brow)
         usern_text = sel_menu(brow, 4).text
-        print(usern_text)
+        #print(usern_text)
         wait(brow, By.XPATH, wait_registr_check2, 2)
         click_menu(brow, 1)
         return usern_text
@@ -709,4 +701,18 @@ def blog_num_check(brow):
         time.sleep(2)
         return len(blogs)
 
+
+def registr_check_a010(brow):
+    wait(brow, By.XPATH, wait_registr_check1, 2)
+    try:
+        welcome_ok(brow)
+        time.sleep(1)
+        click_menu(brow, 1)
+        time.sleep(1)
+        click_menu(brow, 5)
+        time.sleep(2)
+        return "OK"
+    except:
+        reg_failed(brow)
+        return "FAIL"
 
