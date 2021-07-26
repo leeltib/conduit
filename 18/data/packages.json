@@ -1,5 +1,48 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "test_proj.test_index_2",
+    "children" : [ {
+      "name" : "test_t_case001",
+      "uid" : "3d7eaaa93f0957a3",
+      "parentUid" : "5ee4198401b0146cacaf9021b51886ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627312927470,
+        "stop" : 1627312965947,
+        "duration" : 38477
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_t_case002",
+      "uid" : "c49ef755dc6297bf",
+      "parentUid" : "5ee4198401b0146cacaf9021b51886ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627312965957,
+        "stop" : 1627312976523,
+        "duration" : 10566
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_t_case008",
+      "uid" : "d50d7ac6fc0d3cd5",
+      "parentUid" : "5ee4198401b0146cacaf9021b51886ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627312976526,
+        "stop" : 1627313127577,
+        "duration" : 151051
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test_proj.test_index_2"
+  } ],
   "name" : "packages"
 }

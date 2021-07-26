@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://leeltib.github.io/conduit",
+  "buildOrder" : 18,
+  "buildName" : "GitHub Actions Run #1067929098",
+  "buildUrl" : "https://github.com/leeltib/conduit/actions/runs/1067929098",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://leeltib.github.io/conduit/18/"
+} ]
