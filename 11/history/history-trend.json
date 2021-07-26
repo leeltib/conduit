@@ -3,12 +3,12 @@
   "reportUrl" : "https://leeltib.github.io/conduit/11/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "failed" : 0,
-    "broken" : 0,
+    "failed" : 2,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 2,
+    "passed" : 1,
     "unknown" : 0,
-    "total" : 2
+    "total" : 4
   }
 }, {
   "data" : {

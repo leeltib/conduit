@@ -1,0 +1,5 @@
+[{'username': 'szttzyix', 'email': 'rsvdgen@gmail.com', 'password': 'j6Ujs1Im'}, {'username': 'ceqxojfj', 'email': 'rxlpfzl@gmail.com', 'password': 'n2Ibf6Ck'}]
+testuser01
+testuser02
+testuser03
+['testuser01', 'testuser02', 'testuser03']
