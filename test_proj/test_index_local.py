@@ -7,27 +7,27 @@ import time
 # time.sleep(20)
 
 # tcA001_run = A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
-tcA001_run = False
+tcA001_run = True
 # tcA002_run = A002 test case - Belépés a regisztráció során megadott adatokkal - kilépés.
-tcA002_run = False
+tcA002_run = True
 # tcA003_run = A003 test case - Új blogbejegyzés készítése - kilépés.
-tcA003_run = False
+tcA003_run = True
 # tcA004_run = A004 test case - Saját, meglévő blogbejegyzés módosítása - kilépés.
-tcA004_run = False
+tcA004_run = True
 # tcA005_run = A005 test case - Saját, meglévő blogbejegyzés törlése - kilépés.
-tcA005_run = False
+tcA005_run = True
 # tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
-tcA006_run = False
+tcA006_run = True
 # tcA007_run = A007 test case - User select funkció -> a kiválasztott user bejegyzéseinek kiírása egy text fájlba
-tcA007_run = False
+tcA007_run = True
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = True
 # tcA009_run = A009 test case - Lapozó funkció -> elvárás: egyszerre 10 blogot jelenítsen meg a rendszer
-tcA009_run = False
+tcA009_run = True
 # tcA010_run = A010 test case - Regisztrációs űrlap mezőinek validálása
-tcA010_run = False
+tcA010_run = True
 # tcA011_run = A011 test case - Cookie funkció tesztelése
-tcA011_run = False
+tcA011_run = True
 
 
 if tcA001_run == True:
