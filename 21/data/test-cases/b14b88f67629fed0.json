@@ -1,12 +1,12 @@
 {
-  "uid" : "c4ddccabb86acdfa",
+  "uid" : "b14b88f67629fed0",
   "name" : "test_t_case010",
   "fullName" : "test_proj.test_index_3#test_t_case010",
   "historyId" : "3dedc6fadb71433904eae3ff70179e10",
   "time" : {
-    "start" : 1627479359682,
-    "stop" : 1627479477605,
-    "duration" : 117923
+    "start" : 1627484401712,
+    "stop" : 1627484518935,
+    "duration" : 117223
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
@@ -20,21 +20,21 @@
     "statusTrace" : "def test_t_case010():\n        time.sleep(5)\n        import test_tcA010 as tc10\n>       assert tc10.expect_valid == tc10.sign_up_valid_list\nE       AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\nE         At index 2 diff: 'FAIL' != 'OK'\nE         Use -v to get the full diff\n\ntest_proj/test_index_3.py:114: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "7364e770d9d0840",
+      "uid" : "da3de10a56487431",
       "name" : "log",
-      "source" : "7364e770d9d0840.txt",
+      "source" : "da3de10a56487431.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "79d147fde3ea9225",
+      "uid" : "50c850656bb8624b",
       "name" : "stdout",
-      "source" : "79d147fde3ea9225.txt",
+      "source" : "50c850656bb8624b.txt",
       "type" : "text/plain",
       "size" : 2106
     }, {
-      "uid" : "95955dd9c6ebdd3d",
+      "uid" : "178347119d3cf16b",
       "name" : "stderr",
-      "source" : "95955dd9c6ebdd3d.txt",
+      "source" : "178347119d3cf16b.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -53,10 +53,10 @@
     "value" : "test_index_3"
   }, {
     "name" : "host",
-    "value" : "fv-az77-774"
+    "value" : "fv-az42-11"
   }, {
     "name" : "thread",
-    "value" : "3892-MainThread"
+    "value" : "3955-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -84,6 +84,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "c4ddccabb86acdfa.json",
+  "source" : "b14b88f67629fed0.json",
   "parameterValues" : [ ]
 }
