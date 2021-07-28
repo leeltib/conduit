@@ -124,3 +124,4 @@ if tcA011_run == True:
 else:
     print("Az A011 teszteset vizsgálata ki van kapcsolva!")
 
+
