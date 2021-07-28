@@ -1,0 +1,10 @@
+[{'username': 'wldgshpi', 'email': 'yuqppib@gmail.com', 'password': 'm3Ixf2Kf'}, {'username': 'ncdbbeks', 'email': 'uambdbq@gmail.com', 'password': 'x4Rgz8Si'}]
+[['wldgshpi', 'yuqppib@gmail.com', 'm3Ixf2Kf'], ['ncdbbeks', 'uambdbq@gmail.com', 'x4Rgz8Si']]
+"I decline!" click
+wldgshpi
+No cookies
+wldgshpi
+"I accept!" click
+ncdbbeks
+No cookies
+ncdbbeks
