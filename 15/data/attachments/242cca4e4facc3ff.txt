@@ -1,6 +1,0 @@
-[{'username': 'xmdrrbka', 'email': 'wnwygqn@gmail.com', 'password': 'g2Nme4Xt'}, {'username': 'nifzjgpb', 'email': 'ieahdqi@gmail.com', 'password': 'b6Cjr1Bs'}]
-[['xmdrrbka', 'wnwygqn@gmail.com', 'g2Nme4Xt'], ['nifzjgpb', 'ieahdqi@gmail.com', 'b6Cjr1Bs']]
-[['wnwygqn@gmail.com', 'g2Nme4Xt'], ['ieahdqi@gmail.com', 'b6Cjr1Bs']]
-xmdrrbka
-13
-Hibás lapozó funkció, 10-nél több elem jelenik meg egy oldalon.

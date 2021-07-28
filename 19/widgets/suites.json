@@ -4,12 +4,12 @@
     "uid" : "92db12f7e7d0b8dc8bfd8a470ddd0514",
     "name" : "test_proj",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 2
     }
   } ]
 }
