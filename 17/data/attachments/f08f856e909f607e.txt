@@ -1,0 +1,6 @@
+[{'username': 'appigapp', 'email': 'gcdcwae@gmail.com', 'password': 'n5Bml0Hk'}, {'username': 'iofeugna', 'email': 'ciuycau@gmail.com', 'password': 'k4Bsx8Jj'}]
+[['appigapp', 'gcdcwae@gmail.com', 'n5Bml0Hk'], ['iofeugna', 'ciuycau@gmail.com', 'k4Bsx8Jj']]
+[['gcdcwae@gmail.com', 'n5Bml0Hk'], ['ciuycau@gmail.com', 'k4Bsx8Jj']]
+appigapp
+13
+Hibás lapozó funkció, 10-nél több elem jelenik meg egy oldalon.
