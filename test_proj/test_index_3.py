@@ -7,7 +7,7 @@ import time
 time.sleep(60)
 
 # tcA001_run = A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
-tcA001_run = True
+tcA001_run = False
 # tcA002_run = A002 test case - Belépés a regisztráció során megadott adatokkal - kilépés.
 tcA002_run = False
 # tcA003_run = A003 test case - Új blogbejegyzés készítése - kilépés.

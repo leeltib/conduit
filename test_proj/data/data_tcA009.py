@@ -1,5 +1,5 @@
 # A009 - userek megadása lapozó funkció teszteléséhez
-# random generált userek (alapból 12 db, de ez állítható)
+# random generált userek (alapból 2 db, de ez állítható)
 
 import random
 import string
