@@ -1,41 +1,181 @@
 {
-  "71763ec3eea4774bee86fb73c5a99948" : {
+  "3dedc6fadb71433904eae3ff70179e10" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 4
     },
     "items" : [ {
-      "uid" : "9c72cf702b834a2e",
-      "reportUrl" : "https://leeltib.github.io/conduit/15//#testresult/9c72cf702b834a2e",
-      "status" : "passed",
+      "uid" : "3beb139290ccab1f",
+      "reportUrl" : "https://leeltib.github.io/conduit/15//#testresult/3beb139290ccab1f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
       "time" : {
-        "start" : 1627259172822,
-        "stop" : 1627259341124,
-        "duration" : 168302
+        "start" : 1627478306236,
+        "stop" : 1627478423537,
+        "duration" : 117301
+      }
+    }, {
+      "uid" : "fe4af31dac5fddc3",
+      "reportUrl" : "https://leeltib.github.io/conduit/14//#testresult/fe4af31dac5fddc3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
+      "time" : {
+        "start" : 1627478210039,
+        "stop" : 1627478327448,
+        "duration" : 117409
+      }
+    }, {
+      "uid" : "3814e8dcf585b81f",
+      "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/3814e8dcf585b81f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
+      "time" : {
+        "start" : 1627313250007,
+        "stop" : 1627313367437,
+        "duration" : 117430
+      }
+    }, {
+      "uid" : "39cccb0a6f8614a2",
+      "reportUrl" : "https://leeltib.github.io/conduit/12//#testresult/39cccb0a6f8614a2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
+      "time" : {
+        "start" : 1627313220099,
+        "stop" : 1627313336989,
+        "duration" : 116890
       }
     } ]
   },
-  "2f17a20ede4d483d0057e94ad59c5aaa" : {
+  "5cfcc2cefb9f1836745df83e2e45ab28" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 1
+      "total" : 4
     },
     "items" : [ {
-      "uid" : "76d89b77de7a80d1",
-      "reportUrl" : "https://leeltib.github.io/conduit/15//#testresult/76d89b77de7a80d1",
+      "uid" : "5fb30ccb813ef83f",
+      "reportUrl" : "https://leeltib.github.io/conduit/15//#testresult/5fb30ccb813ef83f",
       "status" : "passed",
       "time" : {
-        "start" : 1627259135507,
-        "stop" : 1627259172812,
-        "duration" : 37305
+        "start" : 1627478223046,
+        "stop" : 1627478255297,
+        "duration" : 32251
+      }
+    }, {
+      "uid" : "899d727c300093e0",
+      "reportUrl" : "https://leeltib.github.io/conduit/14//#testresult/899d727c300093e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627478126782,
+        "stop" : 1627478159134,
+        "duration" : 32352
+      }
+    }, {
+      "uid" : "a6ca4831e22e7d32",
+      "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/a6ca4831e22e7d32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627312970833,
+        "stop" : 1627313003014,
+        "duration" : 32181
+      }
+    }, {
+      "uid" : "a2c08359e4b7ecff",
+      "reportUrl" : "https://leeltib.github.io/conduit/12//#testresult/a2c08359e4b7ecff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627312942346,
+        "stop" : 1627312974590,
+        "duration" : 32244
+      }
+    } ]
+  },
+  "11cfb2accc31c8646756c1ed9e0fff89" : {
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "b438a4ed3fe101d8",
+      "reportUrl" : "https://leeltib.github.io/conduit/15//#testresult/b438a4ed3fe101d8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 13 == 10\n +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
+      "time" : {
+        "start" : 1627478255300,
+        "stop" : 1627478306202,
+        "duration" : 50902
+      }
+    }, {
+      "uid" : "71c634135e16f4ff",
+      "reportUrl" : "https://leeltib.github.io/conduit/14//#testresult/71c634135e16f4ff",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 13 == 10\n +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
+      "time" : {
+        "start" : 1627478159149,
+        "stop" : 1627478210005,
+        "duration" : 50856
+      }
+    }, {
+      "uid" : "78911e05e43228ff",
+      "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/78911e05e43228ff",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 23 == 10\n +  where 23 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
+      "time" : {
+        "start" : 1627313036627,
+        "stop" : 1627313250001,
+        "duration" : 213374
+      }
+    }, {
+      "uid" : "8cbf1f08f7f219e2",
+      "reportUrl" : "https://leeltib.github.io/conduit/12//#testresult/8cbf1f08f7f219e2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 23 == 10\n +  where 23 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
+      "time" : {
+        "start" : 1627313008134,
+        "stop" : 1627313220094,
+        "duration" : 211960
+      }
+    } ]
+  },
+  "9ac83a73c8806776a78675035ad2422a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "98c536d8185047b6",
+      "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/98c536d8185047b6",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'data_out/a007_testuser2_blogs'",
+      "time" : {
+        "start" : 1627313003019,
+        "stop" : 1627313036555,
+        "duration" : 33536
+      }
+    }, {
+      "uid" : "f198172ec223c9b9",
+      "reportUrl" : "https://leeltib.github.io/conduit/12//#testresult/f198172ec223c9b9",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'data_out/a007_testuser2_blogs'",
+      "time" : {
+        "start" : 1627312974594,
+        "stop" : 1627313008058,
+        "duration" : 33464
       }
     } ]
   }
