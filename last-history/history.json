@@ -9,14 +9,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6ac0455d128e3df6",
-      "reportUrl" : "https://leeltib.github.io/conduit/19//#testresult/6ac0455d128e3df6",
+      "uid" : "7a78b9f478e2e11f",
+      "reportUrl" : "https://leeltib.github.io/conduit/20//#testresult/7a78b9f478e2e11f",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert 13 == 10\n +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
       "time" : {
-        "start" : 1627483770599,
-        "stop" : 1627483823852,
-        "duration" : 53253
+        "start" : 1627483774211,
+        "stop" : 1627483833648,
+        "duration" : 59437
       }
     } ]
   },
@@ -30,14 +30,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5d5cd8d41d124592",
-      "reportUrl" : "https://leeltib.github.io/conduit/19//#testresult/5d5cd8d41d124592",
+      "uid" : "7829ca794a539280",
+      "reportUrl" : "https://leeltib.github.io/conduit/20//#testresult/7829ca794a539280",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
       "time" : {
-        "start" : 1627483823897,
-        "stop" : 1627483941905,
-        "duration" : 118008
+        "start" : 1627483833682,
+        "stop" : 1627483950867,
+        "duration" : 117185
       }
     } ]
   }
