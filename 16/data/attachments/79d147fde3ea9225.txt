@@ -1,0 +1,15 @@
+[{'username': '', 'email': 'wazodwp@gmail.com', 'password': 'v2Xyf2Ef'}, {'username': 'jcmotbzd', 'email': 'ewaymep@gmail.com', 'password': 'd5Dps9Dk'}, {'username': 'jlgmnqrq', 'email': '', 'password': 'c9Vqh1Zk'}, {'username': 'rarszfvh', 'email': 'dlmddci@gmail.com', 'password': 'g8Acl4Bg'}, {'username': 'lhxaofjx', 'email': 'cduxhkf.gmail.com', 'password': 'b7Upb8Zk'}, {'username': 'tzliorts', 'email': 'setamuz@gmailcom', 'password': 'h2Xes4Vn'}, {'username': 'phafrllb', 'email': 'znbpody@gmail.com', 'password': ''}, {'username': 'wygxafdv', 'email': 'svsvoxy@gmail.com', 'password': 'i9Ihv6Rs'}, {'username': 'zurijdsn', 'email': 'pdifidp@gmail.com', 'password': 'u7Gs6Mk'}, {'username': 'lgkdxlou', 'email': 'wntpkdx@gmail.com', 'password': 'adFiuERx'}, {'username': 'bamedecb', 'email': 'fodzwyn@gmail.com', 'password': '13DA40DA'}, {'username': 'vlyfqlqm', 'email': 'heidllh@gmail.com', 'password': 't39yr5tm'}]
+[['jcmotbzd', 'dlmddci@gmail.com', 'i9Ihv6Rs'], ['', 'wazodwp@gmail.com', 'v2Xyf2Ef'], ['jcmotbzd', 'ewaymep@gmail.com', 'd5Dps9Dk'], ['jlgmnqrq', '', 'c9Vqh1Zk'], ['rarszfvh', 'dlmddci@gmail.com', 'g8Acl4Bg'], ['lhxaofjx', 'cduxhkf.gmail.com', 'b7Upb8Zk'], ['tzliorts', 'setamuz@gmailcom', 'h2Xes4Vn'], ['phafrllb', 'znbpody@gmail.com', ''], ['wygxafdv', 'svsvoxy@gmail.com', 'i9Ihv6Rs'], ['zurijdsn', 'pdifidp@gmail.com', 'u7Gs6Mk'], ['lgkdxlou', 'wntpkdx@gmail.com', 'adFiuERx'], ['bamedecb', 'fodzwyn@gmail.com', '13DA40DA'], ['vlyfqlqm', 'heidllh@gmail.com', 't39yr5tm']]
+A további tesztekhez szükséges "meglévő" user adatok feltöltése OK.
+Username. Üres mezős teszt OK!
+Username. ERROR! Nincs hibaüzenet a meglévő felhasználóneves tesztnél!
+Email. Üres mezős teszt OK!
+Email. Meglévő email cím teszt OK!
+Email. Hiányzó '@' karakter teszt OK!
+Email. Hiányzó '.' karakter teszt OK!
+Password. Üres mezős teszt OK!
+Password. ERROR! Nincs hibaüzenet a meglévő jelszó tesztnél!
+Password. 8 karakternél kevesebb teszt OK!
+Password. A nincs benne szám teszt OK!
+Password. A nincs benne kisbetű teszt OK!
+Password. A nincs benne nagybetű teszt OK!
