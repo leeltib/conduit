@@ -21,6 +21,7 @@ fu01.wait(driver, By.ID, "app", 2)
 
 
 def test_A006_basis():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da06.mail, da06.passw)
     return fu01.tags_list(driver)
 

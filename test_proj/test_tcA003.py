@@ -22,6 +22,7 @@ fu01.wait(driver, By.ID, "app", 2)
 
 
 def test_A003():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da03.mail, da03.passw)
     wr_cont = fu01.blog_write(driver, da03)
     fu01.out_close_driver(driver)

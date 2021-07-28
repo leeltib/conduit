@@ -19,13 +19,15 @@ tcA005_run = False
 # tcA006_run = A006 test case - Tags funkció tesztelése (listázással)
 tcA006_run = False
 # tcA007_run = A007 test case - User select funkció -> a kiválasztott user bejegyzéseinek kiírása egy text fájlba
-tcA007_run = True
+tcA007_run = False
 # tcA008_run = A008 test case - Comment funkció -> kiválasztható bejegyzések kommentelése, ellenörzés, törlés
 tcA008_run = False
 # tcA009_run = A009 test case - Lapozó funkció -> elvárás: egyszerre 10 blogot jelenítsen meg a rendszer
 tcA009_run = True
 # tcA010_run = A010 test case - Regisztrációs űrlap mezőinek validálása
 tcA010_run = True
+# tcA011_run = A011 test case - Cookie funkció tesztelése
+tcA011_run = False
 
 
 if tcA001_run == True:
@@ -83,7 +85,8 @@ if tcA007_run == True:
     def test_t_case007():
         time.sleep(5)
         import test_tcA007 as tc07
-        assert tc07.user_blog_num1 == tc07.user_blog_num2
+        user_blog_num2 = tc07.test_A007_write()
+        assert tc07.user_blog_num1 == user_blog_num2
 else:
     print("Az A007 teszteset vizsgálata ki van kapcsolva!")
 
@@ -111,4 +114,13 @@ if tcA010_run == True:
         assert tc10.expect_valid == tc10.sign_up_valid_list
 else:
     print("Az A010 teszteset vizsgálata ki van kapcsolva!")
+
+if tcA011_run == True:
+    def test_t_case011():
+        time.sleep(1)
+        import test_tcA011 as tc11
+        assert tc11.cookie_valid_dec == tc11.expect_valid_dec
+        assert tc11.cookie_valid_acc == tc11.expect_valid_acc
+else:
+    print("Az A011 teszteset vizsgálata ki van kapcsolva!")
 

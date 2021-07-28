@@ -285,7 +285,6 @@ def del_comm_button(brow):
 
 # regisztráció
 def sign_up(brow, uname, mail, passw):
-    cookie_ok(brow)
     click_menu(brow, 3)
     wait(brow, By.XPATH, wait_sign_up_in, 2)
     sel_up_input(brow, 1).send_keys(uname)
@@ -312,7 +311,6 @@ def registr_check(brow):
 
 # sign_in -> belépés email és jelszó megadásával
 def sign_in(brow, mail, passw):
-    cookie_ok(brow)
     click_menu(brow, 2)
     wait(brow, By.XPATH, wait_sign_up_in, 1)
     sel_up_input(brow, 1).send_keys(mail)
@@ -715,4 +713,27 @@ def registr_check_a010(brow):
     except:
         reg_failed(brow)
         return "FAIL"
+
+
+# Cookie kezelés tesztelése - decline:
+def cookie_valid_decline(brow):
+    try:
+        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
+        print('"I decline!" click')
+        return '"I decline!" click'
+    except:
+        print("No cookies")
+        return "No cookies"
+
+
+# Cookie kezelés tesztelése - accept:
+def cookie_valid_accept(brow):
+    try:
+        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[2]/div').click()
+        print('"I accept!" click')
+        return '"I accept!" click'
+    except:
+        print("No cookies")
+        return "No cookies"
+
 

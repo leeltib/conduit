@@ -7,7 +7,6 @@ import func.func_01 as fu01
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
 
@@ -37,6 +36,7 @@ comments_text_set = set(comments_text)
 
 
 def test_A008_comment():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da08.mail, da08.passw)
     co_da_li = fu01.user_comment(driver, da08.com_list_num, da08.com_list, comments_text)
     fu01.out_user(driver)
@@ -47,6 +47,7 @@ comments_user_title_list = test_A008_comment()
 
 
 def test_A008_control():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da08.mail_cont, da08.passw_cont)
     cont_da_li = fu01.user_comment_control(driver, da08.com_list_num, da08.com_list, comments_text)
     fu01.out_user(driver)
@@ -62,6 +63,7 @@ control_text_list_set = set(control_text_list)
 
 
 def test_A008_del():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da08.mail, da08.passw)
     del_da_li = fu01.user_comment_del(driver, da08.com_list_num, da08.com_list, comments_text)
     fu01.out_close_driver(driver)

@@ -25,6 +25,7 @@ fu01.wait(driver, By.ID, "app", 1)
 def test_A001(users):
     usern_text = []
     for user in users:
+        fu01.cookie_ok(driver)
         fu01.sign_up(driver, user[0], user[1], user[2])
         usn_text = fu01.registr_check(driver)
         usern_text.append(usn_text)

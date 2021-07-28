@@ -27,6 +27,7 @@ def test_A010_sign_up_valid(users):
     valid_data = []
     for user in users:
         time.sleep(1)
+        fu01.cookie_ok(driver)
         fu01.sign_up(driver, user[0], user[1], user[2])
         result_test = fu01.registr_check_a010(driver)
         valid_data.append(result_test)

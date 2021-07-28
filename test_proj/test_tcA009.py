@@ -1,6 +1,6 @@
 # A009 test case -  Lapozó funkció tesztje
-# A teszthez random generálással feltöltünk 12 user profilt, egy-egy blogbejegyzéssel
-# A teszt után ezeket a bejegyzéseket töröljük
+# A teszthez random generálással feltöltünk 2 user profilt, egy-egy blogbejegyzéssel
+# Ha nincs elég bejegyzés az alkalmazásban, akkor data_tcA009.py fájlban növelhetó a teszt indulásakor létrehozott új userek száma
 
 import data.data_tcA009 as da09
 import func.func_01 as fu01
@@ -41,6 +41,7 @@ print(users_in_data_list)
 login_user = users_in_data_list[0]
 
 def test_A009_blog_num():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, login_user[0], login_user[1])
     return fu01.blog_num_check(driver)
 

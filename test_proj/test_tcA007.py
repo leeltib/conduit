@@ -21,6 +21,7 @@ fu01.wait(driver, By.ID, "app", 2)
 
 
 def test_A007_select():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da07.mail, da07.passw)
     return fu01.select_user(driver, da07.username)
 
@@ -38,7 +39,8 @@ blog_read_full = test_A007_read()
 
 
 def test_A007_write():
-    filename = f"data_out/a007_{da07.username}_blogs"
+#    filename = f"data_out/a007_{da07.username}_blogs"
+    filename = f"a007_{da07.username}_blogs"
     with open(filename, "w", encoding='utf-8') as f:
         f.write(f"{da07.username} bejegyzései:\n")
         r_num = len(blog_read_full)
@@ -51,14 +53,15 @@ def test_A007_write():
     return r_num
 
 
-user_blog_num2 = test_A007_write()
+#user_blog_num2 = test_A007_write()
 
 
 # ***************************************************
 
 # normál, önálló futtatáshoz:
 if __name__ == "__main__":
-    print(f"{da07.username} bejegyzései:")
+    user_blog_num2 = test_A007_write()
+    print(f"\n{da07.username} bejegyzései:")
     r_n = len(blog_read_full)
     for i in range(r_n):
         b_title = str(blog_read_full[i][0])

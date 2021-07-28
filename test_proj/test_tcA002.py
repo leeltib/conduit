@@ -22,6 +22,7 @@ fu01.wait(driver, By.ID, "app", 2)
 
 
 def test_A002():
+    fu01.cookie_ok(driver)
     fu01.sign_in(driver, da02.mail, da02.passw)
     usern_text = fu01.login_check(driver)
     fu01.out_close_driver(driver)

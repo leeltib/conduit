@@ -1,16 +1,13 @@
-# A009 - userek megadása lapozó funkció teszteléséhez
-# random generált userek (alapból 12 db, de ez állítható)
+# A011 - userek megadása a cookie funkció teszteléséhez
+# random generált userek (2 db -> elfogad / nem fogad el)
 
 import random
 import string
-
-title = 'Hello, én egy A009 test User vagyok!.'
 
 class MyRND():
     chars_lo = string.ascii_lowercase
     chars_int = string.digits
     chars_up = string.ascii_uppercase
-    chars = string.punctuation               # *'[{&| stb
 
     @classmethod
     def uname(cls):
@@ -55,5 +52,4 @@ for user in td_list:
     users.append(user_data)
 
 print(users)
-
 
