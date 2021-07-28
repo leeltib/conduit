@@ -1,12 +1,12 @@
 {
-  "uid" : "fe4af31dac5fddc3",
+  "uid" : "6fca2e8d49b42a10",
   "name" : "test_t_case010",
   "fullName" : "test_proj.test_index_3#test_t_case010",
   "historyId" : "3dedc6fadb71433904eae3ff70179e10",
   "time" : {
-    "start" : 1627478210039,
-    "stop" : 1627478327448,
-    "duration" : 117409
+    "start" : 1627483116581,
+    "stop" : 1627483235352,
+    "duration" : 118771
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
@@ -20,21 +20,21 @@
     "statusTrace" : "def test_t_case010():\n        time.sleep(5)\n        import test_tcA010 as tc10\n>       assert tc10.expect_valid == tc10.sign_up_valid_list\nE       AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\nE         At index 2 diff: 'FAIL' != 'OK'\nE         Use -v to get the full diff\n\ntest_proj/test_index_3.py:114: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "adf60f4103cb39e0",
+      "uid" : "707c23c136571cd2",
       "name" : "log",
-      "source" : "adf60f4103cb39e0.txt",
+      "source" : "707c23c136571cd2.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "22fd6733089dd409",
+      "uid" : "410bb4e6e67d5f4d",
       "name" : "stdout",
-      "source" : "22fd6733089dd409.txt",
+      "source" : "410bb4e6e67d5f4d.txt",
       "type" : "text/plain",
       "size" : 2106
     }, {
-      "uid" : "5b81112d930bfa8d",
+      "uid" : "2e8cb4e093170733",
       "name" : "stderr",
-      "source" : "5b81112d930bfa8d.txt",
+      "source" : "2e8cb4e093170733.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -53,10 +53,10 @@
     "value" : "test_index_3"
   }, {
     "name" : "host",
-    "value" : "fv-az39-289"
+    "value" : "fv-az83-442"
   }, {
     "name" : "thread",
-    "value" : "3934-MainThread"
+    "value" : "3903-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -82,39 +82,8 @@
       "matchedStatuses" : [ ],
       "flaky" : false
     } ],
-    "history" : {
-      "statistic" : {
-        "failed" : 3,
-        "broken" : 0,
-        "skipped" : 0,
-        "passed" : 0,
-        "unknown" : 0,
-        "total" : 3
-      },
-      "items" : [ {
-        "uid" : "3814e8dcf585b81f",
-        "reportUrl" : "https://leeltib.github.io/conduit/13//#testresult/3814e8dcf585b81f",
-        "status" : "failed",
-        "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
-        "time" : {
-          "start" : 1627313250007,
-          "stop" : 1627313367437,
-          "duration" : 117430
-        }
-      }, {
-        "uid" : "39cccb0a6f8614a2",
-        "reportUrl" : "https://leeltib.github.io/conduit/12//#testresult/39cccb0a6f8614a2",
-        "status" : "failed",
-        "statusDetails" : "AssertionError: assert ['OK', 'FAIL'..., 'FAIL', ...] == ['OK', 'FAIL'..., 'FAIL', ...]\n  At index 2 diff: 'FAIL' != 'OK'\n  Use -v to get the full diff",
-        "time" : {
-          "start" : 1627313220099,
-          "stop" : 1627313336989,
-          "duration" : 116890
-        }
-      } ]
-    },
     "tags" : [ ]
   },
-  "source" : "fe4af31dac5fddc3.json",
+  "source" : "6fca2e8d49b42a10.json",
   "parameterValues" : [ ]
 }
