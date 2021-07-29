@@ -1,4 +1,11 @@
 [ {
+  "buildOrder" : 29,
+  "reportUrl" : "https://leeltib.github.io/conduit/29/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 248432
+  }
+}, {
   "buildOrder" : 23,
   "reportUrl" : "https://leeltib.github.io/conduit/23/",
   "reportName" : "Allure Report with history",
