@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
-options.headless = False
+options.headless = True
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
 driver.get("http://localhost:1667")
@@ -54,7 +54,8 @@ print_error = test_comment_text_list(da10.comment_error)
 
 try:
     assert len(expect_valid) == len(sign_up_valid_list)
-    for i in range(13):
+    rn = len(sign_up_valid_list)
+    for i in range(rn):
         if expect_valid[i] == sign_up_valid_list[i]:
             print(print_ok[i])
         else:
