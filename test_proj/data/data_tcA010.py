@@ -20,7 +20,39 @@ Password:
  - nincs benne nagybetű -> elvárás: hibaüzenet
 """
 
-# random generált userek
+comment_ok = """
+A további tesztekhez szükséges "meglévő" user adatok feltöltése OK.//
+Username. Üres mezős teszt OK!//
+Username. Meglévő felhasználónév teszt OK!//
+Email. Üres mezős teszt OK!//
+Email. Meglévő email cím teszt OK!//
+Email. Hiányzó '@' karakter teszt OK!//
+Email. Hiányzó '.' karakter teszt OK!//
+Password. Üres mezős teszt OK!//
+Password. Meglévő jelszó teszt OK!//
+Password. 8 karakternél kevesebb teszt OK!//
+Password. A nincs benne szám teszt OK!//
+Password. A nincs benne kisbetű teszt OK!//
+Password. A nincs benne nagybetű teszt OK!//
+"""
+
+comment_error = """
+Hiba történt a további tesztekhez szükséges "meglévő" user adatok feltöltése közben!//
+Username. ERROR! Nincs hibaüzenet az üres mezős tesztnél!//
+Username. ERROR! Nincs hibaüzenet a meglévő felhasználóneves tesztnél!//
+Email. ERROR! Nincs hibaüzenet az üres mezős tesztnél!//
+Email. ERROR! Nincs hibaüzenet a meglévő email cím tesztnél!//
+Email. ERROR! Nincs hibaüzenet a hiányzó '@' karakter tesztnél!//
+Email. ERROR! Nincs hibaüzenet a hiányzó '.' karakter tesztnél!//
+Password. ERROR! Nincs hibaüzenet az üres mezős tesztnél!//
+Password. ERROR! Nincs hibaüzenet a meglévő jelszó tesztnél!//
+Password. ERROR! Nincs hibaüzenet a 8 karakternél kevesebb tesztnél!//
+Password. ERROR! Nincs hibaüzenet a nincs benne szám tesztnél!//
+Password. ERROR! Nincs hibaüzenet a nincs benne kisbetű tesztnél!//
+Password. ERROR! Nincs hibaüzenet a nincs benne nagybetű tesztnél!//
+"""
+
+# random generált userek:
 
 import random
 import string

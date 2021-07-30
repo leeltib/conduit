@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
-options.headless = True
+options.headless = False
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
 driver.get("http://localhost:1667")
@@ -40,74 +40,27 @@ expect_valid = ['OK', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'FAIL', 'F
 sign_up_valid_list = test_A010_sign_up_valid(da10.users)
 
 
-for i in range(13):
-    if i == 0:
+def test_comment_text_list(val):
+    comm_ok_full_list = []
+    elements = val.split('//')
+    for element in elements:
+        list_elem = element.replace("\n", "")
+        comm_ok_full_list.append(list_elem)
+    return comm_ok_full_list
+
+
+print_ok = test_comment_text_list(da10.comment_ok)
+print_error = test_comment_text_list(da10.comment_error)
+
+try:
+    assert len(expect_valid) == len(sign_up_valid_list)
+    for i in range(13):
         if expect_valid[i] == sign_up_valid_list[i]:
-            print('A további tesztekhez szükséges "meglévő" user adatok feltöltése OK.')
+            print(print_ok[i])
         else:
-            print('Hiba történt a további tesztekhez szükséges "meglévő" user adatok feltöltése közben!')
-    elif i == 1:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Username. Üres mezős teszt OK!")
-        else:
-            print("Username. ERROR! Nincs hibaüzenet az üres mezős tesztnél!")
-    elif i == 2:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Username. Meglévő felhasználónév teszt OK!")
-        else:
-            print("Username. ERROR! Nincs hibaüzenet a meglévő felhasználóneves tesztnél!")
-    elif i == 3:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Email. Üres mezős teszt OK!")
-        else:
-            print("Email. ERROR! Nincs hibaüzenet az üres mezős tesztnél!")
-    elif i == 4:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Email. Meglévő email cím teszt OK!")
-        else:
-            print("Email. ERROR! Nincs hibaüzenet a meglévő email cím tesztnél!")
-    elif i == 5:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Email. Hiányzó '@' karakter teszt OK!")
-        else:
-            print("Email. ERROR! Nincs hibaüzenet a hiányzó '@' karakter tesztnél!")
-    elif i == 6:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Email. Hiányzó '.' karakter teszt OK!")
-        else:
-            print("Email. ERROR! Nincs hibaüzenet a hiányzó '.' karakter tesztnél!")
-    elif i == 7:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Password. Üres mezős teszt OK!")
-        else:
-            print("Password. ERROR! Nincs hibaüzenet az üres mezős tesztnél!")
-    elif i == 8:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Password. Meglévő jelszó teszt OK!")
-        else:
-            print("Password. ERROR! Nincs hibaüzenet a meglévő jelszó tesztnél!")
-    elif i == 9:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Password. 8 karakternél kevesebb teszt OK!")
-        else:
-            print("Password. ERROR! Nincs hibaüzenet a 8 karakternél kevesebb tesztnél!")
-    elif i == 10:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Password. A nincs benne szám teszt OK!")
-        else:
-            print("Password. ERROR! Nincs hibaüzenet a nincs benne szám tesztnél!")
-    elif i == 11:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Password. A nincs benne kisbetű teszt OK!")
-        else:
-            print("Password. ERROR! Nincs hibaüzenet a nincs benne kisbetű tesztnél!")
-    elif i == 12:
-        if expect_valid[i] == sign_up_valid_list[i]:
-            print("Password. A nincs benne nagybetű teszt OK!")
-        else:
-            print("Password. ERROR! Nincs hibaüzenet a nincs benne nagybetű tesztnél!")
-    else:
-        print("A range füfggvény értéke nem jó! ")
+            print(print_error[i])
+except:
+    print('Error. Az "expect_valid" és a "sign_up_valid_list" listák elemszáma nem azonos!')
 
 
 # ***************************************************
