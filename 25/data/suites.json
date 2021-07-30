@@ -3,61 +3,35 @@
   "children" : [ {
     "name" : "test_proj",
     "children" : [ {
-      "name" : "test_index_2",
+      "name" : "test_index_3",
       "children" : [ {
-        "name" : "test_t_case001",
-        "uid" : "759a0a1c55ee2a40",
-        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
-        "status" : "passed",
+        "name" : "test_t_case009",
+        "uid" : "712bf1a2bbad7da5",
+        "parentUid" : "0615337dbd7d94c0be1c7770db28b736",
+        "status" : "failed",
         "time" : {
-          "start" : 1627483740803,
-          "stop" : 1627483772846,
-          "duration" : 32043
+          "start" : 1627659319509,
+          "stop" : 1627659377707,
+          "duration" : 58198
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_t_case002",
-        "uid" : "e5160524a20b97a",
-        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
-        "status" : "passed",
+        "name" : "test_t_case010",
+        "uid" : "358ec030a2f2e07b",
+        "parentUid" : "0615337dbd7d94c0be1c7770db28b736",
+        "status" : "broken",
         "time" : {
-          "start" : 1627483772850,
-          "stop" : 1627483783333,
-          "duration" : 10483
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case008",
-        "uid" : "b2ad535aa1bb2dfb",
-        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
-        "status" : "passed",
-        "time" : {
-          "start" : 1627483783335,
-          "stop" : 1627483934264,
-          "duration" : 150929
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_t_case011",
-        "uid" : "b73eef64a9e3db8",
-        "parentUid" : "3b7bed4fb7b60153631b941f6f252ece",
-        "status" : "passed",
-        "time" : {
-          "start" : 1627483934267,
-          "stop" : 1627483971047,
-          "duration" : 36780
+          "start" : 1627659377765,
+          "stop" : 1627659384816,
+          "duration" : 7051
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3b7bed4fb7b60153631b941f6f252ece"
+      "uid" : "0615337dbd7d94c0be1c7770db28b736"
     } ],
     "uid" : "92db12f7e7d0b8dc8bfd8a470ddd0514"
   } ],
