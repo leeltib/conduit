@@ -1,12 +1,12 @@
 {
-  "uid" : "e73e49c3448257fb",
+  "uid" : "44be257d17dc0106",
   "name" : "test_t_case009",
   "fullName" : "test_proj.test_index_3#test_t_case009",
   "historyId" : "11cfb2accc31c8646756c1ed9e0fff89",
   "time" : {
-    "start" : 1627579083232,
-    "stop" : 1627579136181,
-    "duration" : 52949
+    "start" : 1627667420976,
+    "stop" : 1627667477509,
+    "duration" : 56533
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert 13 == 10\n +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
@@ -20,21 +20,21 @@
     "statusTrace" : "def test_t_case009():\n        time.sleep(5)\n        import test_tcA009 as tc09\n>       assert tc09.pages_blog_num == 10\nE       AssertionError: assert 13 == 10\nE        +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num\n\ntest_proj/test_index_3.py:106: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "e54c0ddc725640c1",
+      "uid" : "c725eacad935bcdc",
       "name" : "log",
-      "source" : "e54c0ddc725640c1.txt",
+      "source" : "c725eacad935bcdc.txt",
       "type" : "text/plain",
       "size" : 642
     }, {
-      "uid" : "58b17aadfece32a3",
+      "uid" : "634f4e84afc11525",
       "name" : "stdout",
-      "source" : "58b17aadfece32a3.txt",
+      "source" : "634f4e84afc11525.txt",
       "type" : "text/plain",
       "size" : 408
     }, {
-      "uid" : "3a1629f1909301f3",
+      "uid" : "d3778201a7296346",
       "name" : "stderr",
-      "source" : "3a1629f1909301f3.txt",
+      "source" : "d3778201a7296346.txt",
       "type" : "text/plain",
       "size" : 435
     } ],
@@ -53,10 +53,10 @@
     "value" : "test_index_3"
   }, {
     "name" : "host",
-    "value" : "fv-az77-46"
+    "value" : "fv-az36-323"
   }, {
     "name" : "thread",
-    "value" : "3585-MainThread"
+    "value" : "3740-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -84,6 +84,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "e73e49c3448257fb.json",
+  "source" : "44be257d17dc0106.json",
   "parameterValues" : [ ]
 }

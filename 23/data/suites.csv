@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Thu Jul 29 17:18:56 GMT 2021","Thu Jul 29 17:20:53 GMT 2021","117400","test_proj","test_index_3","","","","test_t_case010",""
-"failed","Thu Jul 29 17:18:03 GMT 2021","Thu Jul 29 17:18:56 GMT 2021","52949","test_proj","test_index_3","","","","test_t_case009",""
