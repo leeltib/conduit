@@ -16,16 +16,14 @@ def wait(brow, by, attr, sleep_s):
         print("Loading took too much time!-Try again")
 
 
-# klikkelés kiválasztott menüpontra
-def click_menu(brow, i):
-    menu_full = brow.find_elements_by_class_name('nav-item')
-    menu_full[i-1].click()
+# menüsor lista létrehozása
+def menu_create(brow):
+    return brow.find_elements_by_class_name('nav-item')
 
 
-# menüpont kiválasztása
-def sel_menu(brow, i):
-    menu_full = brow.find_elements_by_class_name('nav-item')
-    return menu_full[i-1]
+# az aktuális oldalon található blogbejegyzések listába gyűjtése
+def article_list_create(brow):
+    return brow.find_elements_by_class_name('article-preview')
 
 
 # Cookie kezelés:
@@ -34,7 +32,6 @@ def cookie_ok(brow):
         brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
     except:
         pass
-        #print("Nincs cookie.")
 
 
 # sign up, sign in beviteli mezők:
@@ -45,7 +42,7 @@ def sel_up_input(brow, i):
     if i < len(up_inputs):
         up_input = up_inputs[i-1].find_element_by_tag_name('input')
     else:
-        up_input = up_inputs[i - 1]
+        up_input = up_inputs[i-1]
     return up_input
 
 
@@ -90,20 +87,6 @@ wait_tags_list3 = '//div[@class="article-preview"]'                            #
 
 wait_return_home = '//div[@id="app"]/div/div[2]/div/div[1]/div[1]/ul/li[2]/a'             # a Home menü betöltésére
 wait_select_user = '//div[@id="app"]/div/div[2]/div/div/div[1]/ul/li[1]'
-
-
-# My Articles -> bejegyzés kiválasztása
-def click_my_blog(brow, i):
-    my_blogs = brow.find_elements_by_class_name('article-preview')
-    my_blog = my_blogs[i].find_element_by_tag_name('h1')
-    my_blog.click()
-
-
-# My Articles -> bejegyzés elemeinek szövegei
-def text_my_blog(brow, i, tagname):
-    my_blogs = brow.find_elements_by_class_name('article-preview')
-    my_bl_text = my_blogs[i].find_element_by_tag_name(tagname).text
-    return my_bl_text
 
 
 # New Article -> új bejegyzés beviteli mezői + gomb
@@ -222,15 +205,9 @@ def select_users_links(brow):
     return users_link
 
 
-# az aktuális oldalon található blogbejegyzések listába gyűjtése
-def create_article_list(brow):
-    article_list = brow.find_elements_by_class_name('article-preview')
-    return article_list
-
-
 # az aktuális oldalon található blogbejegyzések h1 elemének (kattintásra) listába gyűjtése
 def create_article_link_list(brow):
-    article_list = brow.find_elements_by_class_name('article-preview')
+    article_list = article_list_create(brow)
     article_link_list = []
     for article in article_list:
         article_link_list.append(article.find_element_by_tag_name('h1'))
@@ -279,8 +256,73 @@ def del_comm_button(brow):
     return del_buttons
 
 
+# username (megjelenésének) ellenőrzése
+def login_check(brow):
+    wait(brow, By.XPATH, wait_login_check, 1)
+    try:
+        login_failed_text = brow.find_element_by_xpath('/html/body/div[2]/div/div[2]').text
+        assert login_failed_text == "Login failed!"
+        login_failed_button = brow.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button')
+        login_failed_button.click()
+        wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/h1', 1)
+        print("Hibás belépési adatok, nincs ilyen felhasználó.")
+    except:
+        usern_text = sel_menu(brow, 4).text
+        time.sleep(1)
+        print(usern_text)
+        return usern_text
+
+
+# Cookie kezelés tesztelése - decline:
+def cookie_valid_decline(brow):
+    try:
+        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
+        print('"I decline!" click')
+        return '"I decline!" click'
+    except:
+        print("No cookies")
+        return "No cookies"
+
+
+# Cookie kezelés tesztelése - accept:
+def cookie_valid_accept(brow):
+    try:
+        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[2]/div').click()
+        print('"I accept!" click')
+        return '"I accept!" click'
+    except:
+        print("No cookies")
+        return "No cookies"
+
+
 # ****************************************************************************************
 # ****************************** "TISZTA" FÜGGVÉNYEK *************************************
+
+
+# klikkelés kiválasztott menüpontra
+def click_menu(brow, i):
+    menu_full = menu_create(brow)
+    menu_full[i-1].click()
+
+
+# menüpont kiválasztása
+def sel_menu(brow, i):
+    menu_full = menu_create(brow)
+    return menu_full[i-1]
+
+
+# My Articles -> bejegyzés kiválasztása
+def click_my_blog(brow, i):
+    my_blogs = article_list_create(brow)
+    my_blog = my_blogs[i].find_element_by_tag_name('h1')
+    my_blog.click()
+
+
+# My Articles -> kiválasztott bejegyzés elemének szövege
+def text_my_blog(brow, i, tagname):
+    my_blogs = article_list_create(brow)
+    my_bl_text = my_blogs[i].find_element_by_tag_name(tagname).text
+    return my_bl_text
 
 
 # regisztráció
@@ -316,23 +358,6 @@ def sign_in(brow, mail, passw):
     sel_up_input(brow, 1).send_keys(mail)
     sel_up_input(brow, 2).send_keys(passw)
     sel_up_input(brow, 3).click()
-
-
-# username (megjelenésének) ellenőrzése
-def login_check(brow):
-    wait(brow, By.XPATH, wait_login_check, 1)
-    try:
-        login_failed_text = brow.find_element_by_xpath('/html/body/div[2]/div/div[2]').text
-        assert login_failed_text == "Login failed!"
-        login_failed_button = brow.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/button')
-        login_failed_button.click()
-        wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/h1', 1)
-        print("Hibás belépési adatok, nincs ilyen felhasználó.")
-    except:
-        usern_text = sel_menu(brow, 4).text
-        time.sleep(1)
-        print(usern_text)
-        return usern_text
 
 
 # navigálás a home menure, frissítés, újratöltés
@@ -488,7 +513,7 @@ def select_user(brow, username):
     wait(brow, By.XPATH, wait_select_user, 1)
     brow.refresh()
     time.sleep(3)
-    user_blog_num = len(create_article_list(brow))
+    user_blog_num = len(article_list_create(brow))
     print(user_blog_num, "blogbejegyzés")
     return user_blog_num
 
@@ -655,7 +680,6 @@ def registr_check_a009(brow):
     try:
         welcome_ok(brow)
         usern_text = sel_menu(brow, 4).text
-        #print(usern_text)
         wait(brow, By.XPATH, wait_registr_check2, 2)
         click_menu(brow, 1)
         return usern_text
@@ -693,7 +717,7 @@ def blog_num_check(brow):
         print(usern_text)
         click_menu(brow, 1)
         time.sleep(2)
-        blogs = create_article_list(brow)
+        blogs = article_list_create(brow)
         time.sleep(1)
         click_menu(brow, 5)
         time.sleep(2)
@@ -713,27 +737,4 @@ def registr_check_a010(brow):
     except:
         reg_failed(brow)
         return "FAIL"
-
-
-# Cookie kezelés tesztelése - decline:
-def cookie_valid_decline(brow):
-    try:
-        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
-        print('"I decline!" click')
-        return '"I decline!" click'
-    except:
-        print("No cookies")
-        return "No cookies"
-
-
-# Cookie kezelés tesztelése - accept:
-def cookie_valid_accept(brow):
-    try:
-        brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[2]/div').click()
-        print('"I accept!" click')
-        return '"I accept!" click'
-    except:
-        print("No cookies")
-        return "No cookies"
-
 
