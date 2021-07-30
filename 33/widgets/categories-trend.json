@@ -1,3 +1,15 @@
 [ {
+  "buildOrder" : 33,
+  "reportUrl" : "https://leeltib.github.io/conduit/33/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 27,
+  "reportUrl" : "https://leeltib.github.io/conduit/27/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Product defects" : 2
+  }
+}, {
   "data" : { }
 } ]
