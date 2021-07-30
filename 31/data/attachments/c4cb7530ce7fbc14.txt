@@ -1,0 +1,10 @@
+[{'username': 'thruwemu', 'email': 'dithaqz@gmail.com', 'password': 'f7Ccx0Xn'}, {'username': 'bbnhtyme', 'email': 'wbuvbrm@gmail.com', 'password': 'g4Sdh9Ef'}]
+[['thruwemu', 'dithaqz@gmail.com', 'f7Ccx0Xn'], ['bbnhtyme', 'wbuvbrm@gmail.com', 'g4Sdh9Ef']]
+"I decline!" click
+thruwemu
+No cookies
+thruwemu
+"I accept!" click
+bbnhtyme
+No cookies
+bbnhtyme
