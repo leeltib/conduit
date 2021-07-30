@@ -1,5 +1,0 @@
-[{'username': 'fkurtspj', 'email': 'migpfhi@gmail.com', 'password': 'x8Jpz1Xa'}, {'username': 'kduvqlwj', 'email': 'qwgiwfm@gmail.com', 'password': 'v1Vgu4Og'}]
-testuser01
-testuser02
-testuser03
-['testuser01', 'testuser02', 'testuser03']
