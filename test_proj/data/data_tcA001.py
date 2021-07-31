@@ -14,7 +14,7 @@ us9 = ['testuser09', 'tuser09@gmail.com', 'TestUser09']
 us10 = ['testuser10', 'tuser10@gmail.com', 'TestUser10']
 
 # Generate random user
-us_random = True
+us_random = False
 
 users_orig = [us1, us2, us3]
 

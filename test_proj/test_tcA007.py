@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
 
 options = Options()
-options.headless = False
+options.headless = True
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
 driver.get("http://localhost:1667")
