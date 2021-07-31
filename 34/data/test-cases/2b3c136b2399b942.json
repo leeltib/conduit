@@ -1,0 +1,89 @@
+{
+  "uid" : "2b3c136b2399b942",
+  "name" : "test_t_case008",
+  "fullName" : "test_proj.test_index_2#test_t_case008",
+  "historyId" : "238ed554900f6f0e625c4fbf3571b9b5",
+  "time" : {
+    "start" : 1627738066011,
+    "stop" : 1627738085274,
+    "duration" : 19263
+  },
+  "status" : "broken",
+  "statusMessage" : "IndexError: list index out of range",
+  "statusTrace" : "def test_t_case008():\n>       import test_tcA008 as tc08\n\ntest_proj/test_index_2.py:121: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap>:1007: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:986: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:680: in _load_unlocked\n    ???\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/_pytest/assertion/rewrite.py:170: in exec_module\n    exec(co, module.__dict__)\ntest_proj/test_tcA008.py:46: in <module>\n    comments_user_title_list = test_A008_comment()\ntest_proj/test_tcA008.py:42: in test_A008_comment\n    fu01.out_user(driver)\ntest_proj/func/func_01.py:375: in out_user\n    click_menu(brow, 5)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nbrow = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"c03817c46fa2f7f496eba00574b2116e\")>\ni = 5\n\n    def click_menu(brow, i):\n        menu_full = menu_create(brow)\n>       menu_full[i-1].click()\nE       IndexError: list index out of range\n\ntest_proj/func/func_01.py:305: IndexError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "IndexError: list index out of range",
+    "statusTrace" : "def test_t_case008():\n>       import test_tcA008 as tc08\n\ntest_proj/test_index_2.py:121: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap>:1007: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:986: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:680: in _load_unlocked\n    ???\n/opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/_pytest/assertion/rewrite.py:170: in exec_module\n    exec(co, module.__dict__)\ntest_proj/test_tcA008.py:46: in <module>\n    comments_user_title_list = test_A008_comment()\ntest_proj/test_tcA008.py:42: in test_A008_comment\n    fu01.out_user(driver)\ntest_proj/func/func_01.py:375: in out_user\n    click_menu(brow, 5)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nbrow = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"c03817c46fa2f7f496eba00574b2116e\")>\ni = 5\n\n    def click_menu(brow, i):\n        menu_full = menu_create(brow)\n>       menu_full[i-1].click()\nE       IndexError: list index out of range\n\ntest_proj/func/func_01.py:305: IndexError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "46f5612b8369eec0",
+      "name" : "log",
+      "source" : "46f5612b8369eec0.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "48640c5fcc7c4d5d",
+      "name" : "stdout",
+      "source" : "48640c5fcc7c4d5d.txt",
+      "type" : "text/plain",
+      "size" : 124
+    }, {
+      "uid" : "e645a7a2c5c9582f",
+      "name" : "stderr",
+      "source" : "e645a7a2c5c9582f.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_proj"
+  }, {
+    "name" : "suite",
+    "value" : "test_index_2"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-465"
+  }, {
+    "name" : "thread",
+    "value" : "3640-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_proj.test_index_2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2b3c136b2399b942.json",
+  "parameterValues" : [ ]
+}
