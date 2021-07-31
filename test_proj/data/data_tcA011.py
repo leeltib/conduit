@@ -1,6 +1,5 @@
-# A011 - userek megadása a cookie funkció teszteléséhez
-# random generált userek (2 db -> elfogad / nem fogad el)
-
+# A011 - User data for cookie function test 
+# Randomly generated two users (accept/decline)
 import random
 import string
 
@@ -39,7 +38,7 @@ class TestData:
             d["password"] = MyRND.ppass()
             self.data.append(d)
 
-# itt állítható a random generált userek száma
+# Set the number of randomly generated users
 td = TestData(2)
 td_list = td.data
 print(td_list)

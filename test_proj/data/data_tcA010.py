@@ -1,23 +1,23 @@
-# A010 - regisztrációs űrlap mezőinek validálása
+# A010 - Validating registration form fields
 """
-Vizsgálati esetek:
+Test cases:
 Username:
- - üres mező -> elvárás: hibaüzenet
- - meglévő felhasználónév -> elvárás: hibaüzenet
+ - empty field -> error message expected
+ - existing user -> error message expected
 
 Email:
- - üres mező -> elvárás: hibaüzenet
- - meglévő email cím -> elvárás: hibaüzenet
- - hiányzik a '@' karakter -> elvárás: hibaüzenet
- - hiányzik a '.' karakter -> elvárás: hibaüzenet
+ - empty field -> error message expected
+ - existing email address -> error message expected
+ - missing '@' character -> error message expected
+ - missing '.' character -> error message expected
 
 Password:
- - üres mező -> elvárás: hibaüzenet
- - meglévő jelszó -> elvárás: hibaüzenet
- - 8 karakternél kevesebb -> elvárás: hibaüzenet
- - nincs benne szám -> elvárás: hibaüzenet
- - nincs benne kisbetű -> elvárás: hibaüzenet
- - nincs benne nagybetű -> elvárás: hibaüzenet
+ - empty field -> error message expected
+ - existing password -> error message expected
+ - less than 8 characters -> error message expected
+ - no numbers -> error message expected
+ - no lower case letters -> error message expected
+ - no upper case letters -> error message expected
 """
 
 comment_ok = """
@@ -52,7 +52,7 @@ Password. ERROR! Nincs hibaüzenet a nincs benne kisbetű tesztnél!//
 Password. ERROR! Nincs hibaüzenet a nincs benne nagybetű tesztnél!//
 """
 
-# random generált userek:
+# Randomly generated users
 
 import random
 import string
@@ -66,9 +66,9 @@ class MyRND():
 
     @classmethod
     def uname(cls, i):
-        if i == 0:          # üres mező -> elvárás: hibaüzenet
+        if i == 0:          # empty field -> error message expected
             return ""
-        elif i == 1:        # meglévő felhasználónév -> elvárás: hibaüzenet
+        elif i == 1:        # existing user -> error message expected
             return user_bas[0]
         elif i == 2 or i == 3 or i == 4 or i == 5 or i == 6 or i == 7 or i == 8 or i == 9 or i == 10 or i == 11:
             return "".join([random.choice(cls.chars_lo) for _ in range(8)])
@@ -82,18 +82,18 @@ class MyRND():
             mail_fix = "@gmail.com"
             email = mail_lo + mail_fix
             return email
-        elif i == 2:  # üres mező -> elvárás: hibaüzenet
+        elif i == 2:  # empty field -> error message expected
             email = ""
             return email
-        elif i == 3:  # meglévő email cím -> elvárás: hibaüzenet
+        elif i == 3:  # existing email address -> error message expected
             email = user_bas[1]
             return email
-        elif i == 4:  # hiányzik a '@' karakter -> elvárás: hibaüzenet
+        elif i == 4:  # missing '@' character -> error message expected
             mail_lo = "".join([random.choice(cls.chars_lo) for _ in range(7)])
             mail_fix = ".gmail.com"
             email = mail_lo + mail_fix
             return email
-        elif i == 5:  # hiányzik a '.' karakter -> elvárás: hibaüzenet
+        elif i == 5:  # missing '.' character -> error message expected
             mail_lo = "".join([random.choice(cls.chars_lo) for _ in range(7)])
             mail_fix = "@gmailcom"
             email = mail_lo + mail_fix
@@ -112,22 +112,22 @@ class MyRND():
         if i == 0 or i == 1 or i == 2 or i == 3 or i == 4 or i == 5:
             pchars = pp_lo[4] + pp_int[0] + pp_up[7] + pp_lo[1:3] + pp_int[3] + pp_up[4] + pp_lo[6]
             return pchars
-        elif i == 6:         # üres mező -> elvárás: hibaüzenet
+        elif i == 6:         # empty field -> error message expected
             pchars = ""
             return pchars
-        elif i == 7:         # meglévő jelszó -> elvárás: hibaüzenet
+        elif i == 7:         # existing password -> error message expected
             pchars = user_bas[2]
             return pchars
-        elif i == 8:         # 8 karakternél kevesebb -> elvárás: hibaüzenet
+        elif i == 8:         # less than 8 characters -> error message expected
             pchars = pp_lo[4] + pp_int[0] + pp_up[7] + pp_lo[1] + pp_int[3] + pp_up[4] + pp_lo[6]
             return pchars
-        elif i == 9:         # nincs benne szám -> elvárás: hibaüzenet
+        elif i == 9:         # no numbers -> error message expected
             pchars = pp_lo[4:6] + pp_up[7] + pp_lo[1:3] + pp_up[4:6] + pp_lo[6]
             return pchars
-        elif i == 10:         # nincs benne kisbetű -> elvárás: hibaüzenet
+        elif i == 10:         # no lower case letters -> error message expected
             pchars = pp_int[0:2] + pp_up[4:6] + pp_int[3:5] + pp_up[4:6]
             return pchars
-        elif i == 11:        # nincs benne nagybetű -> elvárás: hibaüzenet
+        elif i == 11:        # no upper case letters -> error message expected
             pchars = pp_lo[4] + pp_int[0:2] + pp_lo[1:3] + pp_int[3] + pp_lo[4:6]
             return pchars
         else:
@@ -155,7 +155,7 @@ class TestData2:
             d["password"] = MyRND.ppass(100)
             self.data.append(d)
 
-# "meglévő" User létrehozása
+# creating already existing user
 us = TestData2(1)
 us_ba = us.data
 
@@ -164,7 +164,7 @@ for data in us_ba:
     for value in data.values():
         user_bas.append(value)
 
-# itt állítható a random generált userek száma
+# set number of randomly generated users
 td = TestData(12)
 td_list = td.data
 print(td_list)

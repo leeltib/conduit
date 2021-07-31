@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-# várakozás a betöltésre
+# Wait for loading
 def wait(brow, by, attr, sleep_s):
     try:
         WebDriverWait(brow, 30).until(EC.presence_of_element_located((by, attr)))
@@ -16,17 +16,17 @@ def wait(brow, by, attr, sleep_s):
         print("Loading took too much time!-Try again")
 
 
-# menüsor lista létrehozása
+# create menu
 def menu_create(brow):
     return brow.find_elements_by_class_name('nav-item')
 
 
-# az aktuális oldalon található blogbejegyzések listába gyűjtése
+# list articles on current page
 def article_list_create(brow):
     return brow.find_elements_by_class_name('article-preview')
 
 
-# Cookie kezelés:
+# handling Cookies:
 def cookie_ok(brow):
     try:
         brow.find_element_by_xpath('//div[@id="cookie-policy-panel"]/div/div[2]/button[1]/div').click()
@@ -34,7 +34,7 @@ def cookie_ok(brow):
         pass
 
 
-# sign up, sign in beviteli mezők:
+# sign up, sign in entry fields:
 def sel_up_input(brow, i):
     up_inputs = brow.find_elements_by_class_name('form-group')
     up_button = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/button')
@@ -46,7 +46,7 @@ def sel_up_input(brow, i):
     return up_input
 
 
-# sikeres regisztrációnál felugró Welcome ablak elfogadása
+# accept Welcome window on succesful registration
 def welcome_ok(brow):
     welcome_text = brow.find_element_by_xpath('/html/body/div[2]/div/div[2]').text
     assert welcome_text == "Welcome!"
@@ -55,7 +55,7 @@ def welcome_ok(brow):
     wait(brow, By.XPATH, '//div[@id="app"]/nav/div/ul/li[4]/a', 1)
 
 
-# sikertelen regisztrációnál felugró Registration failed ablak elfogadása
+# accept Registration failed window on failed registration
 def reg_failed(brow):
     failed_text = brow.find_element_by_xpath('/html/body/div[2]/div/div[2]').text
     assert failed_text == "Registration failed!"
@@ -64,32 +64,32 @@ def reg_failed(brow):
     wait(brow, By.XPATH, '//div[@id="app"]/div/div/div/div/h1', 1)
 
 
-# "várakozások
-wait_sign_up_in = '//div[@id="app"]/div/div/div/div/form/fieldset[1]/input'     # a bejelentkező űrlap betöltésére
-wait_registr_check1 = '/html/body/div[2]/div/div[4]/div/button'                 # a Welcome OK gomb betöltésére
-wait_registr_check2 = '//div[@id="app"]/nav/div/ul/li[5]/a'                     # a Log out gomb megjelenésére
-wait_login_check = '//div[@id="app"]/nav/div/ul/li[4]/a'                        # a usernév (menüpont) megejelenésére
+# wait for the loading of...
+wait_sign_up_in = '//div[@id="app"]/div/div/div/div/form/fieldset[1]/input'     # ... login form
+wait_registr_check1 = '/html/body/div[2]/div/div[4]/div/button'                 # ... Welcome OK button
+wait_registr_check2 = '//div[@id="app"]/nav/div/ul/li[5]/a'                     # ... Log out button
+wait_login_check = '//div[@id="app"]/nav/div/ul/li[4]/a'                        # ... user name (menu) 
 
-wait_blog_write1 = '//div[@id="app"]/nav/div/ul/li[2]/a'                                  # a New Article gomb betöltésére
-wait_blog_write2 = '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input'     # a blog író úrlap betöltésére
-wait_blog_write3 = '//div[@id="app"]/div/div[2]/div/div[1]/div[1]/ul/li[2]/a'             # a Home menü betöltésére
+wait_blog_write1 = '//div[@id="app"]/nav/div/ul/li[2]/a'                                  # ... New Article button
+wait_blog_write2 = '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input'     # ... blog edit form 
+wait_blog_write3 = '//div[@id="app"]/div/div[2]/div/div[1]/div[1]/ul/li[2]/a'             # ... Home menu
 
-wait_control_blog_write_edit1 = '//div[@id="app"]/div/div[2]/div[1]/div/div[1]/p'                    # a edit-delete-comment oldal betöltésére
-wait_control_blog_write_edit2 = '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1'        # a user menu betöltésére
+wait_control_blog_write_edit1 = '//div[@id="app"]/div/div[2]/div[1]/div/div[1]/p'                    # ... edit-delete-comment page
+wait_control_blog_write_edit2 = '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div/a/h1'        # ... user menu 
 
-wait_blog_edit1_del14 = '//div[@id="app"]/nav/div/ul/li[4]/a'                                  # a user menu betöltésére
-wait_blog_edit2_del2 = '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div[1]/a/span'      # a My Articles betöltésére
-wait_blog_edit3_del3 = '//div[@id="app"]/div/div[1]/div/div/span/a/span'                       # a kiválasztott elem edit-delet-comment oldalon való betöltésére
-wait_blog_edit4 = '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input'           # a szerkesztő úrlap betöltésére
+wait_blog_edit1_del14 = '//div[@id="app"]/nav/div/ul/li[4]/a'                                  # ... user menu 
+wait_blog_edit2_del2 = '//div[@id="app"]/div/div[2]/div/div/div[2]/div/div/div[1]/a/span'      # ... My Articles 
+wait_blog_edit3_del3 = '//div[@id="app"]/div/div[1]/div/div/span/a/span'                       # ... selected item at edit-delet-comment page
+wait_blog_edit4 = '//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[1]/input'           # ... edit form
 
-wait_tags_list12 = '//div[@class="tag-list"]'                                  # a Popular Tags betöltésére
-wait_tags_list3 = '//div[@class="article-preview"]'                            # a tag-hez rendelt bejegyzések betöltésére
+wait_tags_list12 = '//div[@class="tag-list"]'                                  # ... Popular Tags
+wait_tags_list3 = '//div[@class="article-preview"]'                            # ... tagged articles
 
-wait_return_home = '//div[@id="app"]/div/div[2]/div/div[1]/div[1]/ul/li[2]/a'             # a Home menü betöltésére
+wait_return_home = '//div[@id="app"]/div/div[2]/div/div[1]/div[1]/ul/li[2]/a'             # ... Home menu
 wait_select_user = '//div[@id="app"]/div/div[2]/div/div/div[1]/ul/li[1]'
 
 
-# New Article -> új bejegyzés beviteli mezői + gomb
+# New Article -> Fields and buttton of new article 
 def new_art_inp(brow, i, tagname):
     art_inputs = brow.find_elements_by_class_name('form-group')
     art_button = brow.find_element_by_xpath('//div[@id="app"]/div/div/div/div/form/button')
@@ -101,7 +101,7 @@ def new_art_inp(brow, i, tagname):
     return art_inp
 
 
-# blog írás (módosítás), input mezők kitöltése
+# Write (modify) blog post, fill input fields
 def blog_write_input(brow, da, inp_num):
     if inp_num == 1:
         input1 = new_art_inp(brow, 1, 'input')
@@ -119,7 +119,7 @@ def blog_write_input(brow, da, inp_num):
         print("A beviteli mező azonosítása sikertelen.")
 
 
-# blog írás, tag mező kitöltése
+# write blog post, fill tag field
 def tag_write(brow, da):
     for i in range(da.ta_nu):
         input4 = brow.find_element_by_xpath(f'//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li[{i + 1}]/input')
@@ -128,7 +128,7 @@ def tag_write(brow, da):
         time.sleep(1)
 
 
-# blog módosítás, tag mezők cseréje
+# modify blog post, change tags
 def tag_edit(brow, da):
     tags_num = int(len(brow.find_elements_by_xpath('//div[@id="app"]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li')))
     for i in range(tags_num - 1):
@@ -141,8 +141,8 @@ def tag_edit(brow, da):
         time.sleep(1)
 
 
-# blog módosítás-törlés-komment oldal mezői:
-# Edit Article - Delete Article gombok kiválasztása
+# fields of modify-edit-delete-comment page:
+# choose Edit Article - Delete Article buttons
 def edit_delete_button_sel(brow, i):
     buttons = []
     button_edit = brow.find_element_by_xpath('//div[@id="app"]/div/div[1]/div/div/span/a')
@@ -153,7 +153,7 @@ def edit_delete_button_sel(brow, i):
     return buttons_sel
 
 
-# Write - Tags mezők kiválasztása
+# choose Write - Tags fields
 def edit_write_tags_sel(brow, i):
     wri_tag = []
     write_sel = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div[1]/div/div[1]/p')
@@ -164,7 +164,7 @@ def edit_write_tags_sel(brow, i):
     return wri_tag_sel
 
 
-# Write comment mező és Post Comment gomb kiválasztása
+# choose Write comment field and Post Comment button
 def edit_write_com_postbut_sel(brow, i):
     wcom_postb = []
     wcom_sel = brow.find_element_by_xpath('//div[@id="app"]/div/div[2]/div[2]/div/div/form/div[1]/textarea')
@@ -175,7 +175,7 @@ def edit_write_com_postbut_sel(brow, i):
     return wcom_postb_sel
 
 
-# tag elemek száma, az egyes tag-ekhez tartozó bejegyzések száma (listázás)
+# number of tags, number of tagged posts (list) 
 def tags_list(brow):
     wait(brow, By.XPATH, wait_tags_list12, 2)
     tags_bas = brow.find_elements_by_xpath('//div[@id="app"]/div/div[2]/div/div[2]/div/div//a')
@@ -195,7 +195,7 @@ def tags_list(brow):
     return tb_list
 
 
-# Users-linkek kiválasztása a Global Fedd listából
+# choose Users-links from Global Fedd list
 def select_users_links(brow):
     wait(brow, By.XPATH, '//div[@id="app"]/div/div[2]/div/div[1]/div[1]/ul/li[2]/a', 2)
     users = brow.find_elements_by_class_name('info')

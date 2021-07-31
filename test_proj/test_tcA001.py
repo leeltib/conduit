@@ -1,5 +1,5 @@
-# A001 test case -  Új felhasználó regisztrációja felhasználó név, email cím és jelszó megadásával.
-# A tesztekhez használt felhasználók adatait a data/users.txt fájlban kell megadni (tetszőleges számú lehet)
+# A001 test case -  New user registration with user name, email and password
+# User login data should be provided in data/users.txt file. Arbitrary number of users can be tested.
 
 import data.data_tcA001 as da01
 import func.func_01 as fu01
@@ -16,7 +16,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 1)
 
 # *** TC-A001 **************************************
@@ -43,7 +43,7 @@ print(list_username)
 
 # ***************************************************
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(user_menu_text)
     try:

@@ -1,5 +1,5 @@
-# A011 test case -  cookie funkció tesztelése
-# A teszthez random generálással készülnek a tesztadatok (data_tcA011.py)
+# A011 test case -  Testing Cookie function
+# Test data is randomly generated (data_tcA011.py)
 
 import data.data_tcA011 as da11
 import func.func_01 as fu01
@@ -16,7 +16,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 user_dec = [da11.users[0][0], da11.users[0][1], da11.users[0][2]]
 user_acc = [da11.users[1][0], da11.users[1][1], da11.users[1][2]]
 
-# Teszt az "I decline!" gombra kattintás esetére:
+# "I decline!" button on click test
 def test_A011_cookie_decline(users):
     options = Options()
     options.headless = True
@@ -45,7 +45,7 @@ expect_valid_dec = ['"I decline!" click', 'No cookies']
 cookie_valid_dec = test_A011_cookie_decline(user_dec)
 
 
-# Teszt az "I accept!" gombra kattintás esetére:
+# "I accept!" button on click test
 def test_A011_cookie_accept(users):
     options = Options()
     options.headless = True
@@ -75,7 +75,7 @@ cookie_valid_acc = test_A011_cookie_accept(user_acc)
 
 
 # ***************************************************
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(user_dec)
     print(user_acc)

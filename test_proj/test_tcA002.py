@@ -1,4 +1,4 @@
-# TC002 test case - Belépés a regisztráció során megadott adatokkal - kilépés.
+# TC002 test case - Login in with new user data - exit
 
 import data.data_tcA002 as da02
 import func.func_01 as fu01
@@ -15,7 +15,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A002 **************************************
@@ -34,7 +34,7 @@ username_text = test_A002()
 
 # ***************************************************
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(username_text)
     try:

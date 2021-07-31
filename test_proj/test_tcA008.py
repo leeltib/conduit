@@ -1,6 +1,6 @@
 # A008 - comment function
-# Kiválasztható a blogszerző, és a konkrét blog
-# A komment szövegét külső fájlból olvassuk be
+# Blog author and blog can be set 
+# Comment text is read from external file
 
 import data.data_tcA008 as da08
 import func.func_01 as fu01
@@ -16,7 +16,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A008 **************************************
@@ -76,7 +76,7 @@ del_user_title_list = test_A008_del()
 
 # ***************************************************
 
-# normál, önálló futtatáshoz:
+# Normal, automatic run
 if __name__ == "__main__":
     print(comments_text)
     print(comments_text_set)

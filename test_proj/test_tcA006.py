@@ -1,4 +1,4 @@
-# A006 test case - Tags funkció tesztelése (listázás)
+# test case A006 - test of Tags function (by listing)
 
 import data.data_tcA006 as da06
 import func.func_01 as fu01
@@ -14,7 +14,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A006 **************************************
@@ -49,7 +49,7 @@ tags_del = test_A006_del()
 
 # ***************************************************
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     rn = len(tags_add)
     add_num = len(tags_add) - len(tags_basis)

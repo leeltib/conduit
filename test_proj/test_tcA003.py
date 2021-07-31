@@ -1,4 +1,4 @@
-# A003 test case - Új blogbejegyzés készítése - kilépés.
+# test case A003 - New blog post  - exit
 
 import data.data_tcA003 as da03
 import func.func_01 as fu01
@@ -15,7 +15,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A003 **************************************
@@ -34,7 +34,7 @@ write_add_text = test_A003()
 
 # ***************************************************
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(write_add_text)
     try:

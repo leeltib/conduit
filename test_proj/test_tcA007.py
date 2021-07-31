@@ -9,12 +9,12 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager               # webdriver-manager / Chrome
 
 options = Options()
-options.headless = True
+options.headless = False
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A007 **************************************
@@ -40,7 +40,7 @@ blog_read_full = test_A007_read()
 
 def test_A007_write():
 #    filename = f"data_out/a007_{da07.username}_blogs"
-    filename = f"a007_{da07.username}_blogs"
+    filename = f"a007_{da07.username}_blogs.txt"
     with open(filename, "w", encoding='utf-8') as f:
         f.write(f"{da07.username} bejegyzései:\n")
         r_num = len(blog_read_full)
@@ -58,7 +58,7 @@ def test_A007_write():
 
 # ***************************************************
 
-# normál, önálló futtatáshoz:
+# Normal, automatic run
 if __name__ == "__main__":
     user_blog_num2 = test_A007_write()
     print(f"\n{da07.username} bejegyzései:")

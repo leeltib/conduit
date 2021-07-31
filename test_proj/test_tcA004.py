@@ -1,4 +1,4 @@
-# A004 test case - Saját, meglévő blogbejegyzés módosítása - kilépés.
+# test case A004 - Saját, meglévő blogbejegyzés módosítása - kilépés.
 
 import data.data_tcA004 as da04
 import func.func_01 as fu01
@@ -15,7 +15,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A004 **************************************
@@ -34,7 +34,7 @@ write_edit_text = test_A004()
 
 # ***************************************************
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(write_edit_text)
     try:

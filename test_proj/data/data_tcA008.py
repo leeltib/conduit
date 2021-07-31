@@ -1,4 +1,4 @@
-# A008 teszteset tesztadatai
+# Test data of test case A008
 
 name = 'testuser03'
 mail = 'tuser03@gmail.com'
@@ -7,11 +7,12 @@ name_cont = 'testuser01'
 mail_cont = 'tuser01@gmail.com'
 passw_cont = 'TestUser01'
 
-# számok jelentése:
-# első szám: a bejegyzés sorszáma (ahányadik a listán)
-# második szám: a bejegyzéshez rendelt hozzászólás sorszáma
-# A hozzászólások száma, a hozzájuk kapcsolt komment szabadon variálható, de megkötés, hogy
-# a tesztben minden típusú hozzászólás legalább egyszer szerepeljen! (Kevesebb tesztszituáció esetén csökkenthető a hozzászólás típusok száma...)
+# Input numbers:
+# first number: number of the post (by list position) 
+# second number: number of the comment 
+# Number of posts and comments can be set arbitrary, however
+# each type of comments have to be set at least once during the test.
+# In case of less test cases comment types can be narrowed down.
 com_list = [[1, 2], [2, 4], [5, 1], [10, 3]]
 com_list_num = len(com_list)
 
@@ -43,5 +44,5 @@ ostoba bejegyzés. Ennek a véleményemnek kissé indulatosan
 hangot is adok...
 """
 
-# az elemek száma szabadon változtatható
+# number of elements can vary
 comment_full = [comment_positive1, comment_positive2, comment_negative1, comment_negative2]

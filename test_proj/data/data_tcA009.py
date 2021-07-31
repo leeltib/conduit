@@ -1,5 +1,5 @@
-# A009 - userek megadása lapozó funkció teszteléséhez
-# random generált userek (alapból 2 db, de ez állítható)
+# A009 - enter users for scrolling function test
+# test with randomly generated users (arbitrary number of users, default is 2)
 
 import random
 import string
@@ -10,7 +10,7 @@ class MyRND():
     chars_lo = string.ascii_lowercase
     chars_int = string.digits
     chars_up = string.ascii_uppercase
-    chars = string.punctuation               # *'[{&| stb
+    chars = string.punctuation               # *'[{&| etc
 
     @classmethod
     def uname(cls):
@@ -42,7 +42,7 @@ class TestData:
             d["password"] = MyRND.ppass()
             self.data.append(d)
 
-# itt állítható a random generált userek száma
+# set number of randomly generated users
 td = TestData(2)
 td_list = td.data
 print(td_list)

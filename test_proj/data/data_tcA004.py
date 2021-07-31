@@ -1,4 +1,4 @@
-# A004 teszteset tesztadatai
+# Test data of test case A004 
 
 name = 'testuser01'
 mail = 'tuser01@gmail.com'

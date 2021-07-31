@@ -1,4 +1,4 @@
-# A005 test case - Saját, meglévő blogbejegyzés törlése - kilépés.
+# test case A005 - Delete own existing post - exit
 
 import data.data_tcA005 as da05
 import func.func_01 as fu01
@@ -15,7 +15,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 2)
 
 # *** TC-A005 **************************************
@@ -34,7 +34,7 @@ what_text = test_A005()
 
 # ***************************************************
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(what_text[0], what_text[1],)
     try:

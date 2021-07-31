@@ -1,6 +1,6 @@
-# userek megadása új felhasználók regisztrációjához
-# tetszőleges számú felhasználó megadható, de
-# csak azokkal dolgozik a rendszer, akik a users listában szerepelnek
+# Data for new user registration
+# Arbitrary number of users can be defined
+# Only users in the list will be used as test data
 
 us1 = ['testuser01', 'tuser01@gmail.com', 'TestUser01']
 us2 = ['testuser02', 'tuser02@gmail.com', 'TestUser02']
@@ -13,8 +13,8 @@ us8 = ['testuser08', 'tuser08@gmail.com', 'TestUser08']
 us9 = ['testuser09', 'tuser09@gmail.com', 'TestUser09']
 us10 = ['testuser10', 'tuser10@gmail.com', 'TestUser10']
 
-# random userek generálása
-us_random = False
+# Generate random user
+us_random = True
 
 users_orig = [us1, us2, us3]
 
@@ -51,7 +51,7 @@ class MyRND():
 # print(MyRND.ppass())
 # print(MyRND.email())
 
-# egy másik osztályban gyűjthetjük a random generált adatokat... (pl. egy későbbi belépéshez)
+# Randomly generated data can be stored in an other class (eg. for later login)
 
 class TestData:
     def __init__(self, rn):
@@ -76,7 +76,7 @@ for user in td_list:
 
 #print(users_random)
 
-# random vagy az alap adatok hívása
+# Switch between random and original user data
 if us_random == True:
     users = users_random
 else:

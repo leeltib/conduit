@@ -1,6 +1,7 @@
-# A009 test case -  Lapozó funkció tesztje
-# A teszthez random generálással feltöltünk 2 user profilt, egy-egy blogbejegyzéssel
-# Ha nincs elég bejegyzés az alkalmazásban, akkor data_tcA009.py fájlban növelhetó a teszt indulásakor létrehozott új userek száma
+# test case A009 - test of scrolling functino
+# 2 users are randomly generated with one post each
+# If the number of posts is too small new users number can be set to a higher one at the start of the test in data_tcA009.py
+
 
 import data.data_tcA009 as da09
 import func.func_01 as fu01
@@ -16,7 +17,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 1)
 
 
@@ -59,7 +60,7 @@ except:
 # ***************************************************
 
 
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(pages_blog_num)
     try:

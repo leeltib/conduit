@@ -1,5 +1,5 @@
-# A010 test case -  regisztrációs űrlap mezőinek validálása
-# A teszthez random generálással készülnek a tesztadatok (data_tcA010.py)
+# A010 test case -  Validation of registration form fields
+# Test data is randomly generated (data_tcA010.py)
 
 import data.data_tcA010 as da10
 import func.func_01 as fu01
@@ -16,7 +16,7 @@ driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), optio
 
 driver.get("http://localhost:1667")
 
-# Várakozás a betöltésre
+# Wait for loading
 fu01.wait(driver, By.ID, "app", 1)
 
 
@@ -65,7 +65,7 @@ except:
 
 
 # ***************************************************
-# normál futtatáshoz:
+# Normal run
 if __name__ == "__main__":
     print(expect_valid)
     print(sign_up_valid_list)
