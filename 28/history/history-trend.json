@@ -3,36 +3,12 @@
   "reportUrl" : "https://leeltib.github.io/conduit/28/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 4,
-    "unknown" : 0,
-    "total" : 4
-  }
-}, {
-  "buildOrder" : 22,
-  "reportUrl" : "https://leeltib.github.io/conduit/22/",
-  "reportName" : "Allure Report with history",
-  "data" : {
     "failed" : 2,
     "broken" : 0,
     "skipped" : 0,
     "passed" : 0,
     "unknown" : 0,
     "total" : 2
-  }
-}, {
-  "buildOrder" : 27,
-  "reportUrl" : "https://leeltib.github.io/conduit/27/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 4,
-    "unknown" : 0,
-    "total" : 4
   }
 }, {
   "data" : {

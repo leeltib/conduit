@@ -1,48 +1,48 @@
 {
-  "uid" : "712bf1a2bbad7da5",
+  "uid" : "f390e4254ff5b428",
   "name" : "test_t_case009",
   "fullName" : "test_proj.test_index_3#test_t_case009",
   "historyId" : "11cfb2accc31c8646756c1ed9e0fff89",
   "time" : {
-    "start" : 1627659319509,
-    "stop" : 1627659377707,
-    "duration" : 58198
+    "start" : 1627738036763,
+    "stop" : 1627738091201,
+    "duration" : 54438
   },
   "status" : "failed",
   "statusMessage" : "AssertionError: assert 13 == 10\n +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
-  "statusTrace" : "def test_t_case009():\n        time.sleep(5)\n        import test_tcA009 as tc09\n>       assert tc09.pages_blog_num == 10\nE       AssertionError: assert 13 == 10\nE        +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num\n\ntest_proj/test_index_3.py:106: AssertionError",
+  "statusTrace" : "def test_t_case009():\n        import test_tcA009 as tc09\n>       assert tc09.pages_blog_num == 10\nE       AssertionError: assert 13 == 10\nE        +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num\n\ntest_proj/test_index_3.py:135: AssertionError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "failed",
     "statusMessage" : "AssertionError: assert 13 == 10\n +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num",
-    "statusTrace" : "def test_t_case009():\n        time.sleep(5)\n        import test_tcA009 as tc09\n>       assert tc09.pages_blog_num == 10\nE       AssertionError: assert 13 == 10\nE        +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num\n\ntest_proj/test_index_3.py:106: AssertionError",
+    "statusTrace" : "def test_t_case009():\n        import test_tcA009 as tc09\n>       assert tc09.pages_blog_num == 10\nE       AssertionError: assert 13 == 10\nE        +  where 13 = <module 'test_tcA009' from '/home/runner/work/conduit/conduit/test_proj/test_tcA009.py'>.pages_blog_num\n\ntest_proj/test_index_3.py:135: AssertionError",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "fe8e816ce5db5f3e",
+      "uid" : "db2198cc1ed7a19d",
       "name" : "log",
-      "source" : "fe8e816ce5db5f3e.txt",
+      "source" : "db2198cc1ed7a19d.txt",
       "type" : "text/plain",
       "size" : 642
     }, {
-      "uid" : "92ab1af54520dff3",
+      "uid" : "3c3f1d72ab4ac360",
       "name" : "stdout",
-      "source" : "92ab1af54520dff3.txt",
+      "source" : "3c3f1d72ab4ac360.txt",
       "type" : "text/plain",
       "size" : 408
     }, {
-      "uid" : "14477a6f07d1e232",
+      "uid" : "4183fc38b68371b1",
       "name" : "stderr",
-      "source" : "14477a6f07d1e232.txt",
+      "source" : "4183fc38b68371b1.txt",
       "type" : "text/plain",
       "size" : 435
     } ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 0,
     "attachmentsCount" : 3,
-    "shouldDisplayMessage" : true
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -53,10 +53,10 @@
     "value" : "test_index_3"
   }, {
     "name" : "host",
-    "value" : "fv-az77-46"
+    "value" : "fv-az83-989"
   }, {
     "name" : "thread",
-    "value" : "3597-MainThread"
+    "value" : "3615-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -84,6 +84,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "712bf1a2bbad7da5.json",
+  "source" : "f390e4254ff5b428.json",
   "parameterValues" : [ ]
 }
