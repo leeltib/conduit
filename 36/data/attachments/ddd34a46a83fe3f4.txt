@@ -1,0 +1,10 @@
+[{'username': 'rgukfevt', 'email': 'soaqkmi@gmail.com', 'password': 'n3Hxt0Kh'}, {'username': 'jbsvfvdj', 'email': 'xnjzbym@gmail.com', 'password': 'g1Jja8Yt'}]
+[['rgukfevt', 'soaqkmi@gmail.com', 'n3Hxt0Kh'], ['jbsvfvdj', 'xnjzbym@gmail.com', 'g1Jja8Yt']]
+"I decline!" click
+rgukfevt
+No cookies
+rgukfevt
+"I accept!" click
+jbsvfvdj
+No cookies
+jbsvfvdj
