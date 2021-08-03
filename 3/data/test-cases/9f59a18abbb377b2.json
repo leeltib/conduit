@@ -1,0 +1,101 @@
+{
+  "uid" : "9f59a18abbb377b2",
+  "name" : "test_t_case007",
+  "fullName" : "test_proj.test_index_local#test_t_case007",
+  "historyId" : "999a33e48aed986128762dea0510199e",
+  "time" : {
+    "start" : 1628006737695,
+    "stop" : 1628006766057,
+    "duration" : 28362
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "14daf1881e5c97fd",
+      "name" : "log",
+      "source" : "14daf1881e5c97fd.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "58f9f5600d5069cf",
+      "name" : "stdout",
+      "source" : "58f9f5600d5069cf.txt",
+      "type" : "text/plain",
+      "size" : 1558
+    }, {
+      "uid" : "93d53f00a57faa30",
+      "name" : "stderr",
+      "source" : "93d53f00a57faa30.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_proj"
+  }, {
+    "name" : "suite",
+    "value" : "test_index_local"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-739"
+  }, {
+    "name" : "thread",
+    "value" : "3688-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_proj.test_index_local"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "45a5c9269446cc74",
+        "reportUrl" : "https://leeltib.github.io/conduit/2//#testresult/45a5c9269446cc74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628005467694,
+          "stop" : 1628005495410,
+          "duration" : 27716
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9f59a18abbb377b2.json",
+  "parameterValues" : [ ]
+}
