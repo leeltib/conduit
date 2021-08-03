@@ -4,7 +4,11 @@
 # allure serve ./out
 
 import time
-# time.sleep(20)
+
+
+def time_sl():
+    time.sleep(5)
+
 
 # tcA001_run = A001 test case - New user registration with user name, email and password
 tcA001_run = True
@@ -35,6 +39,7 @@ not_run = []
 
 if tcA001_run == True:
     print("  A001 test case - New user registration with user name, email and password")
+    time_sl()
 
     def test_t_case001():
         import test_tcA001 as tc01
@@ -45,7 +50,7 @@ else:
 
 if tcA002_run == True:
     print("  A002 test case - Login in with new user data.")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case002():
         import test_tcA002 as tc02
@@ -57,7 +62,7 @@ else:
 
 if tcA003_run == True:
     print("  A003 test case - New blog post.")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case003():
         import test_tcA003 as tc03
@@ -69,7 +74,7 @@ else:
 
 if tcA004_run == True:
     print("  A004 test case - Modifying existing blogpost.")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case004():
         import test_tcA004 as tc04
@@ -81,7 +86,7 @@ else:
 
 if tcA005_run == True:
     print("  A005 test case - Deleting own blogpost.")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case005():
         import test_tcA005 as tc05
@@ -92,7 +97,7 @@ else:
 
 if tcA006_run == True:
     print("  A006 test case - Testing Tags function (by listing)")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case006():
         import test_tcA006 as tc06
@@ -104,7 +109,7 @@ else:
 
 if tcA007_run == True:
     print("  A007 test case - User select function -> write selected user's posts to text file")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case007():
         import test_tcA007 as tc07
@@ -116,7 +121,7 @@ else:
 
 if tcA008_run == True:
     print("  A008 test case - Comment function -> commenting, checking and deleting of selected posts")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case008():
         import test_tcA008 as tc08
@@ -128,7 +133,7 @@ else:
 
 if tcA009_run == True:
     print("  A009 test case - Scrolling function -> displaying 10 blogs simultaneously")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case009():
         import test_tcA009 as tc09
@@ -139,7 +144,7 @@ else:
 
 if tcA010_run == True:
     print("  A010 test case - Validating registration form fields.")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case010():
         import test_tcA010 as tc10
@@ -150,7 +155,7 @@ else:
 
 if tcA011_run == True:
     print("  A011 test case - Testing Cookie function.")
-    time.sleep(1)
+    time_sl()
 
     def test_t_case011():
         import test_tcA011 as tc11
