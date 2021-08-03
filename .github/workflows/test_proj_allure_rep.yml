@@ -37,7 +37,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest test_proj/test_index_local.py
+        pytest test_proj/test_index_local.py --alluredir=allure-results
 
     - name: Get Allure history
       uses: actions/checkout@v2
@@ -62,14 +62,3 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
-
-    - name: Collect docker logs
-      uses: jwalton/gh-docker-logs@v1
-      with:
-        dest: './logs'
-
-    - name: Archive execution artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: docker-logs
-        path: ./logs
